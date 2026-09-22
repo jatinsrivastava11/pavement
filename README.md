@@ -6,7 +6,9 @@ Pavement is an iPhone app for car spotting, played a bit like Pokémon Go. Take 
 street, a parking lot or a car show, and Pavement finds every car in the shot, even ones that are
 partly hidden. It adds them to your collection and gives you **Octane** (points) based on how rare they are.
 
-> **Status:** Early development. The app skeleton, rarity tiers and email sign-in (Supabase) work. Features are next.
+> **Status:** Working prototype. Spotting (camera, fake-photo and passenger checks, car detection,
+> 22-model identification), collection, rankings, 3D engines, share cards and friends are built.
+> See [TODO.md](TODO.md) for what's left.
 
 ---
 
@@ -80,8 +82,10 @@ Every car in the world is ranked on two scales, shown side by side:
 | iOS app | Swift, SwiftUI |
 | Camera | AVFoundation |
 | Motion / driving detection | Core Motion (`CMMotionActivityManager`), Core Location |
-| Car detection | On-device only (Vision / Core ML); identifies make and model, e.g. "Porsche 911" |
-| 3D models | RealityKit / SceneKit. Engine: one take-apart model per engine type (I4, V6, V8, V12, flat-6, EV…). Car: exact model only where a free, properly licensed one exists; otherwise a color-matched image |
+| Car detection | YOLOv3-Tiny (Core ML, public domain) with tiling to catch small cars |
+| Car identification | Own Create ML classifier (pilot: 22 models), user confirms from top suggestions |
+| 3D engines | RealityKit, built from code for every engine type (no downloaded models) |
+| Car images | The user's own cropped photo |
 | Backend | Supabase (free plan): accounts, collections, Octane only |
 | Photos | Stay on the user's iPhone and are never uploaded |
 
@@ -143,12 +147,16 @@ Xcode. Your collection is stored online, so nothing is lost.
 Pavement/            The iOS app
   App/               App entry point and main tab bar
   Config/            Secrets.swift (gitignored: Supabase URL and key)
-  Features/          One folder per feature (Auth, Profile, Spot, Spots, …)
+  DesignSystem/      Colors, tier badges, shared styles
+  Features/          Auth, Spot (camera, detection, driving), Collection, Rankings,
+                     Engine (3D), Sharing, Friends, Profile
   Models/            Shared data types (RarityTier, CarModel, CarCatalog)
   Resources/         cars.json (generated, don't edit by hand)
   Services/          Connections to outside services (Supabase)
 PavementTests/       Unit tests
 Data/cars/           Car catalog source (.tsv), one row per car model
+Data/training/       Sources of the photos the identifier was trained on
+supabase/migrations/ Database schema (apply in the Supabase SQL editor)
 Tools/build_cars.py  Builds Pavement/Resources/cars.json from Data/cars
 ```
 
