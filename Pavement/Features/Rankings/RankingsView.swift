@@ -7,6 +7,7 @@ struct RankingsView: View {
     enum Scale: String, CaseIterable { case built = "By production", spotted = "By spotting" }
     @State private var scale: Scale = .built
     @State private var search = ""
+    @State private var recognizableOnly = false
     @State private var counts: [SpotCount]?
     @State private var countsError: String?
 
@@ -18,6 +19,13 @@ struct RankingsView: View {
                 }
                 .pickerStyle(.segmented)
                 .listRowBackground(Color.clear)
+
+                Toggle(isOn: $recognizableOnly) {
+                    Label("Only cars Pavement can recognize (\(CarIdentifier.recognizableIDs.count))", systemImage: "camera.viewfinder")
+                        .font(.subheadline)
+                }
+                .tint(Theme.accent)
+                .listRowBackground(Theme.surface)
 
                 switch scale {
                 case .built: builtList
@@ -33,7 +41,8 @@ struct RankingsView: View {
     }
 
     private func matches(_ car: CarModel) -> Bool {
-        search.isEmpty || car.displayName.localizedCaseInsensitiveContains(search)
+        (search.isEmpty || car.displayName.localizedCaseInsensitiveContains(search))
+            && (!recognizableOnly || CarIdentifier.recognizableIDs.contains(car.id))
     }
 
     @ViewBuilder private var builtList: some View {
@@ -80,6 +89,10 @@ struct RankingsView: View {
                 Text(car.make).font(.caption).foregroundStyle(Theme.textSecondary)
             }
             Spacer()
+            if CarIdentifier.recognizableIDs.contains(car.id) {
+                Image(systemName: "camera.viewfinder").font(.caption).foregroundStyle(Theme.accent)
+                    .accessibilityLabel("Pavement can recognize this car")
+            }
             if let trailing { Text(trailing).font(.caption).foregroundStyle(Theme.textSecondary) }
         }
         .listRowBackground(Theme.surface)

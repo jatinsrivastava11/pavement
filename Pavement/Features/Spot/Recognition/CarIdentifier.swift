@@ -31,6 +31,15 @@ final class CarIdentifier: @unchecked Sendable {
 
     static let otherLabel = "other"
 
+    /// Car IDs the bundled model can recognize, read from the model file (no need to load it).
+    static let recognizableIDs: Set<String> = {
+        guard let url = Bundle.main.url(forResource: "CarIdentifierPilot", withExtension: "mlmodelc"),
+              let data = try? Data(contentsOf: url.appendingPathComponent("metadata.json")),
+              let meta = (try? JSONSerialization.jsonObject(with: data)) as? [[String: Any]],
+              let labels = meta.first?["classLabels"] as? [String] else { return [] }
+        return Set(labels).subtracting([otherLabel])
+    }()
+
     /// Every car ID the model can recognize (not counting "other").
     var knownCarIDs: [String] {
         Self.labels(of: model).filter { $0 != Self.otherLabel }

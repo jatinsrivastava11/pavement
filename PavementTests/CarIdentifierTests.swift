@@ -14,9 +14,10 @@ struct CarIdentifierTests {
         catalog = try CarCatalog.bundled()
     }
 
-    @Test("Knows the 22 pilot models, and every one is in the catalog")
+    @Test("Every recognizable model is in the catalog, and the quick label list matches the model")
     func labelsInCatalog() {
-        #expect(identifier.knownCarIDs.count == 22)
+        #expect(identifier.knownCarIDs.count >= 22)
+        #expect(Set(identifier.knownCarIDs) == CarIdentifier.recognizableIDs)
         for id in identifier.knownCarIDs {
             #expect(catalog.car(id: id) != nil, "\(id) isn't in the catalog")
         }

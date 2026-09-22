@@ -31,7 +31,7 @@ struct SpotReviewView: View {
                         Text("\(cars.count) car\(cars.count == 1 ? "" : "s") found.")
                             .font(.subheadline).foregroundStyle(Theme.textSecondary)
                         ForEach(cars) { car in carRow(car) }
-                        Text("Pavement can recognize 22 models so far. More are coming.")
+                        Text("Pavement can recognize \(CarIdentifier.recognizableIDs.count) models so far. More are coming.")
                             .font(.footnote).foregroundStyle(Theme.textSecondary)
                     }
                 }
