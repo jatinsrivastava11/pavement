@@ -29,14 +29,14 @@ partly hidden. It adds them to your collection and gives you **Octane** (points)
 ### Octane and rarity
 The rarer the car you spot, the more Octane you earn.
 
-| Tier | What it means |
-|---|---|
-| **Legendary** | Top 10 rarest cars in the world |
-| **Exotic** | Top 100 |
-| **Rare** | Top 250 |
-| **Niche** | Uncommon, but you'll see them |
-| **Occasional** | Seen now and then |
-| **Common** | Everyday cars |
+| Tier | World rarity rank | Octane per spot |
+|---|---|---|
+| **Legendary** | 1–10 | 2,000 |
+| **Exotic** | 11–100 | 500 |
+| **Rare** | 101–250 | 200 |
+| **Niche** | 251–750 | 75 |
+| **Occasional** | 751–1,500 | 25 |
+| **Common** | 1,501+ | 10 |
 
 ### Two rarity rankings
 Every car in the world is ranked on two scales, shown side by side:
