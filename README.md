@@ -49,7 +49,7 @@ Every car in the world is ranked on two scales, shown side by side:
 - Send your finds to friends.
 
 ### Accounts
-- Sign in with **Google** or **email and password**.
+- Sign in with **Apple**, **Google**, or **email and password**.
 
 ---
 
@@ -62,7 +62,8 @@ Every car in the world is ranked on two scales, shown side by side:
 | Motion / driving detection | Core Motion (`CMMotionActivityManager`), Core Location |
 | Car detection | Vision / Core ML, plus a car-identification service (to be chosen) |
 | 3D models | RealityKit / SceneKit |
-| Backend | To be chosen (Firebase or Supabase) |
+| Backend | Supabase (free plan): accounts, collections, HP only |
+| Photos | Stay on the user's iPhone and are never uploaded |
 
 ---
 
