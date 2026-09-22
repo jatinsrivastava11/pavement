@@ -35,6 +35,11 @@ Everything here keeps the project at $0.
 10. **Detection misses:** heavily overlapping cars in traffic jams, and very large cars cut off
     at the photo edge.
 
+## Accessibility
+16. The accessibility audit reports 8 contrast issues it can't attach to an element (6 in
+    Rankings, 2 in Profile). Trace them with Xcode's Accessibility Inspector on a device. The UI
+    test fails if the count grows.
+
 ## Later
 11. **Sign in with Apple and push notifications:** when joining the $99/year Apple Developer
     Program (only if publishing).

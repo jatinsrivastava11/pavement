@@ -36,12 +36,12 @@ struct ProfileView: View {
                     Section("Signed in as") { Text(email) }.listRowBackground(Theme.surface)
                 }
                 Section {
-                    Button("Sign Out", role: .destructive) { Task { await auth.signOut() } }
+                    Button("Sign Out", role: .destructive) { Task { await auth.signOut() } }.foregroundStyle(Theme.danger)
                 }
                 .listRowBackground(Theme.surface)
 
                 Section {
-                    Button("Delete my account and data", role: .destructive) { confirmingDelete = true }
+                    Button("Delete my account and data", role: .destructive) { confirmingDelete = true }.foregroundStyle(Theme.danger)
                 } footer: {
                     Text("Removes your account, spots, photos and friends. This can't be undone.")
                 }

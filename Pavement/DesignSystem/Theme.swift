@@ -10,7 +10,10 @@ enum Theme {
 
     // Text
     static let textPrimary = Color.white
-    static let textSecondary = Color.white.opacity(0.62)
+    static let textSecondary = Color.white.opacity(0.7)
+
+    /// Destructive actions (sign out, delete). Brighter than system red so it reads on dark surfaces.
+    static let danger = Color(red: 1.0, green: 0.45, blue: 0.42)
 
     /// Road-marking yellow. Used sparingly: primary actions and Octane.
     static let accent = Color(red: 1.0, green: 0.80, blue: 0.16)

@@ -20,10 +20,7 @@ struct RankingsView: View {
                 .pickerStyle(.segmented)
                 .listRowBackground(Color.clear)
 
-                Toggle(isOn: $recognizableOnly) {
-                    Label("Only cars Pavement can recognize (\(CarIdentifier.recognizableIDs.count))", systemImage: "camera.viewfinder")
-                        .font(.subheadline)
-                }
+                Toggle("Recognizable only (\(CarIdentifier.recognizableIDs.count))", isOn: $recognizableOnly)
                 .tint(Theme.accent)
                 .listRowBackground(Theme.surface)
 
@@ -35,7 +32,7 @@ struct RankingsView: View {
             .scrollContentBackground(.hidden)
             .background(Theme.background)
             .navigationTitle("Rankings")
-            .searchable(text: $search, prompt: "Search 914 cars")
+            .searchable(text: $search, prompt: "Search cars")
             .task(id: scale) { if scale == .spotted, counts == nil { await loadCounts() } }
         }
     }
@@ -84,6 +81,7 @@ struct RankingsView: View {
                 Text("\(rank)").font(.caption.monospacedDigit()).foregroundStyle(Theme.textSecondary).frame(width: 34, alignment: .trailing)
             }
             Image(systemName: car.tier.symbol).foregroundStyle(car.tier.color)
+                .accessibilityLabel("\(car.tier.displayName) tier")
             VStack(alignment: .leading) {
                 Text(car.model).foregroundStyle(Theme.textPrimary)
                 Text(car.make).font(.caption).foregroundStyle(Theme.textSecondary)

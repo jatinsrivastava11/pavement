@@ -99,7 +99,8 @@ struct SpotCard: View {
                 .frame(height: 110)
             TierBadge(tier: entry.car.tier)
             Text(entry.car.make).font(.caption).foregroundStyle(Theme.textSecondary)
-            Text(entry.car.model).font(.headline).foregroundStyle(Theme.textPrimary).lineLimit(1)
+            Text(entry.car.model).font(.headline).foregroundStyle(Theme.textPrimary)
+                .lineLimit(2).fixedSize(horizontal: false, vertical: true)
             HStack {
                 OctaneLabel(amount: entry.totalOctane)
                 Spacer()

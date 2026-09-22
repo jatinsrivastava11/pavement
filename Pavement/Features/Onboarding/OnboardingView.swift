@@ -34,7 +34,9 @@ struct OnboardingView: View {
                         Spacer()
                         Image(systemName: p.symbol).font(.system(size: 72, weight: .semibold)).foregroundStyle(p.tint)
                         Text(p.title).font(.largeTitle.weight(.heavy)).foregroundStyle(Theme.textPrimary).multilineTextAlignment(.center)
+                            .fixedSize(horizontal: false, vertical: true)
                         Text(p.body).font(.body).foregroundStyle(Theme.textSecondary).multilineTextAlignment(.center)
+                            .fixedSize(horizontal: false, vertical: true)
                         Spacer()
                     }
                     .padding(32)

@@ -27,6 +27,8 @@ struct ThemeTests {
         #expect(contrast(Theme.textPrimary, Theme.background) >= 4.5)
         #expect(contrast(Theme.textSecondary, Theme.surface) >= 4.5)
         #expect(contrast(Theme.accent, Theme.background) >= 4.5)
+        #expect(contrast(Theme.danger, Theme.surface) >= 4.5)
+        #expect(contrast(Theme.textSecondary, Theme.surfaceRaised) >= 4.5)
     }
 
     @Test("Badge text (black) is readable on every tier color (WCAG AA, 4.5:1)", arguments: RarityTier.allCases)
