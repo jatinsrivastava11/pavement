@@ -17,6 +17,14 @@ partly hidden. It adds them to your collection and gives you **Octane** (points)
 - Pavement finds **every car in the photo**, including ones that are cut off or partly blocked.
 - Each car it identifies goes into your **Spots** collection.
 
+### Real cars only
+- Photos can only come from the **live in-app camera**. There's no photo library upload, so
+  screenshots and saved pictures can't be spotted.
+- **Screen detection:** on iPhones with two or more rear cameras, Pavement measures depth. A
+  monitor, TV or phone is a flat surface up close, while a real street isn't. On every iPhone it also
+  looks for the stripes and moiré a camera picks up from screens. Neither check is perfect; they're
+  tuned on real devices.
+
 ### Passenger check
 - Pavement uses the iPhone's motion sensors to tell when you're in a moving vehicle.
 - If you are, it asks: *"Are you a passenger?"*

@@ -7,7 +7,7 @@ struct RootTabView: View {
     var body: some View {
         TabView {
             Tab("Spot", systemImage: "camera.viewfinder") {
-                PlaceholderScreen(title: "Spot", owner: "Lens", icon: "camera.viewfinder")
+                SpotView()
             }
             Tab("Spots", systemImage: "square.grid.2x2") {
                 PlaceholderScreen(title: "Spots", owner: "Studio + Mechanic", icon: "square.grid.2x2")
