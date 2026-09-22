@@ -61,9 +61,16 @@ Every car in the world is ranked on two scales, shown side by side:
 | Camera | AVFoundation |
 | Motion / driving detection | Core Motion (`CMMotionActivityManager`), Core Location |
 | Car detection | On-device only (Vision / Core ML); identifies make and model, e.g. "Porsche 911" |
-| 3D models | RealityKit / SceneKit |
+| 3D models | RealityKit / SceneKit. Engine: one take-apart model per engine type (I4, V6, V8, V12, flat-6, EV…). Car: exact model only where a free, properly licensed one exists; otherwise a color-matched image |
 | Backend | Supabase (free plan): accounts, collections, HP only |
 | Photos | Stay on the user's iPhone and are never uploaded |
+
+---
+
+## Cost
+
+Pavement runs at **$0**. There are no paid services and no payment method on file anywhere. Every
+asset is free and properly licensed, and the creators are credited in the app.
 
 ---
 
