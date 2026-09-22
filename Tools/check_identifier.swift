@@ -14,8 +14,8 @@ let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingL
 let model = try VNCoreMLModel(for: MLModel(contentsOf: MLModel.compileModel(
     at: root.appendingPathComponent("Pavement/Resources/Models/CarIdentifierPilot.mlmodel"))))
 // Keep in sync with CarIdentifier.minConfidence / agreementConfidence.
-let minConfidence: Float = 0.95
-let agreementConfidence: Float = 0.9
+let minConfidence: Float = 0.85
+let agreementConfidence: Float = 0.85
 
 struct Result { let label: String; let confidence: Float; let agrees: Bool }
 

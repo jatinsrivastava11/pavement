@@ -4,20 +4,20 @@ import Vision
 
 /// Suggests which car model a cropped car photo shows.
 ///
-/// Pilot model: knows 22 models plus an "other" category (trained on 24 other models) so it can say
-/// "not one I know". The app names the car itself (users can't choose), only when the model is at
-/// least `minConfidence` sure and the answer isn't "other".
+/// Knows 41 common and rare models plus an "other" category (trained on dozens of other models) so it
+/// can say "not one I know". The app names the car itself (users can't choose), only when the model is
+/// at least `minConfidence` sure, the answer isn't "other", and mirrored/zoomed views agree.
 ///
-/// Measured on held-out photographers with the full rule (95% + mirrored/zoomed views agree):
-/// known cars named right 66/179, wrong 14/179; cars of models it never saw wrongly named 1/61.
-/// When it names a car it's right 81% of the time. Trained with extra rear-view photos.
+/// Measured on held-out photographers (cut-off chosen from a sweep): of 528 known test cars, 73 named
+/// right and 6 wrong; of 61 cars from models it never saw, 1 wrongly named. When it names a car it's
+/// right 91% of the time. Most cars are left unnamed rather than risk a wrong name.
 final class CarIdentifier: @unchecked Sendable {
     struct Suggestion: Equatable, Sendable {
         let carID: String
         let confidence: Float
     }
 
-    static let minConfidence: Float = 0.95
+    static let minConfidence: Float = 0.85
 
     private let model: VNCoreMLModel
 
@@ -61,7 +61,7 @@ final class CarIdentifier: @unchecked Sendable {
     }
 
     /// Views of the same crop (mirrored, slightly zoomed) must agree at this confidence.
-    static let agreementConfidence: Float = 0.9
+    static let agreementConfidence: Float = 0.85
 
     /// The model's answer if it's confident enough and it holds up when the photo is mirrored and
     /// slightly zoomed; otherwise nil ("couldn't identify"). Lucky one-off mistakes (a Beetle from

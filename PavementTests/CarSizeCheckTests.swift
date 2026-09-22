@@ -65,7 +65,7 @@ struct CarSizeCheckTests {
 struct AutoIdentifyTests {
     @Test("The app names cars itself only above the measured confidence floor")
     func floor() throws {
-        #expect(CarIdentifier.minConfidence == 0.95)
+        #expect(CarIdentifier.minConfidence == 0.85)
     }
 
     /// The simulator's image-feature model returns the same answer for every image, so identification
