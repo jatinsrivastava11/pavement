@@ -50,11 +50,35 @@ final class CarIdentifier: @unchecked Sendable {
             .map { Suggestion(carID: $0.identifier, confidence: $0.confidence) }
     }
 
-    /// The model's answer if it's confident enough, otherwise nil ("couldn't identify").
+    /// Views of the same crop (mirrored, slightly zoomed) must agree at this confidence.
+    static let agreementConfidence: Float = 0.9
+
+    /// The model's answer if it's confident enough and it holds up when the photo is mirrored and
+    /// slightly zoomed; otherwise nil ("couldn't identify"). Lucky one-off mistakes (a Beetle from
+    /// behind read as a Bugatti) tend to fall apart under those small changes.
     func identify(_ car: CGImage) throws -> Suggestion? {
         guard let best = try suggestions(for: car, limit: 1).first, best.carID != Self.otherLabel,
               best.confidence >= Self.minConfidence else { return nil }
+        for view in [Self.mirrored(car), Self.zoomed(car)].compactMap({ $0 }) {
+            guard let other = try suggestions(for: view, limit: 1).first,
+                  other.carID == best.carID, other.confidence >= Self.agreementConfidence else { return nil }
+        }
         return best
+    }
+
+    static func mirrored(_ image: CGImage) -> CGImage? {
+        guard let ctx = CGContext(data: nil, width: image.width, height: image.height, bitsPerComponent: 8, bytesPerRow: 0,
+                                  space: CGColorSpaceCreateDeviceRGB(), bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue) else { return nil }
+        ctx.translateBy(x: CGFloat(image.width), y: 0)
+        ctx.scaleBy(x: -1, y: 1)
+        ctx.draw(image, in: CGRect(x: 0, y: 0, width: image.width, height: image.height))
+        return ctx.makeImage()
+    }
+
+    /// The middle 84% of the image.
+    static func zoomed(_ image: CGImage) -> CGImage? {
+        let w = Double(image.width), h = Double(image.height)
+        return image.cropping(to: CGRect(x: w * 0.08, y: h * 0.08, width: w * 0.84, height: h * 0.84).integral)
     }
 
     private static func labels(of model: VNCoreMLModel) -> [String] {

@@ -33,3 +33,34 @@ struct CarIdentifierTests {
         #expect(zip(suggestions, suggestions.dropFirst()).allSatisfy { $0.confidence >= $1.confidence })
     }
 }
+
+struct IdentifierViewsTests {
+    private func marker() -> CGImage {
+        let ctx = CGContext(data: nil, width: 100, height: 50, bitsPerComponent: 8, bytesPerRow: 0,
+                            space: CGColorSpaceCreateDeviceRGB(), bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)!
+        ctx.setFillColor(CGColor(red: 0, green: 0, blue: 1, alpha: 1)); ctx.fill(CGRect(x: 0, y: 0, width: 100, height: 50))
+        ctx.setFillColor(CGColor(red: 1, green: 0, blue: 0, alpha: 1)); ctx.fill(CGRect(x: 0, y: 0, width: 10, height: 50)) // left strip
+        return ctx.makeImage()!
+    }
+
+    private func redAt(_ img: CGImage, x: Int) -> Bool {
+        var px = [UInt8](repeating: 0, count: img.width * img.height * 4)
+        let ctx = CGContext(data: &px, width: img.width, height: img.height, bitsPerComponent: 8, bytesPerRow: img.width * 4,
+                            space: CGColorSpaceCreateDeviceRGB(), bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)!
+        ctx.draw(img, in: CGRect(x: 0, y: 0, width: img.width, height: img.height))
+        let i = (img.height / 2 * img.width + x) * 4
+        return px[i] > 200 && px[i + 2] < 50
+    }
+
+    @Test("Mirrored view flips left and right")
+    func mirror() throws {
+        let m = try #require(CarIdentifier.mirrored(marker()))
+        #expect(redAt(m, x: 95) && !redAt(m, x: 5))
+    }
+
+    @Test("Zoomed view is the middle 84%")
+    func zoom() throws {
+        let z = try #require(CarIdentifier.zoomed(marker()))
+        #expect(z.width == 84 && z.height == 42)
+    }
+}
