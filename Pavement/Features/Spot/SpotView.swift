@@ -2,6 +2,7 @@ import SwiftUI
 
 /// The Spot tab: live camera, shutter, and the screen check on every photo.
 struct SpotView: View {
+    let app: AppModel
     @State private var camera = CameraController()
     @State private var driving = DrivingMonitor()
     @State private var status: Status = .starting
@@ -15,8 +16,10 @@ struct SpotView: View {
     struct CaptureResult: Identifiable {
         let id = UUID()
         let image: UIImage
-        let report: ScreenDetector.Report
+        let report: ScreenDetector.Report?
+        let cars: [SpotPipeline.FoundCar]
     }
+    @State private var pipeline: SpotPipeline?
 
     var body: some View {
         ZStack {
@@ -61,7 +64,10 @@ struct SpotView: View {
             camera.stop()
             driving.stop()
         }
-        .sheet(item: $result) { SpotResultView(result: $0) }
+        .sheet(item: $result) { r in
+            SpotReviewView(app: app, photo: r.image, report: r.report, cars: r.cars,
+                           location: driving.lastLocation.map { ($0.coordinate.latitude, $0.coordinate.longitude) })
+        }
     }
 
     private func capture() {
@@ -71,52 +77,18 @@ struct SpotView: View {
             defer { isCapturing = false }
             do {
                 let shot = try await camera.capture()
-                let report = await Task.detached(priority: .userInitiated) {
-                    ScreenDetector().evaluate(depth: shot.depth, luminance: shot.luminance,
-                                              width: shot.width, height: shot.height)
+                if pipeline == nil { pipeline = try SpotPipeline(catalog: app.catalog) }
+                let pipeline = self.pipeline!
+                let (report, cars) = try await Task.detached(priority: .userInitiated) {
+                    let report = ScreenDetector().evaluate(depth: shot.depth, luminance: shot.luminance,
+                                                           width: shot.width, height: shot.height)
+                    if case .reject = report.decision { return (report, [SpotPipeline.FoundCar]()) }
+                    return (report, try pipeline.run(on: shot.image))
                 }.value
-                result = CaptureResult(image: UIImage(cgImage: shot.image, scale: 1, orientation: .right), report: report)
+                result = CaptureResult(image: UIImage(cgImage: shot.image), report: report, cars: cars)
             } catch {
                 status = .failed(error.localizedDescription)
             }
-        }
-    }
-}
-
-/// Shows whether the photo passed the screen check. The numbers are for calibrating on real phones.
-private struct SpotResultView: View {
-    let result: SpotView.CaptureResult
-
-    var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    Image(uiImage: result.image).resizable().scaledToFit()
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                }
-                Section {
-                    switch result.report.decision {
-                    case .accept:
-                        Label("Looks like a real scene", systemImage: "checkmark.seal.fill").foregroundStyle(.green)
-                    case .reject(let reason):
-                        Label(reason, systemImage: "xmark.octagon.fill").foregroundStyle(.red)
-                    }
-                }
-                Section("Screen check details") {
-                    if let depth = result.report.depth {
-                        LabeledContent("Depth verdict", value: "\(depth.verdict)")
-                        LabeledContent("Distance", value: String(format: "%.2f m", depth.medianDepth))
-                        LabeledContent("Flatness error", value: String(format: "%.3f", depth.relativePlaneError))
-                        LabeledContent("Depth coverage", value: String(format: "%.0f%%", depth.validSampleFraction * 100))
-                    } else {
-                        LabeledContent("Depth", value: "Not available on this iPhone")
-                    }
-                    LabeledContent("Stripe score", value: String(format: "%.2f", result.report.pattern.stripeScore))
-                    LabeledContent("Stripe contrast", value: String(format: "%.3f", result.report.pattern.stripeContrast))
-                }
-            }
-            .navigationTitle("Spot check")
-            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

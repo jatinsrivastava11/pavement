@@ -13,7 +13,7 @@ struct RootTabView: View {
     var body: some View {
         TabView(selection: $selection) {
             Tab("Spot", systemImage: "camera.viewfinder", value: .spot) {
-                SpotView()
+                SpotView(app: app)
             }
             Tab("Spots", systemImage: "square.grid.2x2", value: .spots) {
                 SpotsView(app: app)

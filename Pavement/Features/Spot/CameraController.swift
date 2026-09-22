@@ -1,6 +1,7 @@
 @preconcurrency import AVFoundation
 import CoreGraphics
 import CoreImage
+import ImageIO
 
 /// Runs the live camera and captures photos, with depth when the iPhone supports it.
 ///
@@ -97,7 +98,10 @@ final class CameraController: NSObject, @unchecked Sendable {
                 self.photoOutput.capturePhoto(with: settings, delegate: self)
             }
         }
-        guard let image = photo.cgImageRepresentation() else { throw CameraError.captureFailed }
+        let rawOrientation = (photo.metadata[kCGImagePropertyOrientation as String] as? UInt32) ?? 1
+        let orientation = CGImagePropertyOrientation(rawValue: rawOrientation) ?? .up
+        guard let sensorImage = photo.cgImageRepresentation(),
+              let image = sensorImage.upright(orientation: orientation) else { throw CameraError.captureFailed }
         let (luminance, width, height) = Self.luminance(of: image, maxSide: 1024)
         return Capture(image: image, luminance: luminance, width: width, height: height,
                        depth: photo.depthData.flatMap(Self.depthValues))
