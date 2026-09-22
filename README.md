@@ -49,7 +49,10 @@ Every car in the world is ranked on two scales, shown side by side:
   You can rotate it, zoom in, and take the engine apart.
 
 ### Share
-- Send your finds to friends.
+- **Share cards:** turn any spot into an image card (car, tier, HP, location) and send it
+  through iMessage, Instagram, WhatsApp or anything else on the phone.
+- **Friends:** add friends by username, see each other's collections, and get alerts when a friend
+  spots something rare.
 
 ### Accounts
 - Sign in with **Apple**, **Google**, or **email and password**.
