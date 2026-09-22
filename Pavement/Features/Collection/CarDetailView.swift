@@ -6,8 +6,10 @@ struct CarDetailView: View {
     let entry: CollectionEntry
     let app: AppModel
     @State private var showingEngine = false
+    @State private var showingCar = false
 
     private var car: CarModel { entry.car }
+    private var photo: UIImage? { entry.spots.compactMap(\.photoFile).first.flatMap(app.photos.image(named:)) }
 
     var body: some View {
         ScrollView {
@@ -58,6 +60,15 @@ struct CarDetailView: View {
                 }
 
                 Button {
+                    showingCar = true
+                } label: {
+                    Label("View the car in 3D", systemImage: "cube.transparent")
+                        .font(.headline).frame(maxWidth: .infinity).padding()
+                        .foregroundStyle(Theme.textPrimary)
+                        .background(Theme.surfaceRaised, in: RoundedRectangle(cornerRadius: Theme.corner, style: .continuous))
+                }
+
+                Button {
                     showingEngine = true
                 } label: {
                     Label("Explore the \(car.engine.displayName) engine in 3D", systemImage: "gearshape.2.fill")
@@ -72,6 +83,10 @@ struct CarDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar { ShareSpotButton(entry: entry, photos: app.photos) }
         .sheet(isPresented: $showingEngine) { EngineSheet(engine: car.engine) }
+        .sheet(isPresented: $showingCar) {
+            CarViewer(car: car, photoColor: photo.flatMap(\.cgImage).map(CarColor.dominant(in:)))
+                .presentationDetents([.large]).presentationDragIndicator(.visible)
+        }
     }
 
     struct SpotPin: Identifiable {

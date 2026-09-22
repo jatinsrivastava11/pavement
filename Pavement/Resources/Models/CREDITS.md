@@ -12,3 +12,10 @@ above ("YOLOv3Int8LUT" from Apple's model gallery). Used on the whole photo for 
 category), trained with Apple Create ML on 2,110 photos from Wikimedia Commons, all under free licenses. The photos
 aren't included in the app. Every source file and uploader is listed in
 `Data/training/pilot_sources.json`.
+
+## 3D cars
+
+Car bodies (`kenney-*.carmesh`, OBJ text format renamed so Xcode doesn't treat them as compiled
+code) and `kenney-colormap.png`: **Car Kit 3.1 by Kenney** (www.kenney.nl).
+License: Creative Commons Zero (CC0), public domain. Free for personal, educational and commercial
+use. Credit is appreciated but not required.

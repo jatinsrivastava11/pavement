@@ -23,6 +23,9 @@ struct PavementApp: App {
                           let car = AppModel.demo().catalog.car(id: id) {
                     ShareCardView(car: car, photo: nil, city: "Chicago")
                         .scaleEffect(0.34).frame(width: 368, height: 459)
+                } else if let id = UserDefaults.standard.string(forKey: "previewCar3D"),
+                          let car = AppModel.demo().catalog.car(id: id) {
+                    CarViewer(car: car, photoColor: UserDefaults.standard.bool(forKey: "previewCarRed") ? .systemRed : nil)
                 } else if CommandLine.arguments.contains("-previewOnboarding") {
                     OnboardingView {}
                 } else if CommandLine.arguments.contains("-previewTabs") {

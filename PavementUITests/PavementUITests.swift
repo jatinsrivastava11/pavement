@@ -28,6 +28,16 @@ final class PavementUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Crankshaft"].waitForExistence(timeout: 5))
     }
 
+    func testOpenCarIn3D() {
+        let app = launch(["-previewTabs", "-initialTab", "spots"])
+        XCTAssertTrue(app.staticTexts["Civic"].waitForExistence(timeout: 10))
+        app.staticTexts["Civic"].firstMatch.tap()
+        let button = app.buttons["View the car in 3D"]
+        XCTAssertTrue(button.waitForExistence(timeout: 5))
+        button.tap()
+        XCTAssertTrue(app.staticTexts["3D model: Car Kit by Kenney (CC0)"].waitForExistence(timeout: 10))
+    }
+
     func testTierFilterOnSpots() {
         let app = launch(["-previewTabs", "-initialTab", "spots"])
         XCTAssertTrue(app.buttons["Exotic"].waitForExistence(timeout: 10))
