@@ -20,8 +20,10 @@ Everything here keeps the project at $0.
 6. **Camera orientation and depth** on the actual device.
 
 ## Recognition (biggest remaining work)
-7. **Only 22 of 914 models can be identified.** Scaling up needs many more free photos per
-   model (Wikimedia Commons categories, other CC0 sources), then retraining.
+7. **Only 41 of 914 models can be identified**, and it names only ~14% of known cars (it leaves
+   most unnamed rather than risk a wrong name; 91% right when it does name one). Scaling up needs
+   more photos per model. Commons search is thin for some (Toyota Camry, Corolla, RAV4, Hilux),
+   so try Commons *categories* instead of search.
 8. ~~Anti-cheat on picks~~ **Done:** users can no longer choose the model. The app names it
    itself, only at 95%+ confidence, and has an "other car" category so unknown models are
    refused (wrongly named unknown cars went from 66% to 20%).
