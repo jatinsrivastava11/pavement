@@ -38,8 +38,7 @@ struct SpotPipelineTests {
         let cars = try pipeline.run(on: fixture("street01"))
         #expect(cars.count >= 4)
         for car in cars {
-            #expect(!car.suggestions.isEmpty)
-            #expect(car.suggestions.allSatisfy { catalog.car(id: $0.carID) != nil })
+            if case .identified(let id) = car.verdict { #expect(catalog.car(id: id) != nil) }
             #expect(car.crop.width >= 8 && car.crop.height >= 8)
         }
         // Biggest car first.

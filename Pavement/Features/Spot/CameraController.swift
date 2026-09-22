@@ -15,6 +15,10 @@ final class CameraController: NSObject, @unchecked Sendable {
         var width: Int
         var height: Int
         var depth: (values: [Float], width: Int, height: Int)?
+        /// Depth rotated to match the upright image (for measuring car size).
+        var uprightDepth: DepthMap?
+        /// Field of view across the upright image's width, in degrees.
+        var horizontalFOV: Double?
     }
 
     enum CameraError: LocalizedError {
@@ -103,8 +107,20 @@ final class CameraController: NSObject, @unchecked Sendable {
         guard let sensorImage = photo.cgImageRepresentation(),
               let image = sensorImage.upright(orientation: orientation) else { throw CameraError.captureFailed }
         let (luminance, width, height) = Self.luminance(of: image, maxSide: 1024)
-        return Capture(image: image, luminance: luminance, width: width, height: height,
-                       depth: photo.depthData.flatMap(Self.depthValues))
+        let depth = photo.depthData.flatMap(Self.depthValues)
+        return Capture(image: image, luminance: luminance, width: width, height: height, depth: depth,
+                       uprightDepth: depth.map { DepthMap(values: $0.values, width: $0.width, height: $0.height).upright(orientation: orientation) },
+                       horizontalFOV: uprightFOV(orientation: orientation, sensor: sensorImage))
+    }
+
+    /// The camera's field of view across the upright photo. The sensor's FOV is across its long
+    /// (landscape) side; a portrait photo's width is the sensor's short side.
+    private func uprightFOV(orientation: CGImagePropertyOrientation, sensor: CGImage) -> Double? {
+        guard let device = (session.inputs.first as? AVCaptureDeviceInput)?.device else { return nil }
+        let landscapeFOV = Double(device.activeFormat.videoFieldOfView)
+        guard [.left, .right, .leftMirrored, .rightMirrored].contains(orientation) else { return landscapeFOV }
+        let ratio = Double(min(sensor.width, sensor.height)) / Double(max(sensor.width, sensor.height))
+        return 2 * atan(tan(landscapeFOV * .pi / 360) * ratio) * 180 / .pi
     }
 
     /// Grayscale pixels, scaled down so the longest side is at most `maxSide`.

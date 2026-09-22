@@ -5,12 +5,20 @@ import ImageIO
 /// Turns one photo into a list of cars: finds each car, crops it out, and suggests which model it is.
 struct SpotPipeline: Sendable {
     struct FoundCar: Identifiable, Sendable {
+        enum Verdict: Equatable, Sendable {
+            /// Named by the app. Users can keep or skip it, never rename it.
+            case identified(carID: String)
+            /// Not confident enough, or not a model Pavement knows yet.
+            case unidentified
+            /// Too small to be a real car (measured with depth).
+            case toy
+        }
+
         let id = UUID()
         let crop: CGImage
         /// Top-left origin, normalized.
         let box: CGRect
-        /// Best first. Only models in the catalog.
-        let suggestions: [CarIdentifier.Suggestion]
+        let verdict: Verdict
     }
 
     let detector: CarDetector
@@ -25,16 +33,26 @@ struct SpotPipeline: Sendable {
         self.catalog = catalog
     }
 
-    /// - Parameter image: upright photo (see `CGImage.upright(orientation:)`).
-    func run(on image: CGImage) throws -> [FoundCar] {
-        try detector.detect(in: image)
+    /// - Parameters:
+    ///   - image: upright photo (see `CGImage.upright(orientation:)`).
+    ///   - depth: upright depth map, when the iPhone has one; used to catch toy cars.
+    ///   - horizontalFOV: camera field of view across the upright photo's width, in degrees.
+    func run(on image: CGImage, depth: DepthMap? = nil, horizontalFOV: Double? = nil) throws -> [FoundCar] {
+        let aspect = Double(image.height) / Double(image.width)
+        return try detector.detect(in: image)
             .filter { $0.box.width * $0.box.height >= minBoxArea }
             .sorted { $0.box.width * $0.box.height > $1.box.width * $1.box.height }   // biggest first
             .compactMap { detection -> FoundCar? in
                 guard let crop = Self.crop(image, to: detection.box) else { return nil }
-                let suggestions = try identifier.suggestions(for: crop)
-                    .filter { catalog.car(id: $0.carID) != nil }
-                return FoundCar(crop: crop, box: detection.box, suggestions: suggestions)
+                if CarSizeCheck.isToy(box: detection.box, depth: depth, horizontalFOV: horizontalFOV, aspect: aspect) == true {
+                    return FoundCar(crop: crop, box: detection.box, verdict: .toy)
+                }
+                let verdict: FoundCar.Verdict = if let id = try identifier.identify(crop)?.carID, catalog.car(id: id) != nil {
+                    .identified(carID: id)
+                } else {
+                    .unidentified
+                }
+                return FoundCar(crop: crop, box: detection.box, verdict: verdict)
             }
     }
 

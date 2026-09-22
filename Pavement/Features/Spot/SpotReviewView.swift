@@ -1,6 +1,7 @@
 import SwiftUI
 
-/// After a photo: shows each car found, lets the user confirm which model it is, and saves the spots.
+/// After a photo: shows each car found and what Pavement identified it as, then saves the spots.
+/// The app names every car itself; users can only keep or skip a car, never change what it is.
 struct SpotReviewView: View {
     let app: AppModel
     let photo: UIImage
@@ -9,8 +10,8 @@ struct SpotReviewView: View {
     let location: (latitude: Double, longitude: Double)?
     @Environment(\.dismiss) private var dismiss
 
-    /// Chosen model for each found car. `nil` means "none of these".
-    @State private var choices: [UUID: String] = [:]
+    /// Identified cars the user wants to keep (all of them by default).
+    @State private var skipped: Set<UUID> = []
     @State private var earned: [Spot]?
     @State private var saveError: String?
 
@@ -27,7 +28,7 @@ struct SpotReviewView: View {
                                                description: Text("Get a bit closer, or make sure the car is in the frame."))
                             .foregroundStyle(Theme.textSecondary)
                     } else {
-                        Text("\(cars.count) car\(cars.count == 1 ? "" : "s") found. Pick the right model for each.")
+                        Text("\(cars.count) car\(cars.count == 1 ? "" : "s") found.")
                             .font(.subheadline).foregroundStyle(Theme.textSecondary)
                         ForEach(cars) { car in carRow(car) }
                         Text("Pavement can recognize 22 models so far. More are coming.")
@@ -56,47 +57,43 @@ struct SpotReviewView: View {
             Image(decorative: car.crop, scale: 1)
                 .resizable().scaledToFit().frame(maxHeight: 160)
                 .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-            ForEach(car.suggestions, id: \.carID) { suggestion in
-                if let model = app.catalog.car(id: suggestion.carID) {
-                    choiceButton(selected: choices[car.id] == model.id) {
-                        choices[car.id] = model.id
-                    } label: {
-                        HStack {
-                            TierBadge(tier: model.tier, compact: true)
-                            Text(model.displayName).foregroundStyle(Theme.textPrimary)
-                            Spacer()
-                            OctaneLabel(amount: model.tier.octane, prefix: "+")
-                        }
+            switch car.verdict {
+            case .identified(let id):
+                if let model = app.catalog.car(id: id) {
+                    HStack {
+                        TierBadge(tier: model.tier, compact: true)
+                        Text(model.displayName).font(.headline).foregroundStyle(Theme.textPrimary)
+                        Spacer()
+                        OctaneLabel(amount: model.tier.octane, prefix: "+")
                     }
+                    Toggle("Add to collection", isOn: Binding(
+                        get: { !skipped.contains(car.id) },
+                        set: { keep in if keep { skipped.remove(car.id) } else { skipped.insert(car.id) } }))
+                        .tint(Theme.accent).foregroundStyle(Theme.textSecondary)
                 }
-            }
-            choiceButton(selected: choices[car.id] == nil) {
-                choices[car.id] = nil
-            } label: {
-                Text("None of these").foregroundStyle(Theme.textSecondary)
+            case .unidentified:
+                Label("Couldn't identify this one", systemImage: "questionmark.circle")
+                    .foregroundStyle(Theme.textSecondary)
+            case .toy:
+                Label("Looks like a toy or model car. Real cars only.", systemImage: "xmark.octagon.fill")
+                    .foregroundStyle(.red)
             }
         }
         .card()
     }
 
-    private func choiceButton<L: View>(selected: Bool, action: @escaping () -> Void, @ViewBuilder label: () -> L) -> some View {
-        Button(action: action) {
-            HStack {
-                Image(systemName: selected ? "largecircle.fill.circle" : "circle")
-                    .foregroundStyle(selected ? Theme.accent : Theme.textSecondary)
-                label()
-            }
-            .padding(10)
-            .background(selected ? Theme.surfaceRaised : .clear, in: RoundedRectangle(cornerRadius: 10))
+    private var keptCars: [(SpotPipeline.FoundCar, CarModel)] {
+        cars.compactMap { car in
+            guard case .identified(let id) = car.verdict, !skipped.contains(car.id),
+                  let model = app.catalog.car(id: id) else { return nil }
+            return (car, model)
         }
-        .buttonStyle(.plain)
-        .accessibilityAddTraits(selected ? .isSelected : [])
     }
 
     private var addButton: some View {
-        let count = choices.values.count
+        let count = keptCars.count
         return Button(action: save) {
-            Text(count == 0 ? "Pick at least one car" : "Add \(count) to collection")
+            Text(count == 0 ? "Nothing to add" : "Add \(count) to collection")
                 .font(.headline).frame(maxWidth: .infinity).padding()
                 .foregroundStyle(.black)
                 .background(count == 0 ? Theme.textSecondary : Theme.accent,
@@ -110,8 +107,7 @@ struct SpotReviewView: View {
     private func save() {
         var saved: [Spot] = []
         do {
-            for car in cars {
-                guard let id = choices[car.id], let model = app.catalog.car(id: id) else { continue }
+            for (car, model) in keptCars {
                 let file = try? app.photos.save(UIImage(cgImage: car.crop))
                 saved.append(try app.spots.add(car: model, latitude: location?.latitude,
                                                longitude: location?.longitude, photoFile: file))

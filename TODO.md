@@ -21,11 +21,16 @@ Everything here keeps the project at $0.
 ## Recognition (biggest remaining work)
 7. **Only 22 of 914 models can be identified.** Scaling up needs many more free photos per
    model (Wikimedia Commons categories, other CC0 sources), then retraining.
-8. **Anti-cheat on picks:** a user can choose any of the top-3 suggestions, even a wrong,
-   rarer one (e.g. "Ferrari F40" for a Tahoe). Options: only show suggestions above a
-   confidence floor, require stronger evidence for Rare+ tiers, or have friends/community verify
-   rare spots.
-9. **Rear views:** the pilot model is weak on cars seen from behind. It needs rear-view photos.
+8. ~~Anti-cheat on picks~~ **Done:** users can no longer choose the model. The app names it
+   itself, only at 95%+ confidence, and has an "other car" category so unknown models are
+   refused (wrongly named unknown cars went from 66% to 20%).
+8b. **Identification can't be tested in the simulator**, which returns the same answer for every
+   image. Use `Tools/check_identifier.swift` on the Mac, and test on a real iPhone.
+8c. **Printed photos on single-camera iPhones and toy cars without depth** aren't caught yet.
+   Toy cars are caught on iPhones with depth (size check); printed photos by the flatness check.
+9. **Rear views:** the pilot model is weak on cars seen from behind. A VW Beetle from behind is
+   named "Bugatti Veyron" at 99.9%: a +500 Octane mistake. It needs rear-view training photos,
+   and maybe extra proof (a second photo) before awarding Legendary/Exotic points.
 10. **Detection misses:** heavily overlapping cars in traffic jams, and very large cars cut off
     at the photo edge.
 

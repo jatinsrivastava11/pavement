@@ -83,7 +83,7 @@ struct SpotView: View {
                     let report = ScreenDetector().evaluate(depth: shot.depth, luminance: shot.luminance,
                                                            width: shot.width, height: shot.height)
                     if case .reject = report.decision { return (report, [SpotPipeline.FoundCar]()) }
-                    return (report, try pipeline.run(on: shot.image))
+                    return (report, try pipeline.run(on: shot.image, depth: shot.uprightDepth, horizontalFOV: shot.horizontalFOV))
                 }.value
                 result = CaptureResult(image: UIImage(cgImage: shot.image), report: report, cars: cars)
             } catch {
