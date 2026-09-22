@@ -31,7 +31,8 @@ final class AppModel {
                    "nissan-gt-r", "mercedes-benz-g-class", "tesla-model-y", "ferrari-f40", "toyota-corolla", "honda-civic"]
         for (i, id) in ids.enumerated() {
             if let car = model.catalog.car(id: id) {
-                _ = try? model.spots.add(car: car, at: .now.addingTimeInterval(Double(-i) * 86_400))
+                _ = try? model.spots.add(car: car, at: .now.addingTimeInterval(Double(-i) * 86_400),
+                                         latitude: 41.88 + Double(i) * 0.01, longitude: -87.63 - Double(i) * 0.01)
             }
         }
         return model

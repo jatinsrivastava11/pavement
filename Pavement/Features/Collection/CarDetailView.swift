@@ -1,3 +1,4 @@
+import MapKit
 import SwiftUI
 
 /// Everything about one car model the user has spotted.
@@ -39,6 +40,23 @@ struct CarDetailView: View {
                 }
                 .card()
 
+                if !spotPins.isEmpty {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Where you spotted it").font(.headline).foregroundStyle(Theme.textPrimary)
+                        Map(initialPosition: .automatic) {
+                            ForEach(spotPins) { pin in
+                                Marker(pin.date.formatted(date: .abbreviated, time: .omitted),
+                                       systemImage: car.tier.symbol, coordinate: pin.coordinate)
+                                    .tint(car.tier.color)
+                            }
+                        }
+                        .frame(height: 200)
+                        .clipShape(RoundedRectangle(cornerRadius: Theme.corner, style: .continuous))
+                        .allowsHitTesting(false)
+                        Text("Only you can see this map.").font(.caption).foregroundStyle(Theme.textSecondary)
+                    }
+                }
+
                 Button {
                     showingEngine = true
                 } label: {
@@ -54,6 +72,20 @@ struct CarDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar { ShareSpotButton(entry: entry, photos: app.photos) }
         .sheet(isPresented: $showingEngine) { EngineSheet(engine: car.engine) }
+    }
+
+    struct SpotPin: Identifiable {
+        let id: UUID
+        let date: Date
+        let coordinate: CLLocationCoordinate2D
+    }
+
+    /// Spots that have a location.
+    private var spotPins: [SpotPin] {
+        entry.spots.compactMap { spot in
+            guard let lat = spot.latitude, let lon = spot.longitude else { return nil }
+            return SpotPin(id: spot.id, date: spot.spottedAt, coordinate: .init(latitude: lat, longitude: lon))
+        }
     }
 
     private func stat(_ title: String, value: String, icon: String, tint: Color) -> some View {

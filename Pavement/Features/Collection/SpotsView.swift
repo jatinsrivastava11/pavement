@@ -4,6 +4,7 @@ import SwiftUI
 struct SpotsView: View {
     let app: AppModel
     @State private var filter: RarityTier?
+    @State private var path: [CollectionEntry] = []
 
     private var entries: [CollectionEntry] {
         let all = app.spots.collection(catalog: app.catalog)
@@ -11,7 +12,7 @@ struct SpotsView: View {
     }
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ScrollView {
                 VStack(alignment: .leading, spacing: Theme.spacing) {
                     summary
@@ -37,6 +38,15 @@ struct SpotsView: View {
             .navigationTitle("Spots")
             .toolbarColorScheme(.dark, for: .navigationBar)
             .navigationDestination(for: CollectionEntry.self) { CarDetailView(entry: $0, app: app) }
+            #if DEBUG
+            .onAppear {
+                // Debug: `-openCar <id>` opens that car's page.
+                if let id = UserDefaults.standard.string(forKey: "openCar"), path.isEmpty,
+                   let entry = app.spots.collection(catalog: app.catalog).first(where: { $0.car.id == id }) {
+                    path = [entry]
+                }
+            }
+            #endif
         }
     }
 
