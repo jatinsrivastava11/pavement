@@ -38,8 +38,11 @@ Everything here keeps the project at $0.
 9. **Rear views:** the pilot model is weak on cars seen from behind. A VW Beetle from behind is
    named "Bugatti Veyron" at 99.9%: a +500 Octane mistake. It needs rear-view training photos,
    and maybe extra proof (a second photo) before awarding Legendary/Exotic points.
-10. **Detection misses:** heavily overlapping cars in traffic jams, and very large cars cut off
-    at the photo edge.
+10. **Detection misses:** heavily overlapping cars in traffic jams (a jam with ~30 cars yields
+    ~15 boxes). Large cars cut off at the photo edge are fixed. Lowering our confidence cut-off
+    changes nothing (0.30 / 0.25 / 0.20 / 0.15 give identical results) because Apple's packaged
+    YOLO models apply their own cut-off internally before Vision sees the boxes. Going further
+    needs a model rebuilt with coremltools, or a different detector.
 
 ## Accessibility
 16. The accessibility audit reports 8 contrast issues it can't attach to an element (6 in
