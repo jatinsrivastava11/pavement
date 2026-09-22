@@ -1,5 +1,6 @@
 import Foundation
 import Testing
+import UIKit
 @testable import Pavement
 
 @MainActor
@@ -63,5 +64,22 @@ struct SpotStoreTests {
         let entries = store.collection(catalog: catalog)
         #expect(entries.map(\.car.id) == ["mclaren-f1", "porsche-911", "honda-civic"])
         #expect(entries.last?.timesSpotted == 2)
+    }
+}
+
+@MainActor
+struct DeleteDataTests {
+    @Test("Deleting removes every spot and photo from the phone, and it stays deleted after restart")
+    func removesEverything() throws {
+        let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        let catalog = try CarCatalog.bundled()
+        let store = SpotStore(directory: dir), photos = SpotPhotoStore(directory: dir)
+        let file = try photos.save(UIImage(systemName: "car")!.withTintColor(.red))
+        try store.add(car: #require(catalog.car(id: "honda-civic")), photoFile: file)
+        try store.removeAll()
+        try photos.removeAll()
+        #expect(store.spots.isEmpty)
+        #expect(photos.image(named: file) == nil)
+        #expect(SpotStore(directory: dir).spots.isEmpty)
     }
 }

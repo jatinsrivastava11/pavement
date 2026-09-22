@@ -19,6 +19,13 @@ struct SpotPhotoStore: Sendable {
         return name
     }
 
+    /// Deletes every saved spot photo.
+    func removeAll() throws {
+        for file in try FileManager.default.contentsOfDirectory(at: directory, includingPropertiesForKeys: nil) {
+            try FileManager.default.removeItem(at: file)
+        }
+    }
+
     func image(named name: String) -> UIImage? {
         UIImage(contentsOfFile: directory.appendingPathComponent(name).path)
     }

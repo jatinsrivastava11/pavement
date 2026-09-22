@@ -4,6 +4,8 @@ import SwiftUI
 struct ProfileView: View {
     let auth: AuthModel
     let app: AppModel
+    @State private var confirmingDelete = false
+    @State private var deleteError: String?
 
     var body: some View {
         NavigationStack {
@@ -37,10 +39,35 @@ struct ProfileView: View {
                     Button("Sign Out", role: .destructive) { Task { await auth.signOut() } }
                 }
                 .listRowBackground(Theme.surface)
+
+                Section {
+                    Button("Delete my account and data", role: .destructive) { confirmingDelete = true }
+                } footer: {
+                    Text("Removes your account, spots, photos and friends. This can't be undone.")
+                }
+                .listRowBackground(Theme.surface)
             }
             .scrollContentBackground(.hidden)
             .background(Theme.background)
             .navigationTitle("Profile")
+            .confirmationDialog("Delete your account?", isPresented: $confirmingDelete, titleVisibility: .visible) {
+                Button("Delete everything", role: .destructive) { Task { await deleteEverything() } }
+            } message: {
+                Text("Your account, spots, photos and friends will be permanently deleted.")
+            }
+            .alert("Couldn't delete your account", isPresented: .constant(deleteError != nil)) {
+                Button("OK") { deleteError = nil }
+            } message: { Text(deleteError ?? "") }
+        }
+    }
+
+    private func deleteEverything() async {
+        do {
+            try await auth.deleteAccount()
+            try app.spots.removeAll()
+            try app.photos.removeAll()
+        } catch {
+            deleteError = "Check your connection and try again. Nothing on your phone was deleted."
         }
     }
 }

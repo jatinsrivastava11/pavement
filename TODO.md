@@ -5,7 +5,8 @@ Everything here keeps the project at $0.
 
 ## Needs you (a few minutes each)
 1. **Apply the database migrations.** In Supabase → SQL Editor, run in order:
-   `supabase/migrations/0001_profiles_and_spots.sql`, `0002_seed_car_tiers.sql`, `0003_friends.sql`.
+   `supabase/migrations/0001_profiles_and_spots.sql`, `0002_seed_car_tiers.sql`, `0003_friends.sql`,
+   `0004_delete_account.sql`.
    This switches on community rankings, friends, and server-side Octane. It hasn't been tested
    against a real database yet, so expect a round of fixes.
 2. **Sync spots to Supabase.** After step 1, add the upload of local spots (the code for it
@@ -40,3 +41,5 @@ Everything here keeps the project at $0.
 12. Turn **email confirmation** back on before publishing.
 13. **Exact 3D car models** where free, properly licensed ones exist (CC0 / CC-BY).
 14. Old commits on GitHub still show the real email (history rewrite was left for later).
+15. The full detector model is 59 MB, over GitHub's recommended 50 MB (the hard limit is 100 MB).
+    Git LFS is free up to 1 GB if it becomes a problem.

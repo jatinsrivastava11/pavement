@@ -46,6 +46,12 @@ final class SpotStore {
         }
     }
 
+    /// Deletes every spot on this phone.
+    func removeAll() throws {
+        spots = []
+        try? FileManager.default.removeItem(at: fileURL)
+    }
+
     private func save() throws {
         try Self.encoder.encode(spots).write(to: fileURL, options: .atomic)
     }

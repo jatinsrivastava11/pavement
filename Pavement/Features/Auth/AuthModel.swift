@@ -44,6 +44,13 @@ final class AuthModel {
         return response.session == nil ? .needsEmailConfirmation : .signedIn
     }
 
+    /// Deletes the account on the server (profile, spots and friendships go with it), then signs out.
+    /// Needs `supabase/migrations/0004_delete_account.sql`.
+    func deleteAccount() async throws {
+        try await client.rpc("delete_my_account").execute()
+        try? await client.auth.signOut()
+    }
+
     func signOut() async {
         try? await client.auth.signOut()
     }
