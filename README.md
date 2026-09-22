@@ -104,6 +104,13 @@ The app is built by six AI agents, each with its own area:
 4. Choose an iPhone simulator (or your own iPhone) and press **Run** (⌘R).
 5. Run the tests with **⌘U**. (One test contacts Supabase, so it needs internet.)
 
+The full account test creates a real throwaway user, so it only runs when asked:
+
+```sh
+TEST_RUNNER_PAVEMENT_E2E=1 xcodebuild test -project Pavement.xcodeproj -scheme Pavement \
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro'
+```
+
 From the command line:
 
 ```sh
