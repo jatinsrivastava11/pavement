@@ -60,7 +60,7 @@ Every car in the world is ranked on two scales, shown side by side:
 | iOS app | Swift, SwiftUI |
 | Camera | AVFoundation |
 | Motion / driving detection | Core Motion (`CMMotionActivityManager`), Core Location |
-| Car detection | Vision / Core ML, plus a car-identification service (to be chosen) |
+| Car detection | On-device only (Vision / Core ML); identifies make and model, e.g. "Porsche 911" |
 | 3D models | RealityKit / SceneKit |
 | Backend | Supabase (free plan): accounts, collections, HP only |
 | Photos | Stay on the user's iPhone and are never uploaded |
