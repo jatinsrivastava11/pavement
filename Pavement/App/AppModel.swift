@@ -8,11 +8,18 @@ final class AppModel {
     let catalog: CarCatalog
     let spots: SpotStore
     let photos: SpotPhotoStore
+    let sync: SpotSync
 
     init(catalog: CarCatalog? = nil, spots: SpotStore? = nil, photos: SpotPhotoStore? = nil) {
         self.catalog = catalog ?? ((try? CarCatalog.bundled()) ?? CarCatalog(cars: []))
         self.spots = spots ?? SpotStore()
         self.photos = photos ?? SpotPhotoStore()
+        self.sync = SpotSync(uploader: SupabaseSpotUploader())
+    }
+
+    /// Uploads any spots not yet on the server. Safe to call often; failures just retry later.
+    func syncSpots() {
+        Task { await sync.syncPending(from: spots) }
     }
 
     #if DEBUG

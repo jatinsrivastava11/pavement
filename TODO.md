@@ -9,8 +9,8 @@ Everything here keeps the project at $0.
    `0004_delete_account.sql`.
    This switches on community rankings, friends, and server-side Octane. It hasn't been tested
    against a real database yet, so expect a round of fixes.
-2. **Sync spots to Supabase.** After step 1, add the upload of local spots (the code for it
-   isn't written yet, on purpose, so it can be tested against the live tables).
+2. **Check spot syncing live.** The upload queue is built and tested with a stand-in server
+   (offline, retries, no duplicates). After step 1, confirm spots appear in the `spots` table.
 
 ## Needs a real iPhone
 3. **Fake-photo (screen) detection:** 5 photos of real cars + 5 of a car on a screen; tune the

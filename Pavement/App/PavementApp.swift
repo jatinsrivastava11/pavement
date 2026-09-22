@@ -47,6 +47,7 @@ struct PavementApp: App {
         case .signedIn:
             if seenOnboarding {
                 RootTabView(auth: auth, app: app)
+                    .onAppear { app.syncSpots() }
             } else {
                 OnboardingView { seenOnboarding = true }
             }

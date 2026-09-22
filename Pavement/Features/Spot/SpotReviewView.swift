@@ -113,6 +113,7 @@ struct SpotReviewView: View {
                                                longitude: location?.longitude, photoFile: file))
             }
             earned = saved
+            app.syncSpots()
         } catch {
             saveError = "Couldn't save. Try again."
         }
