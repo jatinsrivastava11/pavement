@@ -1485,6 +1485,15 @@
   "approxBuilt": 699
  },
  {
+  "id": "hongqi-l5",
+  "make": "Hongqi",
+  "model": "L5",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 500
+ },
+ {
   "id": "hummer-h1",
   "make": "Hummer",
   "model": "H1",
@@ -1672,6 +1681,15 @@
   "engine": "v12",
   "body": "sedan",
   "approxBuilt": 3000
+ },
+ {
+  "id": "maybach-62",
+  "make": "Maybach",
+  "model": "62",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "sedan",
+  "approxBuilt": 1500
  },
  {
   "id": "mazda-cosmo-sport",
@@ -2086,5 +2104,6125 @@
   "engine": "i5",
   "body": "wagon",
   "approxBuilt": 6964
+ },
+ {
+  "id": "acura-zdx",
+  "make": "Acura",
+  "model": "ZDX",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "alfa-romeo-4c",
+  "make": "Alfa Romeo",
+  "model": "4C",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 9000
+ },
+ {
+  "id": "alfa-romeo-brera",
+  "make": "Alfa Romeo",
+  "model": "Brera",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 21786
+ },
+ {
+  "id": "alfa-romeo-gtv",
+  "make": "Alfa Romeo",
+  "model": "GTV",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 40000
+ },
+ {
+  "id": "alfa-romeo-giulia",
+  "make": "Alfa Romeo",
+  "model": "Giulia",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "alfa-romeo-spider",
+  "make": "Alfa Romeo",
+  "model": "Spider",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 124000
+ },
+ {
+  "id": "alfa-romeo-stelvio",
+  "make": "Alfa Romeo",
+  "model": "Stelvio",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 180000
+ },
+ {
+  "id": "alfa-romeo-tonale",
+  "make": "Alfa Romeo",
+  "model": "Tonale",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "alpine-a110",
+  "make": "Alpine",
+  "model": "A110",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "ariel-atom",
+  "make": "Ariel",
+  "model": "Atom",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "aston-martin-db11",
+  "make": "Aston Martin",
+  "model": "DB11",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 11000
+ },
+ {
+  "id": "aston-martin-db12",
+  "make": "Aston Martin",
+  "model": "DB12",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 5000
+ },
+ {
+  "id": "aston-martin-db7",
+  "make": "Aston Martin",
+  "model": "DB7",
+  "tier": "niche",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 7000
+ },
+ {
+  "id": "aston-martin-db9",
+  "make": "Aston Martin",
+  "model": "DB9",
+  "tier": "niche",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 16500
+ },
+ {
+  "id": "aston-martin-dbs",
+  "make": "Aston Martin",
+  "model": "DBS",
+  "tier": "niche",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "aston-martin-dbx",
+  "make": "Aston Martin",
+  "model": "DBX",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 15000
+ },
+ {
+  "id": "aston-martin-rapide",
+  "make": "Aston Martin",
+  "model": "Rapide",
+  "tier": "niche",
+  "engine": "v12",
+  "body": "sedan",
+  "approxBuilt": 8000
+ },
+ {
+  "id": "aston-martin-vanquish",
+  "make": "Aston Martin",
+  "model": "Vanquish",
+  "tier": "niche",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 5000
+ },
+ {
+  "id": "aston-martin-vantage",
+  "make": "Aston Martin",
+  "model": "Vantage",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 40000
+ },
+ {
+  "id": "audi-a2",
+  "make": "Audi",
+  "model": "A2",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 176000
+ },
+ {
+  "id": "audi-q8-e-tron",
+  "make": "Audi",
+  "model": "Q8 e-tron",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 200000
+ },
+ {
+  "id": "audi-quattro",
+  "make": "Audi",
+  "model": "Quattro",
+  "tier": "niche",
+  "engine": "i5",
+  "body": "coupe",
+  "approxBuilt": 11452
+ },
+ {
+  "id": "audi-r8",
+  "make": "Audi",
+  "model": "R8",
+  "tier": "niche",
+  "engine": "v10",
+  "body": "supercar",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "audi-e-tron-gt",
+  "make": "Audi",
+  "model": "e-tron GT",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 40000
+ },
+ {
+  "id": "bmw-8-series",
+  "make": "BMW",
+  "model": "8 Series",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "bmw-isetta",
+  "make": "BMW",
+  "model": "Isetta",
+  "tier": "niche",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 161000
+ },
+ {
+  "id": "bmw-m2",
+  "make": "BMW",
+  "model": "M2",
+  "tier": "niche",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "bmw-m4",
+  "make": "BMW",
+  "model": "M4",
+  "tier": "niche",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "bmw-m5",
+  "make": "BMW",
+  "model": "M5",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "bmw-xm",
+  "make": "BMW",
+  "model": "XM",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 20000
+ },
+ {
+  "id": "bmw-i4",
+  "make": "BMW",
+  "model": "i4",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 200000
+ },
+ {
+  "id": "bmw-i7",
+  "make": "BMW",
+  "model": "i7",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "bmw-ix",
+  "make": "BMW",
+  "model": "iX",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "bentley-arnage",
+  "make": "Bentley",
+  "model": "Arnage",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 7000
+ },
+ {
+  "id": "bentley-azure",
+  "make": "Bentley",
+  "model": "Azure",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "bentley-bentayga",
+  "make": "Bentley",
+  "model": "Bentayga",
+  "tier": "niche",
+  "engine": "w12",
+  "body": "suv",
+  "approxBuilt": 40000
+ },
+ {
+  "id": "bentley-continental-gt",
+  "make": "Bentley",
+  "model": "Continental GT",
+  "tier": "niche",
+  "engine": "w12",
+  "body": "coupe",
+  "approxBuilt": 90000
+ },
+ {
+  "id": "bentley-flying-spur",
+  "make": "Bentley",
+  "model": "Flying Spur",
+  "tier": "niche",
+  "engine": "w12",
+  "body": "sedan",
+  "approxBuilt": 40000
+ },
+ {
+  "id": "buick-grand-national",
+  "make": "Buick",
+  "model": "Grand National",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 35000
+ },
+ {
+  "id": "cadillac-ct4",
+  "make": "Cadillac",
+  "model": "CT4",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 60000
+ },
+ {
+  "id": "cadillac-ct5",
+  "make": "Cadillac",
+  "model": "CT5",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "cadillac-elr",
+  "make": "Cadillac",
+  "model": "ELR",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 2697
+ },
+ {
+  "id": "cadillac-escalade-iq",
+  "make": "Cadillac",
+  "model": "Escalade IQ",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 20000
+ },
+ {
+  "id": "cadillac-lyriq",
+  "make": "Cadillac",
+  "model": "Lyriq",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 60000
+ },
+ {
+  "id": "cadillac-xlr",
+  "make": "Cadillac",
+  "model": "XLR",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 15000
+ },
+ {
+  "id": "cadillac-xt6",
+  "make": "Cadillac",
+  "model": "XT6",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "caterham-seven",
+  "make": "Caterham",
+  "model": "Seven",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 20000
+ },
+ {
+  "id": "chevrolet-ssr",
+  "make": "Chevrolet",
+  "model": "SSR",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 24000
+ },
+ {
+  "id": "chevrolet-volt",
+  "make": "Chevrolet",
+  "model": "Volt",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "chrysler-crossfire",
+  "make": "Chrysler",
+  "model": "Crossfire",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 76000
+ },
+ {
+  "id": "citroen-sm",
+  "make": "Citroën",
+  "model": "SM",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 12920
+ },
+ {
+  "id": "cupra-born",
+  "make": "Cupra",
+  "model": "Born",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "dacia-spring",
+  "make": "Dacia",
+  "model": "Spring",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "daihatsu-copen",
+  "make": "Daihatsu",
+  "model": "Copen",
+  "tier": "niche",
+  "engine": "i3",
+  "body": "convertible",
+  "approxBuilt": 70000
+ },
+ {
+  "id": "dodge-hornet",
+  "make": "Dodge",
+  "model": "Hornet",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "dodge-magnum",
+  "make": "Dodge",
+  "model": "Magnum",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "wagon",
+  "approxBuilt": 170000
+ },
+ {
+  "id": "dodge-nitro",
+  "make": "Dodge",
+  "model": "Nitro",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 200000
+ },
+ {
+  "id": "dodge-viper",
+  "make": "Dodge",
+  "model": "Viper",
+  "tier": "niche",
+  "engine": "v10",
+  "body": "coupe",
+  "approxBuilt": 31000
+ },
+ {
+  "id": "ferrari-296-gtb",
+  "make": "Ferrari",
+  "model": "296 GTB",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "supercar",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "ferrari-328",
+  "make": "Ferrari",
+  "model": "328",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 7412
+ },
+ {
+  "id": "ferrari-348",
+  "make": "Ferrari",
+  "model": "348",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 8844
+ },
+ {
+  "id": "ferrari-360-modena",
+  "make": "Ferrari",
+  "model": "360 Modena",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 16365
+ },
+ {
+  "id": "ferrari-458-italia",
+  "make": "Ferrari",
+  "model": "458 Italia",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 15000
+ },
+ {
+  "id": "ferrari-488",
+  "make": "Ferrari",
+  "model": "488",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 20000
+ },
+ {
+  "id": "ferrari-california",
+  "make": "Ferrari",
+  "model": "California",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 14000
+ },
+ {
+  "id": "ferrari-f430",
+  "make": "Ferrari",
+  "model": "F430",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 15000
+ },
+ {
+  "id": "ferrari-f8-tributo",
+  "make": "Ferrari",
+  "model": "F8 Tributo",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "ferrari-gtc4lusso",
+  "make": "Ferrari",
+  "model": "GTC4Lusso",
+  "tier": "niche",
+  "engine": "v12",
+  "body": "wagon",
+  "approxBuilt": 4000
+ },
+ {
+  "id": "ferrari-portofino",
+  "make": "Ferrari",
+  "model": "Portofino",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 12000
+ },
+ {
+  "id": "ferrari-roma",
+  "make": "Ferrari",
+  "model": "Roma",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "fiat-124-spider",
+  "make": "Fiat",
+  "model": "124 Spider",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "fisker-ocean",
+  "make": "Fisker",
+  "model": "Ocean",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "ford-excursion",
+  "make": "Ford",
+  "model": "Excursion",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 118000
+ },
+ {
+  "id": "ford-f-150-lightning",
+  "make": "Ford",
+  "model": "F-150 Lightning",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "pickup",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "gmc-hummer-ev",
+  "make": "GMC",
+  "model": "Hummer EV",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "pickup",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "genesis-g70",
+  "make": "Genesis",
+  "model": "G70",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 90000
+ },
+ {
+  "id": "genesis-g90",
+  "make": "Genesis",
+  "model": "G90",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "genesis-gv60",
+  "make": "Genesis",
+  "model": "GV60",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "honda-cr-z",
+  "make": "Honda",
+  "model": "CR-Z",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 70000
+ },
+ {
+  "id": "honda-clarity",
+  "make": "Honda",
+  "model": "Clarity",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 20000
+ },
+ {
+  "id": "honda-del-sol",
+  "make": "Honda",
+  "model": "Del Sol",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "honda-prologue",
+  "make": "Honda",
+  "model": "Prologue",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "honda-s2000",
+  "make": "Honda",
+  "model": "S2000",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 110000
+ },
+ {
+  "id": "honda-e",
+  "make": "Honda",
+  "model": "e",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 15000
+ },
+ {
+  "id": "hummer-h2",
+  "make": "Hummer",
+  "model": "H2",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 160000
+ },
+ {
+  "id": "hummer-h3",
+  "make": "Hummer",
+  "model": "H3",
+  "tier": "niche",
+  "engine": "i5",
+  "body": "suv",
+  "approxBuilt": 120000
+ },
+ {
+  "id": "hyundai-genesis-coupe",
+  "make": "Hyundai",
+  "model": "Genesis Coupe",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "hyundai-ioniq-6",
+  "make": "Hyundai",
+  "model": "Ioniq 6",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "hyundai-nexo",
+  "make": "Hyundai",
+  "model": "Nexo",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 40000
+ },
+ {
+  "id": "hyundai-santa-cruz",
+  "make": "Hyundai",
+  "model": "Santa Cruz",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "pickup",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "infiniti-q60",
+  "make": "Infiniti",
+  "model": "Q60",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 70000
+ },
+ {
+  "id": "infiniti-q70",
+  "make": "Infiniti",
+  "model": "Q70",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "jaguar-e-type",
+  "make": "Jaguar",
+  "model": "E-Type",
+  "tier": "niche",
+  "engine": "i6",
+  "body": "convertible",
+  "approxBuilt": 72500
+ },
+ {
+  "id": "jaguar-f-type",
+  "make": "Jaguar",
+  "model": "F-Type",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 90000
+ },
+ {
+  "id": "jaguar-i-pace",
+  "make": "Jaguar",
+  "model": "I-Pace",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "jaguar-xk",
+  "make": "Jaguar",
+  "model": "XK",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 146000
+ },
+ {
+  "id": "jaguar-xk120",
+  "make": "Jaguar",
+  "model": "XK120",
+  "tier": "niche",
+  "engine": "i6",
+  "body": "convertible",
+  "approxBuilt": 12000
+ },
+ {
+  "id": "jeep-grand-wagoneer",
+  "make": "Jeep",
+  "model": "Grand Wagoneer",
+  "tier": "niche",
+  "engine": "i6",
+  "body": "suv",
+  "approxBuilt": 60000
+ },
+ {
+  "id": "jeep-wagoneer",
+  "make": "Jeep",
+  "model": "Wagoneer",
+  "tier": "niche",
+  "engine": "i6",
+  "body": "suv",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "kia-ev9",
+  "make": "Kia",
+  "model": "EV9",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "kia-stinger",
+  "make": "Kia",
+  "model": "Stinger",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 70000
+ },
+ {
+  "id": "lamborghini-gallardo",
+  "make": "Lamborghini",
+  "model": "Gallardo",
+  "tier": "niche",
+  "engine": "v10",
+  "body": "supercar",
+  "approxBuilt": 14022
+ },
+ {
+  "id": "lamborghini-huracan",
+  "make": "Lamborghini",
+  "model": "Huracán",
+  "tier": "niche",
+  "engine": "v10",
+  "body": "supercar",
+  "approxBuilt": 25000
+ },
+ {
+  "id": "lamborghini-temerario",
+  "make": "Lamborghini",
+  "model": "Temerario",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "lamborghini-urus",
+  "make": "Lamborghini",
+  "model": "Urus",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 25000
+ },
+ {
+  "id": "lancia-delta-integrale",
+  "make": "Lancia",
+  "model": "Delta Integrale",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 44000
+ },
+ {
+  "id": "lexus-lc",
+  "make": "Lexus",
+  "model": "LC",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "lexus-rc",
+  "make": "Lexus",
+  "model": "RC",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "lexus-rz",
+  "make": "Lexus",
+  "model": "RZ",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "lexus-sc",
+  "make": "Lexus",
+  "model": "SC",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "lexus-tx",
+  "make": "Lexus",
+  "model": "TX",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "lincoln-blackwood",
+  "make": "Lincoln",
+  "model": "Blackwood",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 3356
+ },
+ {
+  "id": "lincoln-mark-lt",
+  "make": "Lincoln",
+  "model": "Mark LT",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 40000
+ },
+ {
+  "id": "lotus-elan",
+  "make": "Lotus",
+  "model": "Elan",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 12000
+ },
+ {
+  "id": "lotus-eletre",
+  "make": "Lotus",
+  "model": "Eletre",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 15000
+ },
+ {
+  "id": "lotus-elise",
+  "make": "Lotus",
+  "model": "Elise",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 35000
+ },
+ {
+  "id": "lotus-emira",
+  "make": "Lotus",
+  "model": "Emira",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "lotus-esprit",
+  "make": "Lotus",
+  "model": "Esprit",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 10675
+ },
+ {
+  "id": "lotus-evora",
+  "make": "Lotus",
+  "model": "Evora",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 7000
+ },
+ {
+  "id": "lotus-exige",
+  "make": "Lotus",
+  "model": "Exige",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "lucid-air",
+  "make": "Lucid",
+  "model": "Air",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "lucid-gravity",
+  "make": "Lucid",
+  "model": "Gravity",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 5000
+ },
+ {
+  "id": "maserati-coupe",
+  "make": "Maserati",
+  "model": "Coupé",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 25000
+ },
+ {
+  "id": "maserati-ghibli",
+  "make": "Maserati",
+  "model": "Ghibli",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "maserati-grancabrio",
+  "make": "Maserati",
+  "model": "GranCabrio",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 20000
+ },
+ {
+  "id": "maserati-granturismo",
+  "make": "Maserati",
+  "model": "GranTurismo",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "maserati-grecale",
+  "make": "Maserati",
+  "model": "Grecale",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "maserati-levante",
+  "make": "Maserati",
+  "model": "Levante",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 80000
+ },
+ {
+  "id": "maserati-quattroporte",
+  "make": "Maserati",
+  "model": "Quattroporte",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "mazda-cx-90",
+  "make": "Mazda",
+  "model": "CX-90",
+  "tier": "niche",
+  "engine": "i6",
+  "body": "suv",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "mazda-mx-30",
+  "make": "Mazda",
+  "model": "MX-30",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 40000
+ },
+ {
+  "id": "mazda-rx-8",
+  "make": "Mazda",
+  "model": "RX-8",
+  "tier": "niche",
+  "engine": "rotary",
+  "body": "coupe",
+  "approxBuilt": 192000
+ },
+ {
+  "id": "mclaren-12c",
+  "make": "McLaren",
+  "model": "12C",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 3500
+ },
+ {
+  "id": "mclaren-570s",
+  "make": "McLaren",
+  "model": "570S",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "mclaren-600lt",
+  "make": "McLaren",
+  "model": "600LT",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 2000
+ },
+ {
+  "id": "mclaren-650s",
+  "make": "McLaren",
+  "model": "650S",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 3500
+ },
+ {
+  "id": "mclaren-720s",
+  "make": "McLaren",
+  "model": "720S",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 9000
+ },
+ {
+  "id": "mclaren-750s",
+  "make": "McLaren",
+  "model": "750S",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "mclaren-artura",
+  "make": "McLaren",
+  "model": "Artura",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "supercar",
+  "approxBuilt": 5000
+ },
+ {
+  "id": "mclaren-gt",
+  "make": "McLaren",
+  "model": "GT",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 5000
+ },
+ {
+  "id": "mercedes-amg-gt",
+  "make": "Mercedes-AMG",
+  "model": "GT",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "mercedes-benz-eqe",
+  "make": "Mercedes-Benz",
+  "model": "EQE",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 60000
+ },
+ {
+  "id": "mercedes-benz-eqs",
+  "make": "Mercedes-Benz",
+  "model": "EQS",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "mercedes-benz-x-class",
+  "make": "Mercedes-Benz",
+  "model": "X-Class",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "pickup",
+  "approxBuilt": 17000
+ },
+ {
+  "id": "mercedes-maybach-gls",
+  "make": "Mercedes-Maybach",
+  "model": "GLS",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 20000
+ },
+ {
+  "id": "mercedes-maybach-s-class",
+  "make": "Mercedes-Maybach",
+  "model": "S-Class",
+  "tier": "niche",
+  "engine": "v12",
+  "body": "sedan",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "mercury-marauder",
+  "make": "Mercury",
+  "model": "Marauder",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 11000
+ },
+ {
+  "id": "mitsubishi-lancer-evolution",
+  "make": "Mitsubishi",
+  "model": "Lancer Evolution",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 110000
+ },
+ {
+  "id": "mitsubishi-i-miev",
+  "make": "Mitsubishi",
+  "model": "i-MiEV",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "morgan-plus-four",
+  "make": "Morgan",
+  "model": "Plus Four",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "nio-es6",
+  "make": "NIO",
+  "model": "ES6",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "nio-es8",
+  "make": "NIO",
+  "model": "ES8",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "nio-et5",
+  "make": "NIO",
+  "model": "ET5",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "nissan-240z",
+  "make": "Nissan",
+  "model": "240Z",
+  "tier": "niche",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "nissan-370z",
+  "make": "Nissan",
+  "model": "370Z",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "nissan-ariya",
+  "make": "Nissan",
+  "model": "Ariya",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "nissan-gt-r",
+  "make": "Nissan",
+  "model": "GT-R",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 48000
+ },
+ {
+  "id": "nissan-z",
+  "make": "Nissan",
+  "model": "Z",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "opel-gt",
+  "make": "Opel",
+  "model": "GT",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 103000
+ },
+ {
+  "id": "peugeot-rcz",
+  "make": "Peugeot",
+  "model": "RCZ",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 68000
+ },
+ {
+  "id": "plymouth-prowler",
+  "make": "Plymouth",
+  "model": "Prowler",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "convertible",
+  "approxBuilt": 11702
+ },
+ {
+  "id": "polestar-2",
+  "make": "Polestar",
+  "model": "2",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 200000
+ },
+ {
+  "id": "polestar-3",
+  "make": "Polestar",
+  "model": "3",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "polestar-4",
+  "make": "Polestar",
+  "model": "4",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "pontiac-aztek",
+  "make": "Pontiac",
+  "model": "Aztek",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 115000
+ },
+ {
+  "id": "pontiac-g8",
+  "make": "Pontiac",
+  "model": "G8",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 40000
+ },
+ {
+  "id": "pontiac-gto",
+  "make": "Pontiac",
+  "model": "GTO",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 40000
+ },
+ {
+  "id": "pontiac-solstice",
+  "make": "Pontiac",
+  "model": "Solstice",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 65000
+ },
+ {
+  "id": "porsche-356",
+  "make": "Porsche",
+  "model": "356",
+  "tier": "niche",
+  "engine": "flat4",
+  "body": "coupe",
+  "approxBuilt": 76000
+ },
+ {
+  "id": "porsche-914",
+  "make": "Porsche",
+  "model": "914",
+  "tier": "niche",
+  "engine": "flat4",
+  "body": "convertible",
+  "approxBuilt": 118000
+ },
+ {
+  "id": "porsche-924",
+  "make": "Porsche",
+  "model": "924",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "porsche-928",
+  "make": "Porsche",
+  "model": "928",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 61000
+ },
+ {
+  "id": "porsche-944",
+  "make": "Porsche",
+  "model": "944",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 163000
+ },
+ {
+  "id": "porsche-968",
+  "make": "Porsche",
+  "model": "968",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 12776
+ },
+ {
+  "id": "porsche-taycan",
+  "make": "Porsche",
+  "model": "Taycan",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 170000
+ },
+ {
+  "id": "ram-trx",
+  "make": "Ram",
+  "model": "TRX",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "renault-5-e-tech",
+  "make": "Renault",
+  "model": "5 E-Tech",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 50000
+ },
+ {
+  "id": "renault-sport-spider",
+  "make": "Renault",
+  "model": "Sport Spider",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 1685
+ },
+ {
+  "id": "rivian-r1s",
+  "make": "Rivian",
+  "model": "R1S",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 80000
+ },
+ {
+  "id": "rivian-r1t",
+  "make": "Rivian",
+  "model": "R1T",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "pickup",
+  "approxBuilt": 80000
+ },
+ {
+  "id": "rolls-royce-cullinan",
+  "make": "Rolls-Royce",
+  "model": "Cullinan",
+  "tier": "niche",
+  "engine": "v12",
+  "body": "suv",
+  "approxBuilt": 15000
+ },
+ {
+  "id": "rolls-royce-dawn",
+  "make": "Rolls-Royce",
+  "model": "Dawn",
+  "tier": "niche",
+  "engine": "v12",
+  "body": "convertible",
+  "approxBuilt": 4000
+ },
+ {
+  "id": "rolls-royce-ghost",
+  "make": "Rolls-Royce",
+  "model": "Ghost",
+  "tier": "niche",
+  "engine": "v12",
+  "body": "sedan",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "rolls-royce-silver-shadow",
+  "make": "Rolls-Royce",
+  "model": "Silver Shadow",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "rolls-royce-wraith",
+  "make": "Rolls-Royce",
+  "model": "Wraith",
+  "tier": "niche",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 13000
+ },
+ {
+  "id": "saturn-sky",
+  "make": "Saturn",
+  "model": "Sky",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 34000
+ },
+ {
+  "id": "subaru-brz",
+  "make": "Subaru",
+  "model": "BRZ",
+  "tier": "niche",
+  "engine": "flat4",
+  "body": "coupe",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "subaru-baja",
+  "make": "Subaru",
+  "model": "Baja",
+  "tier": "niche",
+  "engine": "flat4",
+  "body": "pickup",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "subaru-svx",
+  "make": "Subaru",
+  "model": "SVX",
+  "tier": "niche",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 25000
+ },
+ {
+  "id": "subaru-solterra",
+  "make": "Subaru",
+  "model": "Solterra",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "subaru-tribeca",
+  "make": "Subaru",
+  "model": "Tribeca",
+  "tier": "niche",
+  "engine": "flat6",
+  "body": "suv",
+  "approxBuilt": 78000
+ },
+ {
+  "id": "suzuki-kizashi",
+  "make": "Suzuki",
+  "model": "Kizashi",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "tvr-chimaera",
+  "make": "TVR",
+  "model": "Chimaera",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 6000
+ },
+ {
+  "id": "tvr-griffith",
+  "make": "TVR",
+  "model": "Griffith",
+  "tier": "niche",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 2600
+ },
+ {
+  "id": "tank-300",
+  "make": "Tank",
+  "model": "300",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 180000
+ },
+ {
+  "id": "tata-harrier",
+  "make": "Tata",
+  "model": "Harrier",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "tesla-cybertruck",
+  "make": "Tesla",
+  "model": "Cybertruck",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "pickup",
+  "approxBuilt": 60000
+ },
+ {
+  "id": "toyota-gr-corolla",
+  "make": "Toyota",
+  "model": "GR Corolla",
+  "tier": "niche",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 30000
+ },
+ {
+  "id": "toyota-mirai",
+  "make": "Toyota",
+  "model": "Mirai",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 25000
+ },
+ {
+  "id": "toyota-supra",
+  "make": "Toyota",
+  "model": "Supra",
+  "tier": "niche",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "toyota-bz4x",
+  "make": "Toyota",
+  "model": "bZ4X",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "volkswagen-corrado",
+  "make": "Volkswagen",
+  "model": "Corrado",
+  "tier": "niche",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 97000
+ },
+ {
+  "id": "volkswagen-id-buzz",
+  "make": "Volkswagen",
+  "model": "ID. Buzz",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "van",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "volkswagen-phaeton",
+  "make": "Volkswagen",
+  "model": "Phaeton",
+  "tier": "niche",
+  "engine": "w12",
+  "body": "sedan",
+  "approxBuilt": 84000
+ },
+ {
+  "id": "volvo-c30",
+  "make": "Volvo",
+  "model": "C30",
+  "tier": "niche",
+  "engine": "i5",
+  "body": "hatchback",
+  "approxBuilt": 200000
+ },
+ {
+  "id": "volvo-c40",
+  "make": "Volvo",
+  "model": "C40",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "volvo-ex30",
+  "make": "Volvo",
+  "model": "EX30",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "volvo-p1800",
+  "make": "Volvo",
+  "model": "P1800",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 47000
+ },
+ {
+  "id": "volvo-v90",
+  "make": "Volvo",
+  "model": "V90",
+  "tier": "niche",
+  "engine": "i4",
+  "body": "wagon",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "xpeng-g6",
+  "make": "XPeng",
+  "model": "G6",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 100000
+ },
+ {
+  "id": "xpeng-p7",
+  "make": "XPeng",
+  "model": "P7",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 150000
+ },
+ {
+  "id": "yangwang-u8",
+  "make": "Yangwang",
+  "model": "U8",
+  "tier": "niche",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "acura-ilx",
+  "make": "Acura",
+  "model": "ILX",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 180000
+ },
+ {
+  "id": "acura-integra",
+  "make": "Acura",
+  "model": "Integra",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "acura-mdx",
+  "make": "Acura",
+  "model": "MDX",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "acura-rdx",
+  "make": "Acura",
+  "model": "RDX",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "acura-rsx",
+  "make": "Acura",
+  "model": "RSX",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "acura-tl",
+  "make": "Acura",
+  "model": "TL",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "acura-tlx",
+  "make": "Acura",
+  "model": "TLX",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "acura-tsx",
+  "make": "Acura",
+  "model": "TSX",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "alfa-romeo-159",
+  "make": "Alfa Romeo",
+  "model": "159",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "alfa-romeo-giulietta",
+  "make": "Alfa Romeo",
+  "model": "Giulietta",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "alfa-romeo-mito",
+  "make": "Alfa Romeo",
+  "model": "MiTo",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 290000
+ },
+ {
+  "id": "audi-a1",
+  "make": "Audi",
+  "model": "A1",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 1200000
+ },
+ {
+  "id": "audi-a5",
+  "make": "Audi",
+  "model": "A5",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "audi-a7",
+  "make": "Audi",
+  "model": "A7",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "audi-a8",
+  "make": "Audi",
+  "model": "A8",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "audi-q2",
+  "make": "Audi",
+  "model": "Q2",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "audi-q3",
+  "make": "Audi",
+  "model": "Q3",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "audi-q4-e-tron",
+  "make": "Audi",
+  "model": "Q4 e-tron",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "audi-q7",
+  "make": "Audi",
+  "model": "Q7",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "audi-q8",
+  "make": "Audi",
+  "model": "Q8",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "audi-tt",
+  "make": "Audi",
+  "model": "TT",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 660000
+ },
+ {
+  "id": "bmw-2-series",
+  "make": "BMW",
+  "model": "2 Series",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "bmw-2002",
+  "make": "BMW",
+  "model": "2002",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 861000
+ },
+ {
+  "id": "bmw-4-series",
+  "make": "BMW",
+  "model": "4 Series",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "bmw-6-series",
+  "make": "BMW",
+  "model": "6 Series",
+  "tier": "occasional",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "bmw-7-series",
+  "make": "BMW",
+  "model": "7 Series",
+  "tier": "occasional",
+  "engine": "i6",
+  "body": "sedan",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "bmw-m3",
+  "make": "BMW",
+  "model": "M3",
+  "tier": "occasional",
+  "engine": "i6",
+  "body": "sedan",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "bmw-x2",
+  "make": "BMW",
+  "model": "X2",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "bmw-x4",
+  "make": "BMW",
+  "model": "X4",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 600000
+ },
+ {
+  "id": "bmw-x6",
+  "make": "BMW",
+  "model": "X6",
+  "tier": "occasional",
+  "engine": "i6",
+  "body": "suv",
+  "approxBuilt": 700000
+ },
+ {
+  "id": "bmw-x7",
+  "make": "BMW",
+  "model": "X7",
+  "tier": "occasional",
+  "engine": "i6",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "bmw-z3",
+  "make": "BMW",
+  "model": "Z3",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "bmw-z4",
+  "make": "BMW",
+  "model": "Z4",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "bmw-i3",
+  "make": "BMW",
+  "model": "i3",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "byd-atto-3",
+  "make": "BYD",
+  "model": "Atto 3",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "byd-dolphin",
+  "make": "BYD",
+  "model": "Dolphin",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 900000
+ },
+ {
+  "id": "byd-han",
+  "make": "BYD",
+  "model": "Han",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "byd-seagull",
+  "make": "BYD",
+  "model": "Seagull",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "byd-seal",
+  "make": "BYD",
+  "model": "Seal",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "byd-tang",
+  "make": "BYD",
+  "model": "Tang",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 600000
+ },
+ {
+  "id": "buick-enclave",
+  "make": "Buick",
+  "model": "Enclave",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "buick-encore",
+  "make": "Buick",
+  "model": "Encore",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "buick-envision",
+  "make": "Buick",
+  "model": "Envision",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "buick-lacrosse",
+  "make": "Buick",
+  "model": "LaCrosse",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "buick-regal",
+  "make": "Buick",
+  "model": "Regal",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "buick-verano",
+  "make": "Buick",
+  "model": "Verano",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "cadillac-ats",
+  "make": "Cadillac",
+  "model": "ATS",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "cadillac-cts",
+  "make": "Cadillac",
+  "model": "CTS",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "cadillac-escalade",
+  "make": "Cadillac",
+  "model": "Escalade",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 1300000
+ },
+ {
+  "id": "cadillac-srx",
+  "make": "Cadillac",
+  "model": "SRX",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 600000
+ },
+ {
+  "id": "cadillac-xt4",
+  "make": "Cadillac",
+  "model": "XT4",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "cadillac-xt5",
+  "make": "Cadillac",
+  "model": "XT5",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "chevrolet-avalanche",
+  "make": "Chevrolet",
+  "model": "Avalanche",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 600000
+ },
+ {
+  "id": "chevrolet-blazer",
+  "make": "Chevrolet",
+  "model": "Blazer",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "chevrolet-bolt",
+  "make": "Chevrolet",
+  "model": "Bolt",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 200000
+ },
+ {
+  "id": "chevrolet-cobalt",
+  "make": "Chevrolet",
+  "model": "Cobalt",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "chevrolet-colorado",
+  "make": "Chevrolet",
+  "model": "Colorado",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "pickup",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "chevrolet-corvette",
+  "make": "Chevrolet",
+  "model": "Corvette",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 1900000
+ },
+ {
+  "id": "chevrolet-hhr",
+  "make": "Chevrolet",
+  "model": "HHR",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "wagon",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "chevrolet-sonic",
+  "make": "Chevrolet",
+  "model": "Sonic",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "chevrolet-trailblazer",
+  "make": "Chevrolet",
+  "model": "Trailblazer",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "chevrolet-traverse",
+  "make": "Chevrolet",
+  "model": "Traverse",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "chevrolet-trax",
+  "make": "Chevrolet",
+  "model": "Trax",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "chrysler-200",
+  "make": "Chrysler",
+  "model": "200",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "chrysler-300",
+  "make": "Chrysler",
+  "model": "300",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "chrysler-pt-cruiser",
+  "make": "Chrysler",
+  "model": "PT Cruiser",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 1350000
+ },
+ {
+  "id": "chrysler-pacifica",
+  "make": "Chrysler",
+  "model": "Pacifica",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "van",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "chrysler-sebring",
+  "make": "Chrysler",
+  "model": "Sebring",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "citroen-c1",
+  "make": "Citroën",
+  "model": "C1",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "citroen-c5-aircross",
+  "make": "Citroën",
+  "model": "C5 Aircross",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "cupra-formentor",
+  "make": "Cupra",
+  "model": "Formentor",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "dacia-jogger",
+  "make": "Dacia",
+  "model": "Jogger",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "wagon",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "dodge-avenger",
+  "make": "Dodge",
+  "model": "Avenger",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 600000
+ },
+ {
+  "id": "dodge-caliber",
+  "make": "Dodge",
+  "model": "Caliber",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "dodge-challenger",
+  "make": "Dodge",
+  "model": "Challenger",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "dodge-charger",
+  "make": "Dodge",
+  "model": "Charger",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "dodge-dart",
+  "make": "Dodge",
+  "model": "Dart",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "dodge-durango",
+  "make": "Dodge",
+  "model": "Durango",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "dodge-journey",
+  "make": "Dodge",
+  "model": "Journey",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1300000
+ },
+ {
+  "id": "dodge-neon",
+  "make": "Dodge",
+  "model": "Neon",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "fiat-500x",
+  "make": "Fiat",
+  "model": "500X",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 700000
+ },
+ {
+  "id": "fiat-doblo",
+  "make": "Fiat",
+  "model": "Doblo",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "fiat-multipla",
+  "make": "Fiat",
+  "model": "Multipla",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "fiat-tipo",
+  "make": "Fiat",
+  "model": "Tipo",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "ford-bronco",
+  "make": "Ford",
+  "model": "Bronco",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "ford-bronco-sport",
+  "make": "Ford",
+  "model": "Bronco Sport",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "ford-crown-victoria",
+  "make": "Ford",
+  "model": "Crown Victoria",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "ford-ecosport",
+  "make": "Ford",
+  "model": "EcoSport",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "ford-edge",
+  "make": "Ford",
+  "model": "Edge",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1800000
+ },
+ {
+  "id": "ford-everest",
+  "make": "Ford",
+  "model": "Everest",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "ford-expedition",
+  "make": "Ford",
+  "model": "Expedition",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "ford-flex",
+  "make": "Ford",
+  "model": "Flex",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "ford-maverick",
+  "make": "Ford",
+  "model": "Maverick",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "pickup",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "ford-mustang-mach-e",
+  "make": "Ford",
+  "model": "Mustang Mach-E",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "ford-puma",
+  "make": "Ford",
+  "model": "Puma",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "gmc-acadia",
+  "make": "GMC",
+  "model": "Acadia",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "gmc-canyon",
+  "make": "GMC",
+  "model": "Canyon",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "pickup",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "gmc-savana",
+  "make": "GMC",
+  "model": "Savana",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "van",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "gmc-terrain",
+  "make": "GMC",
+  "model": "Terrain",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "gmc-yukon",
+  "make": "GMC",
+  "model": "Yukon",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "genesis-g80",
+  "make": "Genesis",
+  "model": "G80",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "genesis-gv70",
+  "make": "Genesis",
+  "model": "GV70",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "genesis-gv80",
+  "make": "Genesis",
+  "model": "GV80",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "honda-element",
+  "make": "Honda",
+  "model": "Element",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 325000
+ },
+ {
+  "id": "honda-insight",
+  "make": "Honda",
+  "model": "Insight",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "honda-passport",
+  "make": "Honda",
+  "model": "Passport",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "honda-pilot",
+  "make": "Honda",
+  "model": "Pilot",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "honda-prelude",
+  "make": "Honda",
+  "model": "Prelude",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "honda-ridgeline",
+  "make": "Honda",
+  "model": "Ridgeline",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "pickup",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "hyundai-creta",
+  "make": "Hyundai",
+  "model": "Creta",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "hyundai-getz",
+  "make": "Hyundai",
+  "model": "Getz",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "hyundai-grandeur",
+  "make": "Hyundai",
+  "model": "Grandeur",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "hyundai-ioniq-5",
+  "make": "Hyundai",
+  "model": "Ioniq 5",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "hyundai-palisade",
+  "make": "Hyundai",
+  "model": "Palisade",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "hyundai-veloster",
+  "make": "Hyundai",
+  "model": "Veloster",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "hyundai-venue",
+  "make": "Hyundai",
+  "model": "Venue",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "infiniti-fx",
+  "make": "Infiniti",
+  "model": "FX",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "infiniti-g",
+  "make": "Infiniti",
+  "model": "G",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "infiniti-q50",
+  "make": "Infiniti",
+  "model": "Q50",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "infiniti-qx50",
+  "make": "Infiniti",
+  "model": "QX50",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "infiniti-qx60",
+  "make": "Infiniti",
+  "model": "QX60",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "infiniti-qx80",
+  "make": "Infiniti",
+  "model": "QX80",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "jaguar-e-pace",
+  "make": "Jaguar",
+  "model": "E-Pace",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "jaguar-f-pace",
+  "make": "Jaguar",
+  "model": "F-Pace",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "jaguar-s-type",
+  "make": "Jaguar",
+  "model": "S-Type",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 290000
+ },
+ {
+  "id": "jaguar-x-type",
+  "make": "Jaguar",
+  "model": "X-Type",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 350000
+ },
+ {
+  "id": "jaguar-xe",
+  "make": "Jaguar",
+  "model": "XE",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "jaguar-xf",
+  "make": "Jaguar",
+  "model": "XF",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "jaguar-xj",
+  "make": "Jaguar",
+  "model": "XJ",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 900000
+ },
+ {
+  "id": "jeep-commander",
+  "make": "Jeep",
+  "model": "Commander",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "jeep-gladiator",
+  "make": "Jeep",
+  "model": "Gladiator",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "pickup",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "jeep-liberty",
+  "make": "Jeep",
+  "model": "Liberty",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "jeep-patriot",
+  "make": "Jeep",
+  "model": "Patriot",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "jeep-renegade",
+  "make": "Jeep",
+  "model": "Renegade",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "kia-carnival",
+  "make": "Kia",
+  "model": "Carnival",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "van",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "kia-ceed",
+  "make": "Kia",
+  "model": "Ceed",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "kia-ev6",
+  "make": "Kia",
+  "model": "EV6",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "kia-niro",
+  "make": "Kia",
+  "model": "Niro",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1200000
+ },
+ {
+  "id": "kia-seltos",
+  "make": "Kia",
+  "model": "Seltos",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "kia-sonet",
+  "make": "Kia",
+  "model": "Sonet",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "kia-soul",
+  "make": "Kia",
+  "model": "Soul",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "kia-telluride",
+  "make": "Kia",
+  "model": "Telluride",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 600000
+ },
+ {
+  "id": "lada-granta",
+  "make": "Lada",
+  "model": "Granta",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "land-rover-defender",
+  "make": "Land Rover",
+  "model": "Defender",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "land-rover-discovery",
+  "make": "Land Rover",
+  "model": "Discovery",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1200000
+ },
+ {
+  "id": "land-rover-discovery-sport",
+  "make": "Land Rover",
+  "model": "Discovery Sport",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "land-rover-freelander",
+  "make": "Land Rover",
+  "model": "Freelander",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "land-rover-range-rover",
+  "make": "Land Rover",
+  "model": "Range Rover",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "land-rover-range-rover-evoque",
+  "make": "Land Rover",
+  "model": "Range Rover Evoque",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "land-rover-range-rover-sport",
+  "make": "Land Rover",
+  "model": "Range Rover Sport",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "land-rover-range-rover-velar",
+  "make": "Land Rover",
+  "model": "Range Rover Velar",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "lexus-ct",
+  "make": "Lexus",
+  "model": "CT",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "lexus-gs",
+  "make": "Lexus",
+  "model": "GS",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "lexus-gx",
+  "make": "Lexus",
+  "model": "GX",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 600000
+ },
+ {
+  "id": "lexus-is",
+  "make": "Lexus",
+  "model": "IS",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "lexus-ls",
+  "make": "Lexus",
+  "model": "LS",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "lexus-lx",
+  "make": "Lexus",
+  "model": "LX",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "lexus-nx",
+  "make": "Lexus",
+  "model": "NX",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "lexus-ux",
+  "make": "Lexus",
+  "model": "UX",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "li-auto-l7",
+  "make": "Li Auto",
+  "model": "L7",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "li-auto-l9",
+  "make": "Li Auto",
+  "model": "L9",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "lincoln-aviator",
+  "make": "Lincoln",
+  "model": "Aviator",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "lincoln-corsair",
+  "make": "Lincoln",
+  "model": "Corsair",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "lincoln-mkz",
+  "make": "Lincoln",
+  "model": "MKZ",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "lincoln-nautilus",
+  "make": "Lincoln",
+  "model": "Nautilus",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 600000
+ },
+ {
+  "id": "lincoln-navigator",
+  "make": "Lincoln",
+  "model": "Navigator",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "lincoln-town-car",
+  "make": "Lincoln",
+  "model": "Town Car",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "mg-hs",
+  "make": "MG",
+  "model": "HS",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "mg-mg4",
+  "make": "MG",
+  "model": "MG4",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "mg-mgb",
+  "make": "MG",
+  "model": "MGB",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 523000
+ },
+ {
+  "id": "mg-midget",
+  "make": "MG",
+  "model": "Midget",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 226000
+ },
+ {
+  "id": "mg-zs",
+  "make": "MG",
+  "model": "ZS",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "mahindra-bolero",
+  "make": "Mahindra",
+  "model": "Bolero",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "mahindra-scorpio",
+  "make": "Mahindra",
+  "model": "Scorpio",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "mahindra-thar",
+  "make": "Mahindra",
+  "model": "Thar",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "mahindra-xuv700",
+  "make": "Mahindra",
+  "model": "XUV700",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "mazda-bt-50",
+  "make": "Mazda",
+  "model": "BT-50",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "pickup",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "mazda-cx-3",
+  "make": "Mazda",
+  "model": "CX-3",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "mazda-cx-30",
+  "make": "Mazda",
+  "model": "CX-30",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "mazda-cx-50",
+  "make": "Mazda",
+  "model": "CX-50",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "mazda-cx-9",
+  "make": "Mazda",
+  "model": "CX-9",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "mazda-mx-5",
+  "make": "Mazda",
+  "model": "MX-5",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 1200000
+ },
+ {
+  "id": "mazda-mazda5",
+  "make": "Mazda",
+  "model": "Mazda5",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "mazda-rx-7",
+  "make": "Mazda",
+  "model": "RX-7",
+  "tier": "occasional",
+  "engine": "rotary",
+  "body": "coupe",
+  "approxBuilt": 811000
+ },
+ {
+  "id": "mercedes-benz-190e",
+  "make": "Mercedes-Benz",
+  "model": "190E",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1879629
+ },
+ {
+  "id": "mercedes-benz-b-class",
+  "make": "Mercedes-Benz",
+  "model": "B-Class",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "mercedes-benz-cla",
+  "make": "Mercedes-Benz",
+  "model": "CLA",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "mercedes-benz-clk",
+  "make": "Mercedes-Benz",
+  "model": "CLK",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "mercedes-benz-cls",
+  "make": "Mercedes-Benz",
+  "model": "CLS",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "mercedes-benz-g-class",
+  "make": "Mercedes-Benz",
+  "model": "G-Class",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "mercedes-benz-gla",
+  "make": "Mercedes-Benz",
+  "model": "GLA",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "mercedes-benz-glb",
+  "make": "Mercedes-Benz",
+  "model": "GLB",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "mercedes-benz-glk",
+  "make": "Mercedes-Benz",
+  "model": "GLK",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 600000
+ },
+ {
+  "id": "mercedes-benz-gls",
+  "make": "Mercedes-Benz",
+  "model": "GLS",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "mercedes-benz-s-class",
+  "make": "Mercedes-Benz",
+  "model": "S-Class",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "mercedes-benz-sl",
+  "make": "Mercedes-Benz",
+  "model": "SL",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 700000
+ },
+ {
+  "id": "mercedes-benz-slk",
+  "make": "Mercedes-Benz",
+  "model": "SLK",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 700000
+ },
+ {
+  "id": "mercedes-benz-vito",
+  "make": "Mercedes-Benz",
+  "model": "Vito",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "mini-clubman",
+  "make": "Mini",
+  "model": "Clubman",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "wagon",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "mini-countryman",
+  "make": "Mini",
+  "model": "Countryman",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "mitsubishi-3000gt",
+  "make": "Mitsubishi",
+  "model": "3000GT",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "mitsubishi-asx",
+  "make": "Mitsubishi",
+  "model": "ASX",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "mitsubishi-eclipse",
+  "make": "Mitsubishi",
+  "model": "Eclipse",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 900000
+ },
+ {
+  "id": "mitsubishi-eclipse-cross",
+  "make": "Mitsubishi",
+  "model": "Eclipse Cross",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "nissan-300zx",
+  "make": "Nissan",
+  "model": "300ZX",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "nissan-350z",
+  "make": "Nissan",
+  "model": "350Z",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 260000
+ },
+ {
+  "id": "nissan-armada",
+  "make": "Nissan",
+  "model": "Armada",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "nissan-juke",
+  "make": "Nissan",
+  "model": "Juke",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "nissan-kicks",
+  "make": "Nissan",
+  "model": "Kicks",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "nissan-leaf",
+  "make": "Nissan",
+  "model": "Leaf",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 700000
+ },
+ {
+  "id": "nissan-maxima",
+  "make": "Nissan",
+  "model": "Maxima",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 1800000
+ },
+ {
+  "id": "nissan-murano",
+  "make": "Nissan",
+  "model": "Murano",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "nissan-nv200",
+  "make": "Nissan",
+  "model": "NV200",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 700000
+ },
+ {
+  "id": "nissan-patrol",
+  "make": "Nissan",
+  "model": "Patrol",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "nissan-silvia",
+  "make": "Nissan",
+  "model": "Silvia",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "nissan-skyline",
+  "make": "Nissan",
+  "model": "Skyline",
+  "tier": "occasional",
+  "engine": "i6",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "nissan-titan",
+  "make": "Nissan",
+  "model": "Titan",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "opel-insignia",
+  "make": "Opel",
+  "model": "Insignia",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "opel-mokka",
+  "make": "Opel",
+  "model": "Mokka",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "opel-zafira",
+  "make": "Opel",
+  "model": "Zafira",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "peugeot-5008",
+  "make": "Peugeot",
+  "model": "5008",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "peugeot-508",
+  "make": "Peugeot",
+  "model": "508",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "pontiac-fiero",
+  "make": "Pontiac",
+  "model": "Fiero",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 370000
+ },
+ {
+  "id": "pontiac-firebird",
+  "make": "Pontiac",
+  "model": "Firebird",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "pontiac-vibe",
+  "make": "Pontiac",
+  "model": "Vibe",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "porsche-911",
+  "make": "Porsche",
+  "model": "911",
+  "tier": "occasional",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 1200000
+ },
+ {
+  "id": "porsche-boxster",
+  "make": "Porsche",
+  "model": "Boxster",
+  "tier": "occasional",
+  "engine": "flat6",
+  "body": "convertible",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "porsche-cayenne",
+  "make": "Porsche",
+  "model": "Cayenne",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "porsche-cayman",
+  "make": "Porsche",
+  "model": "Cayman",
+  "tier": "occasional",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 220000
+ },
+ {
+  "id": "porsche-macan",
+  "make": "Porsche",
+  "model": "Macan",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "porsche-panamera",
+  "make": "Porsche",
+  "model": "Panamera",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "ram-heavy-duty",
+  "make": "Ram",
+  "model": "Heavy Duty",
+  "tier": "occasional",
+  "engine": "i6",
+  "body": "pickup",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "ram-promaster",
+  "make": "Ram",
+  "model": "ProMaster",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "van",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "renault-arkana",
+  "make": "Renault",
+  "model": "Arkana",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "renault-espace",
+  "make": "Renault",
+  "model": "Espace",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 1300000
+ },
+ {
+  "id": "renault-kadjar",
+  "make": "Renault",
+  "model": "Kadjar",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "renault-kwid",
+  "make": "Renault",
+  "model": "Kwid",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "renault-laguna",
+  "make": "Renault",
+  "model": "Laguna",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "renault-zoe",
+  "make": "Renault",
+  "model": "Zoe",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "seat-arona",
+  "make": "SEAT",
+  "model": "Arona",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 600000
+ },
+ {
+  "id": "seat-ateca",
+  "make": "SEAT",
+  "model": "Ateca",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 700000
+ },
+ {
+  "id": "saab-9-3",
+  "make": "Saab",
+  "model": "9-3",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1600000
+ },
+ {
+  "id": "saab-9-5",
+  "make": "Saab",
+  "model": "9-5",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "saab-900",
+  "make": "Saab",
+  "model": "900",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 900000
+ },
+ {
+  "id": "scion-xb",
+  "make": "Scion",
+  "model": "xB",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "wagon",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "skoda-enyaq",
+  "make": "Skoda",
+  "model": "Enyaq",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "skoda-kamiq",
+  "make": "Skoda",
+  "model": "Kamiq",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "skoda-karoq",
+  "make": "Skoda",
+  "model": "Karoq",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 700000
+ },
+ {
+  "id": "skoda-kodiaq",
+  "make": "Skoda",
+  "model": "Kodiaq",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 900000
+ },
+ {
+  "id": "skoda-superb",
+  "make": "Skoda",
+  "model": "Superb",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "skoda-yeti",
+  "make": "Skoda",
+  "model": "Yeti",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 685000
+ },
+ {
+  "id": "smart-fortwo",
+  "make": "Smart",
+  "model": "Fortwo",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "subaru-ascent",
+  "make": "Subaru",
+  "model": "Ascent",
+  "tier": "occasional",
+  "engine": "flat4",
+  "body": "suv",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "subaru-levorg",
+  "make": "Subaru",
+  "model": "Levorg",
+  "tier": "occasional",
+  "engine": "flat4",
+  "body": "wagon",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "subaru-wrx",
+  "make": "Subaru",
+  "model": "WRX",
+  "tier": "occasional",
+  "engine": "flat4",
+  "body": "sedan",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "suzuki-sx4",
+  "make": "Suzuki",
+  "model": "SX4",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "tata-nexon",
+  "make": "Tata",
+  "model": "Nexon",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "tata-punch",
+  "make": "Tata",
+  "model": "Punch",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "tesla-model-s",
+  "make": "Tesla",
+  "model": "Model S",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 400000
+ },
+ {
+  "id": "tesla-model-x",
+  "make": "Tesla",
+  "model": "Model X",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "toyota-86",
+  "make": "Toyota",
+  "model": "86",
+  "tier": "occasional",
+  "engine": "flat4",
+  "body": "coupe",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "toyota-alphard",
+  "make": "Toyota",
+  "model": "Alphard",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "van",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "toyota-avalon",
+  "make": "Toyota",
+  "model": "Avalon",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "toyota-c-hr",
+  "make": "Toyota",
+  "model": "C-HR",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "toyota-fj-cruiser",
+  "make": "Toyota",
+  "model": "FJ Cruiser",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "toyota-mr2",
+  "make": "Toyota",
+  "model": "MR2",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "toyota-matrix",
+  "make": "Toyota",
+  "model": "Matrix",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "toyota-sequoia",
+  "make": "Toyota",
+  "model": "Sequoia",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "toyota-sienna",
+  "make": "Toyota",
+  "model": "Sienna",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "van",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "toyota-tundra",
+  "make": "Toyota",
+  "model": "Tundra",
+  "tier": "occasional",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "toyota-venza",
+  "make": "Toyota",
+  "model": "Venza",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "volkswagen-amarok",
+  "make": "Volkswagen",
+  "model": "Amarok",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "pickup",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "volkswagen-arteon",
+  "make": "Volkswagen",
+  "model": "Arteon",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 200000
+ },
+ {
+  "id": "volkswagen-atlas",
+  "make": "Volkswagen",
+  "model": "Atlas",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "volkswagen-cc",
+  "make": "Volkswagen",
+  "model": "CC",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "volkswagen-eos",
+  "make": "Volkswagen",
+  "model": "Eos",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 230000
+ },
+ {
+  "id": "volkswagen-id-3",
+  "make": "Volkswagen",
+  "model": "ID.3",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "volkswagen-id-4",
+  "make": "Volkswagen",
+  "model": "ID.4",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 800000
+ },
+ {
+  "id": "volkswagen-scirocco",
+  "make": "Volkswagen",
+  "model": "Scirocco",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 1300000
+ },
+ {
+  "id": "volkswagen-t-cross",
+  "make": "Volkswagen",
+  "model": "T-Cross",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "volkswagen-taos",
+  "make": "Volkswagen",
+  "model": "Taos",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "volkswagen-touareg",
+  "make": "Volkswagen",
+  "model": "Touareg",
+  "tier": "occasional",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 1200000
+ },
+ {
+  "id": "volkswagen-touran",
+  "make": "Volkswagen",
+  "model": "Touran",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "volkswagen-up",
+  "make": "Volkswagen",
+  "model": "up!",
+  "tier": "occasional",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "volvo-s40",
+  "make": "Volvo",
+  "model": "S40",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "volvo-s60",
+  "make": "Volvo",
+  "model": "S60",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "volvo-s90",
+  "make": "Volvo",
+  "model": "S90",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 300000
+ },
+ {
+  "id": "volvo-v60",
+  "make": "Volvo",
+  "model": "V60",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "wagon",
+  "approxBuilt": 500000
+ },
+ {
+  "id": "volvo-v70",
+  "make": "Volvo",
+  "model": "V70",
+  "tier": "occasional",
+  "engine": "i5",
+  "body": "wagon",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "volvo-xc40",
+  "make": "Volvo",
+  "model": "XC40",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1000000
+ },
+ {
+  "id": "volvo-xc90",
+  "make": "Volvo",
+  "model": "XC90",
+  "tier": "occasional",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "wuling-hongguang-mini-ev",
+  "make": "Wuling",
+  "model": "Hongguang Mini EV",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "hatchback",
+  "approxBuilt": 1500000
+ },
+ {
+  "id": "xiaomi-su7",
+  "make": "Xiaomi",
+  "model": "SU7",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "zeekr-001",
+  "make": "Zeekr",
+  "model": "001",
+  "tier": "occasional",
+  "engine": "electric",
+  "body": "wagon",
+  "approxBuilt": 250000
+ },
+ {
+  "id": "audi-a3",
+  "make": "Audi",
+  "model": "A3",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 6000000
+ },
+ {
+  "id": "audi-a4",
+  "make": "Audi",
+  "model": "A4",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 10000000
+ },
+ {
+  "id": "audi-a6",
+  "make": "Audi",
+  "model": "A6",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "audi-q5",
+  "make": "Audi",
+  "model": "Q5",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 3500000
+ },
+ {
+  "id": "bmw-1-series",
+  "make": "BMW",
+  "model": "1 Series",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "bmw-3-series",
+  "make": "BMW",
+  "model": "3 Series",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 17000000
+ },
+ {
+  "id": "bmw-5-series",
+  "make": "BMW",
+  "model": "5 Series",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 9000000
+ },
+ {
+  "id": "bmw-x1",
+  "make": "BMW",
+  "model": "X1",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 3500000
+ },
+ {
+  "id": "bmw-x3",
+  "make": "BMW",
+  "model": "X3",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 3500000
+ },
+ {
+  "id": "bmw-x5",
+  "make": "BMW",
+  "model": "X5",
+  "tier": "common",
+  "engine": "i6",
+  "body": "suv",
+  "approxBuilt": 3500000
+ },
+ {
+  "id": "byd-qin",
+  "make": "BYD",
+  "model": "Qin",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "byd-song",
+  "make": "BYD",
+  "model": "Song",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "chery-tiggo",
+  "make": "Chery",
+  "model": "Tiggo",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "chevrolet-aveo",
+  "make": "Chevrolet",
+  "model": "Aveo",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "chevrolet-camaro",
+  "make": "Chevrolet",
+  "model": "Camaro",
+  "tier": "common",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 5500000
+ },
+ {
+  "id": "chevrolet-cruze",
+  "make": "Chevrolet",
+  "model": "Cruze",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "chevrolet-equinox",
+  "make": "Chevrolet",
+  "model": "Equinox",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "chevrolet-express",
+  "make": "Chevrolet",
+  "model": "Express",
+  "tier": "common",
+  "engine": "v8",
+  "body": "van",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "chevrolet-impala",
+  "make": "Chevrolet",
+  "model": "Impala",
+  "tier": "common",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 16000000
+ },
+ {
+  "id": "chevrolet-malibu",
+  "make": "Chevrolet",
+  "model": "Malibu",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 10000000
+ },
+ {
+  "id": "chevrolet-silverado",
+  "make": "Chevrolet",
+  "model": "Silverado",
+  "tier": "common",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 15000000
+ },
+ {
+  "id": "chevrolet-spark",
+  "make": "Chevrolet",
+  "model": "Spark",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "chevrolet-suburban",
+  "make": "Chevrolet",
+  "model": "Suburban",
+  "tier": "common",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 10000000
+ },
+ {
+  "id": "chevrolet-tahoe",
+  "make": "Chevrolet",
+  "model": "Tahoe",
+  "tier": "common",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "chrysler-town-country",
+  "make": "Chrysler",
+  "model": "Town & Country",
+  "tier": "common",
+  "engine": "v6",
+  "body": "van",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "citroen-berlingo",
+  "make": "Citroën",
+  "model": "Berlingo",
+  "tier": "common",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "citroen-c3",
+  "make": "Citroën",
+  "model": "C3",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "citroen-c4",
+  "make": "Citroën",
+  "model": "C4",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "dacia-duster",
+  "make": "Dacia",
+  "model": "Duster",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "dacia-logan",
+  "make": "Dacia",
+  "model": "Logan",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "dacia-sandero",
+  "make": "Dacia",
+  "model": "Sandero",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 7000000
+ },
+ {
+  "id": "dodge-grand-caravan",
+  "make": "Dodge",
+  "model": "Grand Caravan",
+  "tier": "common",
+  "engine": "v6",
+  "body": "van",
+  "approxBuilt": 10000000
+ },
+ {
+  "id": "fiat-500",
+  "make": "Fiat",
+  "model": "500",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "fiat-ducato",
+  "make": "Fiat",
+  "model": "Ducato",
+  "tier": "common",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 6000000
+ },
+ {
+  "id": "fiat-panda",
+  "make": "Fiat",
+  "model": "Panda",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "fiat-punto",
+  "make": "Fiat",
+  "model": "Punto",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 9000000
+ },
+ {
+  "id": "ford-e-series",
+  "make": "Ford",
+  "model": "E-Series",
+  "tier": "common",
+  "engine": "v8",
+  "body": "van",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "ford-escape",
+  "make": "Ford",
+  "model": "Escape",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "ford-explorer",
+  "make": "Ford",
+  "model": "Explorer",
+  "tier": "common",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "ford-f-150",
+  "make": "Ford",
+  "model": "F-150",
+  "tier": "common",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 40000000
+ },
+ {
+  "id": "ford-fiesta",
+  "make": "Ford",
+  "model": "Fiesta",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 18000000
+ },
+ {
+  "id": "ford-focus",
+  "make": "Ford",
+  "model": "Focus",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 16000000
+ },
+ {
+  "id": "ford-fusion",
+  "make": "Ford",
+  "model": "Fusion",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "ford-ka",
+  "make": "Ford",
+  "model": "Ka",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "ford-mustang",
+  "make": "Ford",
+  "model": "Mustang",
+  "tier": "common",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 10000000
+ },
+ {
+  "id": "ford-ranger",
+  "make": "Ford",
+  "model": "Ranger",
+  "tier": "common",
+  "engine": "i4",
+  "body": "pickup",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "ford-super-duty",
+  "make": "Ford",
+  "model": "Super Duty",
+  "tier": "common",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "ford-taurus",
+  "make": "Ford",
+  "model": "Taurus",
+  "tier": "common",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "ford-transit",
+  "make": "Ford",
+  "model": "Transit",
+  "tier": "common",
+  "engine": "v6",
+  "body": "van",
+  "approxBuilt": 10000000
+ },
+ {
+  "id": "gmc-sierra",
+  "make": "GMC",
+  "model": "Sierra",
+  "tier": "common",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 7000000
+ },
+ {
+  "id": "geely-emgrand",
+  "make": "Geely",
+  "model": "Emgrand",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "haval-h6",
+  "make": "Haval",
+  "model": "H6",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "honda-accord",
+  "make": "Honda",
+  "model": "Accord",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 20000000
+ },
+ {
+  "id": "honda-cr-v",
+  "make": "Honda",
+  "model": "CR-V",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 13000000
+ },
+ {
+  "id": "honda-city",
+  "make": "Honda",
+  "model": "City",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "honda-civic",
+  "make": "Honda",
+  "model": "Civic",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 27000000
+ },
+ {
+  "id": "honda-fit",
+  "make": "Honda",
+  "model": "Fit",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 7500000
+ },
+ {
+  "id": "honda-hr-v",
+  "make": "Honda",
+  "model": "HR-V",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "honda-odyssey",
+  "make": "Honda",
+  "model": "Odyssey",
+  "tier": "common",
+  "engine": "v6",
+  "body": "van",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "hyundai-accent",
+  "make": "Hyundai",
+  "model": "Accent",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 10000000
+ },
+ {
+  "id": "hyundai-elantra",
+  "make": "Hyundai",
+  "model": "Elantra",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 15000000
+ },
+ {
+  "id": "hyundai-kona",
+  "make": "Hyundai",
+  "model": "Kona",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "hyundai-santa-fe",
+  "make": "Hyundai",
+  "model": "Santa Fe",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "hyundai-sonata",
+  "make": "Hyundai",
+  "model": "Sonata",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 9000000
+ },
+ {
+  "id": "hyundai-tucson",
+  "make": "Hyundai",
+  "model": "Tucson",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 9000000
+ },
+ {
+  "id": "hyundai-i10",
+  "make": "Hyundai",
+  "model": "i10",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "hyundai-i20",
+  "make": "Hyundai",
+  "model": "i20",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "hyundai-i30",
+  "make": "Hyundai",
+  "model": "i30",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "isuzu-d-max",
+  "make": "Isuzu",
+  "model": "D-Max",
+  "tier": "common",
+  "engine": "i4",
+  "body": "pickup",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "jeep-cherokee",
+  "make": "Jeep",
+  "model": "Cherokee",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "jeep-compass",
+  "make": "Jeep",
+  "model": "Compass",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "jeep-grand-cherokee",
+  "make": "Jeep",
+  "model": "Grand Cherokee",
+  "tier": "common",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 7000000
+ },
+ {
+  "id": "jeep-wrangler",
+  "make": "Jeep",
+  "model": "Wrangler",
+  "tier": "common",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "kia-forte",
+  "make": "Kia",
+  "model": "Forte",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "kia-optima",
+  "make": "Kia",
+  "model": "Optima",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "kia-picanto",
+  "make": "Kia",
+  "model": "Picanto",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "kia-rio",
+  "make": "Kia",
+  "model": "Rio",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 6000000
+ },
+ {
+  "id": "kia-sorento",
+  "make": "Kia",
+  "model": "Sorento",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 3500000
+ },
+ {
+  "id": "kia-sportage",
+  "make": "Kia",
+  "model": "Sportage",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 7000000
+ },
+ {
+  "id": "lada-niva",
+  "make": "Lada",
+  "model": "Niva",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "lancia-ypsilon",
+  "make": "Lancia",
+  "model": "Ypsilon",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "lexus-es",
+  "make": "Lexus",
+  "model": "ES",
+  "tier": "common",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "lexus-rx",
+  "make": "Lexus",
+  "model": "RX",
+  "tier": "common",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 3500000
+ },
+ {
+  "id": "mazda-cx-5",
+  "make": "Mazda",
+  "model": "CX-5",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 4500000
+ },
+ {
+  "id": "mazda-mazda2",
+  "make": "Mazda",
+  "model": "Mazda2",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "mazda-mazda3",
+  "make": "Mazda",
+  "model": "Mazda3",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 13000000
+ },
+ {
+  "id": "mazda-mazda6",
+  "make": "Mazda",
+  "model": "Mazda6",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "mercedes-benz-a-class",
+  "make": "Mercedes-Benz",
+  "model": "A-Class",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 6000000
+ },
+ {
+  "id": "mercedes-benz-c-class",
+  "make": "Mercedes-Benz",
+  "model": "C-Class",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 12000000
+ },
+ {
+  "id": "mercedes-benz-e-class",
+  "make": "Mercedes-Benz",
+  "model": "E-Class",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 15000000
+ },
+ {
+  "id": "mercedes-benz-glc",
+  "make": "Mercedes-Benz",
+  "model": "GLC",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "mercedes-benz-gle",
+  "make": "Mercedes-Benz",
+  "model": "GLE",
+  "tier": "common",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "mercedes-benz-sprinter",
+  "make": "Mercedes-Benz",
+  "model": "Sprinter",
+  "tier": "common",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "mini-cooper",
+  "make": "Mini",
+  "model": "Cooper",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "mitsubishi-galant",
+  "make": "Mitsubishi",
+  "model": "Galant",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "mitsubishi-lancer",
+  "make": "Mitsubishi",
+  "model": "Lancer",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 6000000
+ },
+ {
+  "id": "mitsubishi-mirage",
+  "make": "Mitsubishi",
+  "model": "Mirage",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "mitsubishi-outlander",
+  "make": "Mitsubishi",
+  "model": "Outlander",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 3500000
+ },
+ {
+  "id": "mitsubishi-pajero",
+  "make": "Mitsubishi",
+  "model": "Pajero",
+  "tier": "common",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 3200000
+ },
+ {
+  "id": "mitsubishi-triton",
+  "make": "Mitsubishi",
+  "model": "Triton",
+  "tier": "common",
+  "engine": "i4",
+  "body": "pickup",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "nissan-altima",
+  "make": "Nissan",
+  "model": "Altima",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 7000000
+ },
+ {
+  "id": "nissan-frontier",
+  "make": "Nissan",
+  "model": "Frontier",
+  "tier": "common",
+  "engine": "v6",
+  "body": "pickup",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "nissan-micra",
+  "make": "Nissan",
+  "model": "Micra",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 7000000
+ },
+ {
+  "id": "nissan-pathfinder",
+  "make": "Nissan",
+  "model": "Pathfinder",
+  "tier": "common",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "nissan-qashqai",
+  "make": "Nissan",
+  "model": "Qashqai",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "nissan-rogue",
+  "make": "Nissan",
+  "model": "Rogue",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "nissan-sentra",
+  "make": "Nissan",
+  "model": "Sentra",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "nissan-sunny",
+  "make": "Nissan",
+  "model": "Sunny",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 16000000
+ },
+ {
+  "id": "nissan-versa",
+  "make": "Nissan",
+  "model": "Versa",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "nissan-x-trail",
+  "make": "Nissan",
+  "model": "X-Trail",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 7000000
+ },
+ {
+  "id": "opel-astra",
+  "make": "Opel",
+  "model": "Astra",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 15000000
+ },
+ {
+  "id": "opel-corsa",
+  "make": "Opel",
+  "model": "Corsa",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 14000000
+ },
+ {
+  "id": "opel-vectra",
+  "make": "Opel",
+  "model": "Vectra",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "peugeot-2008",
+  "make": "Peugeot",
+  "model": "2008",
+  "tier": "common",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "peugeot-206",
+  "make": "Peugeot",
+  "model": "206",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "peugeot-207",
+  "make": "Peugeot",
+  "model": "207",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "peugeot-208",
+  "make": "Peugeot",
+  "model": "208",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "peugeot-3008",
+  "make": "Peugeot",
+  "model": "3008",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "peugeot-308",
+  "make": "Peugeot",
+  "model": "308",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 7000000
+ },
+ {
+  "id": "ram-1500",
+  "make": "Ram",
+  "model": "1500",
+  "tier": "common",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 12000000
+ },
+ {
+  "id": "renault-captur",
+  "make": "Renault",
+  "model": "Captur",
+  "tier": "common",
+  "engine": "i3",
+  "body": "suv",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "renault-clio",
+  "make": "Renault",
+  "model": "Clio",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 16000000
+ },
+ {
+  "id": "renault-kangoo",
+  "make": "Renault",
+  "model": "Kangoo",
+  "tier": "common",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "renault-megane",
+  "make": "Renault",
+  "model": "Megane",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 10000000
+ },
+ {
+  "id": "renault-scenic",
+  "make": "Renault",
+  "model": "Scenic",
+  "tier": "common",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "renault-twingo",
+  "make": "Renault",
+  "model": "Twingo",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "seat-ibiza",
+  "make": "SEAT",
+  "model": "Ibiza",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 6000000
+ },
+ {
+  "id": "seat-leon",
+  "make": "SEAT",
+  "model": "Leon",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "skoda-fabia",
+  "make": "Skoda",
+  "model": "Fabia",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "skoda-octavia",
+  "make": "Skoda",
+  "model": "Octavia",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 7000000
+ },
+ {
+  "id": "subaru-crosstrek",
+  "make": "Subaru",
+  "model": "Crosstrek",
+  "tier": "common",
+  "engine": "flat4",
+  "body": "suv",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "subaru-forester",
+  "make": "Subaru",
+  "model": "Forester",
+  "tier": "common",
+  "engine": "flat4",
+  "body": "suv",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "subaru-impreza",
+  "make": "Subaru",
+  "model": "Impreza",
+  "tier": "common",
+  "engine": "flat4",
+  "body": "sedan",
+  "approxBuilt": 6000000
+ },
+ {
+  "id": "subaru-legacy",
+  "make": "Subaru",
+  "model": "Legacy",
+  "tier": "common",
+  "engine": "flat4",
+  "body": "sedan",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "subaru-outback",
+  "make": "Subaru",
+  "model": "Outback",
+  "tier": "common",
+  "engine": "flat4",
+  "body": "wagon",
+  "approxBuilt": 5000000
+ },
+ {
+  "id": "suzuki-alto",
+  "make": "Suzuki",
+  "model": "Alto",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 15000000
+ },
+ {
+  "id": "suzuki-baleno",
+  "make": "Suzuki",
+  "model": "Baleno",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "suzuki-dzire",
+  "make": "Suzuki",
+  "model": "Dzire",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "suzuki-ertiga",
+  "make": "Suzuki",
+  "model": "Ertiga",
+  "tier": "common",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "suzuki-jimny",
+  "make": "Suzuki",
+  "model": "Jimny",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "suzuki-swift",
+  "make": "Suzuki",
+  "model": "Swift",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 9000000
+ },
+ {
+  "id": "suzuki-vitara",
+  "make": "Suzuki",
+  "model": "Vitara",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "suzuki-wagon-r",
+  "make": "Suzuki",
+  "model": "Wagon R",
+  "tier": "common",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "tesla-model-3",
+  "make": "Tesla",
+  "model": "Model 3",
+  "tier": "common",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "tesla-model-y",
+  "make": "Tesla",
+  "model": "Model Y",
+  "tier": "common",
+  "engine": "electric",
+  "body": "suv",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "toyota-4runner",
+  "make": "Toyota",
+  "model": "4Runner",
+  "tier": "common",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "toyota-camry",
+  "make": "Toyota",
+  "model": "Camry",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 20000000
+ },
+ {
+  "id": "toyota-celica",
+  "make": "Toyota",
+  "model": "Celica",
+  "tier": "common",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "toyota-corolla",
+  "make": "Toyota",
+  "model": "Corolla",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 50000000
+ },
+ {
+  "id": "toyota-corolla-cross",
+  "make": "Toyota",
+  "model": "Corolla Cross",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "toyota-crown",
+  "make": "Toyota",
+  "model": "Crown",
+  "tier": "common",
+  "engine": "v6",
+  "body": "sedan",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "toyota-fortuner",
+  "make": "Toyota",
+  "model": "Fortuner",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "toyota-hiace",
+  "make": "Toyota",
+  "model": "HiAce",
+  "tier": "common",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 7000000
+ },
+ {
+  "id": "toyota-highlander",
+  "make": "Toyota",
+  "model": "Highlander",
+  "tier": "common",
+  "engine": "v6",
+  "body": "suv",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "toyota-hilux",
+  "make": "Toyota",
+  "model": "Hilux",
+  "tier": "common",
+  "engine": "i4",
+  "body": "pickup",
+  "approxBuilt": 25000000
+ },
+ {
+  "id": "toyota-innova",
+  "make": "Toyota",
+  "model": "Innova",
+  "tier": "common",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "toyota-land-cruiser",
+  "make": "Toyota",
+  "model": "Land Cruiser",
+  "tier": "common",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 11000000
+ },
+ {
+  "id": "toyota-land-cruiser-prado",
+  "make": "Toyota",
+  "model": "Land Cruiser Prado",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "toyota-prius",
+  "make": "Toyota",
+  "model": "Prius",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 6000000
+ },
+ {
+  "id": "toyota-rav4",
+  "make": "Toyota",
+  "model": "RAV4",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 15000000
+ },
+ {
+  "id": "toyota-tacoma",
+  "make": "Toyota",
+  "model": "Tacoma",
+  "tier": "common",
+  "engine": "v6",
+  "body": "pickup",
+  "approxBuilt": 4000000
+ },
+ {
+  "id": "toyota-vios",
+  "make": "Toyota",
+  "model": "Vios",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 3000000
+ },
+ {
+  "id": "toyota-yaris",
+  "make": "Toyota",
+  "model": "Yaris",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 10000000
+ },
+ {
+  "id": "volkswagen-beetle",
+  "make": "Volkswagen",
+  "model": "Beetle",
+  "tier": "common",
+  "engine": "flat4",
+  "body": "hatchback",
+  "approxBuilt": 23000000
+ },
+ {
+  "id": "volkswagen-gol",
+  "make": "Volkswagen",
+  "model": "Gol",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "volkswagen-golf",
+  "make": "Volkswagen",
+  "model": "Golf",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 37000000
+ },
+ {
+  "id": "volkswagen-jetta",
+  "make": "Volkswagen",
+  "model": "Jetta",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 17000000
+ },
+ {
+  "id": "volkswagen-passat",
+  "make": "Volkswagen",
+  "model": "Passat",
+  "tier": "common",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 30000000
+ },
+ {
+  "id": "volkswagen-polo",
+  "make": "Volkswagen",
+  "model": "Polo",
+  "tier": "common",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 18000000
+ },
+ {
+  "id": "volkswagen-t-roc",
+  "make": "Volkswagen",
+  "model": "T-Roc",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2000000
+ },
+ {
+  "id": "volkswagen-tiguan",
+  "make": "Volkswagen",
+  "model": "Tiguan",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 8000000
+ },
+ {
+  "id": "volkswagen-transporter",
+  "make": "Volkswagen",
+  "model": "Transporter",
+  "tier": "common",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 12000000
+ },
+ {
+  "id": "volvo-xc60",
+  "make": "Volvo",
+  "model": "XC60",
+  "tier": "common",
+  "engine": "i4",
+  "body": "suv",
+  "approxBuilt": 2500000
+ },
+ {
+  "id": "wuling-hongguang",
+  "make": "Wuling",
+  "model": "Hongguang",
+  "tier": "common",
+  "engine": "i4",
+  "body": "van",
+  "approxBuilt": 5000000
  }
 ]

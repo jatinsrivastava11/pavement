@@ -46,6 +46,8 @@ The rarer the car you spot, the more Octane you earn.
 | **Occasional** | 751–1,500 | 25 |
 | **Common** | 1,501+ | 10 |
 
+The catalog currently lists **914 car models** across the six tiers.
+
 ### Two rarity rankings
 Every car in the world is ranked on two scales, shown side by side:
 1. **Production rarity:** how many were ever built.

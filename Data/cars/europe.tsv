@@ -1,0 +1,174 @@
+make	model	tier	engine	body	approx_built
+Renault	Clio	common	i4	hatchback	16000000
+Renault	Megane	common	i4	hatchback	10000000
+Renault	Captur	common	i3	suv	2500000
+Renault	Kadjar	occasional	i4	suv	1000000
+Renault	Twingo	common	i3	hatchback	4000000
+Renault	Scenic	common	i4	van	5000000
+Renault	Espace	occasional	i4	van	1300000
+Renault	Zoe	occasional	electric	hatchback	400000
+Renault	Kangoo	common	i4	van	4000000
+Renault	Arkana	occasional	i4	suv	500000
+Renault	Kwid	occasional	i3	hatchback	1000000
+Renault	Laguna	occasional	i4	sedan	2000000
+Renault	5 E-Tech	niche	electric	hatchback	50000
+Renault	Sport Spider	niche	i4	convertible	1685
+Alpine	A110	niche	i4	coupe	30000
+Dacia	Duster	common	i4	suv	2500000
+Dacia	Sandero	common	i4	hatchback	7000000
+Dacia	Logan	common	i4	sedan	5000000
+Dacia	Spring	niche	electric	hatchback	150000
+Dacia	Jogger	occasional	i3	wagon	250000
+Peugeot	208	common	i3	hatchback	3000000
+Peugeot	308	common	i3	hatchback	7000000
+Peugeot	3008	common	i4	suv	2500000
+Peugeot	2008	common	i3	suv	2500000
+Peugeot	5008	occasional	i4	suv	1000000
+Peugeot	508	occasional	i4	sedan	1000000
+Peugeot	206	common	i4	hatchback	8000000
+Peugeot	207	common	i4	hatchback	3000000
+Peugeot	RCZ	niche	i4	coupe	68000
+Citroën	C3	common	i3	hatchback	5000000
+Citroën	C4	common	i4	hatchback	3000000
+Citroën	C5 Aircross	occasional	i4	suv	1000000
+Citroën	Berlingo	common	i4	van	4000000
+Citroën	C1	occasional	i3	hatchback	2000000
+Citroën	SM	niche	v6	coupe	12920
+Fiat	500	common	i4	hatchback	3000000
+Fiat	Panda	common	i4	hatchback	8000000
+Fiat	Punto	common	i4	hatchback	9000000
+Fiat	Tipo	occasional	i4	sedan	1000000
+Fiat	124 Spider	niche	i4	convertible	150000
+Fiat	Multipla	occasional	i4	van	400000
+Fiat	Ducato	common	i4	van	6000000
+Fiat	Doblo	occasional	i4	van	2000000
+Fiat	500X	occasional	i4	suv	700000
+Alfa Romeo	Giulia	niche	i4	sedan	150000
+Alfa Romeo	Stelvio	niche	i4	suv	180000
+Alfa Romeo	Giulietta	occasional	i4	hatchback	400000
+Alfa Romeo	4C	niche	i4	coupe	9000
+Alfa Romeo	MiTo	occasional	i4	hatchback	290000
+Alfa Romeo	159	occasional	i4	sedan	250000
+Alfa Romeo	Spider	niche	i4	convertible	124000
+Alfa Romeo	Brera	niche	v6	coupe	21786
+Alfa Romeo	GTV	niche	v6	coupe	40000
+Alfa Romeo	Tonale	niche	i4	suv	100000
+Lancia	Ypsilon	common	i4	hatchback	3000000
+Lancia	Delta Integrale	niche	i4	hatchback	44000
+Maserati	Ghibli	niche	v6	sedan	100000
+Maserati	Quattroporte	niche	v8	sedan	100000
+Maserati	Levante	niche	v6	suv	80000
+Maserati	GranTurismo	niche	v8	coupe	50000
+Maserati	Grecale	niche	i4	suv	50000
+Maserati	GranCabrio	niche	v8	convertible	20000
+Maserati	Coupé	niche	v8	coupe	25000
+Ferrari	458 Italia	niche	v8	supercar	15000
+Ferrari	488	niche	v8	supercar	20000
+Ferrari	F8 Tributo	niche	v8	supercar	10000
+Ferrari	Roma	niche	v8	coupe	10000
+Ferrari	Portofino	niche	v8	convertible	12000
+Ferrari	California	niche	v8	convertible	14000
+Ferrari	296 GTB	niche	v6	supercar	10000
+Ferrari	F430	niche	v8	supercar	15000
+Ferrari	360 Modena	niche	v8	supercar	16365
+Ferrari	348	niche	v8	supercar	8844
+Ferrari	328	niche	v8	coupe	7412
+Ferrari	GTC4Lusso	niche	v12	wagon	4000
+Lamborghini	Huracán	niche	v10	supercar	25000
+Lamborghini	Urus	niche	v8	suv	25000
+Lamborghini	Gallardo	niche	v10	supercar	14022
+Lamborghini	Temerario	niche	v8	supercar	3000
+Aston Martin	Vantage	niche	v8	coupe	40000
+Aston Martin	DB9	niche	v12	coupe	16500
+Aston Martin	DB11	niche	v8	coupe	11000
+Aston Martin	DBS	niche	v12	coupe	10000
+Aston Martin	DBX	niche	v8	suv	15000
+Aston Martin	Rapide	niche	v12	sedan	8000
+Aston Martin	Vanquish	niche	v12	coupe	5000
+Aston Martin	DB7	niche	i6	coupe	7000
+Aston Martin	DB12	niche	v8	coupe	5000
+Bentley	Continental GT	niche	w12	coupe	90000
+Bentley	Bentayga	niche	w12	suv	40000
+Bentley	Flying Spur	niche	w12	sedan	40000
+Bentley	Arnage	niche	v8	sedan	7000
+Bentley	Azure	niche	v8	convertible	3000
+Rolls-Royce	Ghost	niche	v12	sedan	30000
+Rolls-Royce	Cullinan	niche	v12	suv	15000
+Rolls-Royce	Wraith	niche	v12	coupe	13000
+Rolls-Royce	Dawn	niche	v12	convertible	4000
+Rolls-Royce	Silver Shadow	niche	v8	sedan	30000
+McLaren	720S	niche	v8	supercar	9000
+McLaren	570S	niche	v8	supercar	10000
+McLaren	750S	niche	v8	supercar	3000
+McLaren	Artura	niche	v6	supercar	5000
+McLaren	GT	niche	v8	coupe	5000
+McLaren	12C	niche	v8	supercar	3500
+McLaren	650S	niche	v8	supercar	3500
+McLaren	600LT	niche	v8	supercar	2000
+Lotus	Elise	niche	i4	convertible	35000
+Lotus	Exige	niche	i4	coupe	10000
+Lotus	Evora	niche	v6	coupe	7000
+Lotus	Emira	niche	v6	coupe	10000
+Lotus	Esprit	niche	i4	coupe	10675
+Lotus	Eletre	niche	electric	suv	15000
+Lotus	Elan	niche	i4	convertible	12000
+Jaguar	F-Pace	occasional	i4	suv	300000
+Jaguar	XF	occasional	i4	sedan	500000
+Jaguar	XE	occasional	i4	sedan	250000
+Jaguar	XJ	occasional	v8	sedan	900000
+Jaguar	F-Type	niche	v8	convertible	90000
+Jaguar	E-Type	niche	i6	convertible	72500
+Jaguar	I-Pace	niche	electric	suv	50000
+Jaguar	E-Pace	occasional	i4	suv	250000
+Jaguar	XK	niche	v8	coupe	146000
+Jaguar	S-Type	occasional	v6	sedan	290000
+Jaguar	X-Type	occasional	v6	sedan	350000
+Jaguar	XK120	niche	i6	convertible	12000
+Land Rover	Defender	occasional	i4	suv	2000000
+Land Rover	Discovery	occasional	v6	suv	1200000
+Land Rover	Discovery Sport	occasional	i4	suv	1000000
+Land Rover	Range Rover	occasional	v8	suv	1000000
+Land Rover	Range Rover Sport	occasional	v6	suv	1000000
+Land Rover	Range Rover Evoque	occasional	i4	suv	1000000
+Land Rover	Range Rover Velar	occasional	i4	suv	300000
+Land Rover	Freelander	occasional	i4	suv	1000000
+Volvo	XC90	occasional	i4	suv	1500000
+Volvo	XC60	common	i4	suv	2500000
+Volvo	XC40	occasional	i4	suv	1000000
+Volvo	S60	occasional	i4	sedan	1500000
+Volvo	V60	occasional	i4	wagon	500000
+Volvo	S90	occasional	i4	sedan	300000
+Volvo	V90	niche	i4	wagon	150000
+Volvo	EX30	niche	electric	suv	100000
+Volvo	C40	niche	electric	suv	100000
+Volvo	V70	occasional	i5	wagon	1000000
+Volvo	S40	occasional	i4	sedan	1000000
+Volvo	P1800	niche	i4	coupe	47000
+Volvo	C30	niche	i5	hatchback	200000
+Polestar	2	niche	electric	sedan	200000
+Polestar	3	niche	electric	suv	30000
+Polestar	4	niche	electric	suv	30000
+Saab	9-3	occasional	i4	sedan	1600000
+Saab	9-5	occasional	i4	sedan	1000000
+Saab	900	occasional	i4	hatchback	900000
+Skoda	Octavia	common	i4	hatchback	7000000
+Skoda	Fabia	common	i3	hatchback	5000000
+Skoda	Superb	occasional	i4	sedan	1500000
+Skoda	Kodiaq	occasional	i4	suv	900000
+Skoda	Karoq	occasional	i4	suv	700000
+Skoda	Kamiq	occasional	i3	suv	400000
+Skoda	Enyaq	occasional	electric	suv	300000
+Skoda	Yeti	occasional	i4	suv	685000
+SEAT	Ibiza	common	i4	hatchback	6000000
+SEAT	Leon	common	i4	hatchback	3000000
+SEAT	Ateca	occasional	i4	suv	700000
+SEAT	Arona	occasional	i3	suv	600000
+Cupra	Formentor	occasional	i4	suv	300000
+Cupra	Born	niche	electric	hatchback	100000
+Morgan	Plus Four	niche	i4	convertible	10000
+Caterham	Seven	niche	i4	convertible	20000
+TVR	Griffith	niche	v8	convertible	2600
+TVR	Chimaera	niche	v8	convertible	6000
+Ariel	Atom	niche	i4	convertible	3000
+Lada	Niva	common	i4	suv	2500000
+Lada	Granta	occasional	i4	sedan	1500000

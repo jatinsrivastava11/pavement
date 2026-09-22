@@ -1,0 +1,124 @@
+make	model	tier	engine	body	approx_built
+Volkswagen	Golf	common	i4	hatchback	37000000
+Volkswagen	Polo	common	i4	hatchback	18000000
+Volkswagen	Passat	common	i4	sedan	30000000
+Volkswagen	Jetta	common	i4	sedan	17000000
+Volkswagen	Tiguan	common	i4	suv	8000000
+Volkswagen	Beetle	common	flat4	hatchback	23000000
+Volkswagen	T-Roc	common	i4	suv	2000000
+Volkswagen	Atlas	occasional	v6	suv	800000
+Volkswagen	Touareg	occasional	v6	suv	1200000
+Volkswagen	Touran	occasional	i4	van	2000000
+Volkswagen	Arteon	occasional	i4	sedan	200000
+Volkswagen	ID.4	occasional	electric	suv	800000
+Volkswagen	ID.3	occasional	electric	hatchback	500000
+Volkswagen	ID. Buzz	niche	electric	van	100000
+Volkswagen	Transporter	common	i4	van	12000000
+Volkswagen	Amarok	occasional	i4	pickup	800000
+Volkswagen	Scirocco	occasional	i4	coupe	1300000
+Volkswagen	up!	occasional	i3	hatchback	1000000
+Volkswagen	T-Cross	occasional	i3	suv	1000000
+Volkswagen	Taos	occasional	i4	suv	300000
+Volkswagen	CC	occasional	i4	sedan	800000
+Volkswagen	Phaeton	niche	w12	sedan	84000
+Volkswagen	Corrado	niche	v6	coupe	97000
+Volkswagen	Eos	occasional	i4	convertible	230000
+Volkswagen	Gol	common	i4	hatchback	8000000
+Audi	A4	common	i4	sedan	10000000
+Audi	A3	common	i4	hatchback	6000000
+Audi	A6	common	i4	sedan	8000000
+Audi	Q5	common	i4	suv	3500000
+Audi	Q3	occasional	i4	suv	2000000
+Audi	Q7	occasional	v6	suv	1500000
+Audi	Q8	occasional	v6	suv	400000
+Audi	A5	occasional	i4	coupe	1500000
+Audi	A8	occasional	v8	sedan	1000000
+Audi	A7	occasional	v6	sedan	400000
+Audi	TT	occasional	i4	coupe	660000
+Audi	R8	niche	v10	supercar	50000
+Audi	Q8 e-tron	niche	electric	suv	200000
+Audi	e-tron GT	niche	electric	sedan	40000
+Audi	Q4 e-tron	occasional	electric	suv	300000
+Audi	A1	occasional	i3	hatchback	1200000
+Audi	Q2	occasional	i4	suv	800000
+Audi	A2	niche	i4	hatchback	176000
+Audi	Quattro	niche	i5	coupe	11452
+BMW	3 Series	common	i4	sedan	17000000
+BMW	5 Series	common	i4	sedan	9000000
+BMW	X5	common	i6	suv	3500000
+BMW	X3	common	i4	suv	3500000
+BMW	1 Series	common	i4	hatchback	4000000
+BMW	X1	common	i4	suv	3500000
+BMW	7 Series	occasional	i6	sedan	2000000
+BMW	X6	occasional	i6	suv	700000
+BMW	X7	occasional	i6	suv	300000
+BMW	4 Series	occasional	i4	coupe	1000000
+BMW	2 Series	occasional	i4	coupe	1500000
+BMW	6 Series	occasional	i6	coupe	500000
+BMW	8 Series	niche	v8	coupe	100000
+BMW	Z4	occasional	i4	convertible	300000
+BMW	Z3	occasional	i4	convertible	300000
+BMW	M3	occasional	i6	sedan	400000
+BMW	M5	niche	v8	sedan	100000
+BMW	M2	niche	i6	coupe	100000
+BMW	M4	niche	i6	coupe	150000
+BMW	i3	occasional	electric	hatchback	250000
+BMW	i4	niche	electric	sedan	200000
+BMW	iX	niche	electric	suv	150000
+BMW	i7	niche	electric	sedan	50000
+BMW	X2	occasional	i4	suv	500000
+BMW	X4	occasional	i4	suv	600000
+BMW	XM	niche	v8	suv	20000
+BMW	Isetta	niche	i3	hatchback	161000
+BMW	2002	occasional	i4	sedan	861000
+Mercedes-Benz	C-Class	common	i4	sedan	12000000
+Mercedes-Benz	E-Class	common	i4	sedan	15000000
+Mercedes-Benz	S-Class	occasional	v8	sedan	2000000
+Mercedes-Benz	G-Class	occasional	v8	suv	500000
+Mercedes-Benz	GLE	common	v6	suv	3000000
+Mercedes-Benz	GLC	common	i4	suv	3000000
+Mercedes-Benz	GLA	occasional	i4	suv	1500000
+Mercedes-Benz	GLB	occasional	i4	suv	800000
+Mercedes-Benz	A-Class	common	i4	hatchback	6000000
+Mercedes-Benz	B-Class	occasional	i4	hatchback	2000000
+Mercedes-Benz	CLA	occasional	i4	sedan	1500000
+Mercedes-Benz	CLS	occasional	v6	sedan	500000
+Mercedes-Benz	GLS	occasional	v8	suv	800000
+Mercedes-Benz	SL	occasional	v8	convertible	700000
+Mercedes-Benz	SLK	occasional	i4	convertible	700000
+Mercedes-Benz	Sprinter	common	i4	van	5000000
+Mercedes-Benz	Vito	occasional	i4	van	2000000
+Mercedes-Benz	EQS	niche	electric	sedan	50000
+Mercedes-Benz	EQE	niche	electric	sedan	60000
+Mercedes-Benz	CLK	occasional	v6	coupe	1000000
+Mercedes-Benz	GLK	occasional	i4	suv	600000
+Mercedes-Benz	X-Class	niche	v6	pickup	17000
+Mercedes-Benz	190E	occasional	i4	sedan	1879629
+Mercedes-AMG	GT	niche	v8	coupe	50000
+Mercedes-Maybach	S-Class	niche	v12	sedan	100000
+Mercedes-Maybach	GLS	niche	v8	suv	20000
+Porsche	911	occasional	flat6	coupe	1200000
+Porsche	Cayenne	occasional	v6	suv	1500000
+Porsche	Macan	occasional	i4	suv	800000
+Porsche	Panamera	occasional	v6	sedan	300000
+Porsche	Boxster	occasional	flat6	convertible	400000
+Porsche	Cayman	occasional	flat6	coupe	220000
+Porsche	Taycan	niche	electric	sedan	170000
+Porsche	944	niche	i4	coupe	163000
+Porsche	928	niche	v8	coupe	61000
+Porsche	914	niche	flat4	convertible	118000
+Porsche	356	niche	flat4	coupe	76000
+Porsche	924	niche	i4	coupe	150000
+Porsche	968	niche	i4	coupe	12776
+Opel	Corsa	common	i4	hatchback	14000000
+Opel	Astra	common	i4	hatchback	15000000
+Opel	Insignia	occasional	i4	sedan	1500000
+Opel	Mokka	occasional	i4	suv	1000000
+Opel	Zafira	occasional	i4	van	2000000
+Opel	Vectra	common	i4	sedan	3000000
+Opel	GT	niche	i4	coupe	103000
+Smart	Fortwo	occasional	i3	hatchback	2000000
+Mini	Cooper	common	i4	hatchback	5000000
+Mini	Countryman	occasional	i4	suv	1500000
+Mini	Clubman	occasional	i4	wagon	500000
+Maybach	62	rare	v12	sedan	1500

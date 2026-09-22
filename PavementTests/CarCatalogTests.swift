@@ -23,6 +23,13 @@ struct CarCatalogTests {
         #expect((110...200).contains(catalog.cars(in: .rare).count))
     }
 
+    @Test("Every tier below Rare has plenty of cars")
+    func lowerTierSizes() {
+        #expect(catalog.cars(in: .niche).count >= 150)
+        #expect(catalog.cars(in: .occasional).count >= 200)
+        #expect(catalog.cars(in: .common).count >= 150)
+    }
+
     // MARK: Anchors: placements that must never be wrong.
 
     @Test("Every Bugatti is Legendary or Exotic; the rarest ones are Legendary")
@@ -58,6 +65,34 @@ struct CarCatalogTests {
     func everydayCars(make: String, model: String) {
         let t = tier(make, model)
         #expect(t == nil || ![.legendary, .exotic, .rare].contains(t!), "\(make) \(model) is \(String(describing: t))")
+    }
+
+    @Test("Best-sellers are Common", arguments: [
+        ("Honda", "Civic"), ("Honda", "Accord"), ("Honda", "CR-V"), ("Toyota", "Corolla"),
+        ("Toyota", "Camry"), ("Toyota", "RAV4"), ("Volkswagen", "Tiguan"), ("Volkswagen", "Golf"),
+        ("Ford", "F-150"), ("Ford", "Mustang"), ("Tesla", "Model 3"), ("Tesla", "Model Y"),
+        ("BMW", "3 Series"), ("Chevrolet", "Silverado"), ("Hyundai", "Elantra"), ("Nissan", "Altima"),
+    ])
+    func bestSellers(make: String, model: String) {
+        #expect(tier(make, model) == .common, "\(make) \(model)")
+    }
+
+    @Test("Well-known middle cases land where expected", arguments: [
+        ("Porsche", "911", RarityTier.occasional), ("Mercedes-Benz", "G-Class", .occasional),
+        ("Chevrolet", "Corvette", .occasional), ("Nissan", "GT-R", .niche),
+        ("Lamborghini", "Huracán", .niche), ("Ferrari", "458 Italia", .niche),
+        ("Rolls-Royce", "Cullinan", .niche), ("Dodge", "Viper", .niche),
+    ])
+    func middleCases(make: String, model: String, expected: RarityTier) {
+        #expect(tier(make, model) == expected, "\(make) \(model)")
+    }
+
+    @Test("Supercar brands never fall to Occasional or Common")
+    func supercarBrandsStayRare() {
+        let brands: Set = ["Ferrari", "Lamborghini", "McLaren", "Bugatti", "Pagani", "Koenigsegg", "Rolls-Royce", "Bentley"]
+        for car in catalog.cars where brands.contains(car.make) {
+            #expect(![.occasional, .common].contains(car.tier), "\(car.displayName) is \(car.tier)")
+        }
     }
 
     // MARK: Consistency with rough production numbers.

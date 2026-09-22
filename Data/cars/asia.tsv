@@ -1,0 +1,80 @@
+make	model	tier	engine	body	approx_built
+Hyundai	Elantra	common	i4	sedan	15000000
+Hyundai	Tucson	common	i4	suv	9000000
+Hyundai	Santa Fe	common	i4	suv	5000000
+Hyundai	Sonata	common	i4	sedan	9000000
+Hyundai	Accent	common	i4	sedan	10000000
+Hyundai	i10	common	i3	hatchback	3000000
+Hyundai	i20	common	i3	hatchback	3000000
+Hyundai	i30	common	i4	hatchback	4000000
+Hyundai	Kona	common	i4	suv	2500000
+Hyundai	Palisade	occasional	v6	suv	1000000
+Hyundai	Venue	occasional	i4	suv	1000000
+Hyundai	Creta	occasional	i4	suv	1500000
+Hyundai	Ioniq 5	occasional	electric	suv	400000
+Hyundai	Ioniq 6	niche	electric	sedan	150000
+Hyundai	Veloster	occasional	i4	hatchback	400000
+Hyundai	Genesis Coupe	niche	v6	coupe	100000
+Hyundai	Santa Cruz	niche	i4	pickup	100000
+Hyundai	Nexo	niche	electric	suv	40000
+Hyundai	Getz	occasional	i4	hatchback	1500000
+Hyundai	Grandeur	occasional	v6	sedan	2000000
+Kia	Sportage	common	i4	suv	7000000
+Kia	Sorento	common	i4	suv	3500000
+Kia	Rio	common	i4	hatchback	6000000
+Kia	Forte	common	i4	sedan	5000000
+Kia	Optima	common	i4	sedan	3000000
+Kia	Soul	occasional	i4	hatchback	2000000
+Kia	Seltos	occasional	i4	suv	1500000
+Kia	Telluride	occasional	v6	suv	600000
+Kia	Carnival	occasional	v6	van	1500000
+Kia	Picanto	common	i3	hatchback	3000000
+Kia	Stinger	niche	v6	sedan	70000
+Kia	EV6	occasional	electric	suv	300000
+Kia	EV9	niche	electric	suv	100000
+Kia	Niro	occasional	i4	suv	1200000
+Kia	Ceed	occasional	i4	hatchback	2000000
+Kia	Sonet	occasional	i3	suv	500000
+Genesis	G70	niche	v6	sedan	90000
+Genesis	G80	occasional	v6	sedan	300000
+Genesis	G90	niche	v6	sedan	100000
+Genesis	GV70	occasional	i4	suv	300000
+Genesis	GV80	occasional	i4	suv	300000
+Genesis	GV60	niche	electric	suv	50000
+BYD	Song	common	i4	suv	3000000
+BYD	Qin	common	i4	sedan	2500000
+BYD	Seal	occasional	electric	sedan	400000
+BYD	Dolphin	occasional	electric	hatchback	900000
+BYD	Atto 3	occasional	electric	suv	1500000
+BYD	Han	occasional	electric	sedan	800000
+BYD	Tang	occasional	electric	suv	600000
+BYD	Seagull	occasional	electric	hatchback	1000000
+Yangwang	U8	niche	electric	suv	10000
+Geely	Emgrand	common	i4	sedan	4000000
+NIO	ES6	niche	electric	suv	150000
+NIO	ET5	niche	electric	sedan	150000
+NIO	ES8	niche	electric	suv	100000
+XPeng	P7	niche	electric	sedan	150000
+XPeng	G6	niche	electric	suv	100000
+Li Auto	L9	occasional	i4	suv	300000
+Li Auto	L7	occasional	i4	suv	300000
+Zeekr	001	occasional	electric	wagon	250000
+Haval	H6	common	i4	suv	4000000
+Tank	300	niche	i4	suv	180000
+Chery	Tiggo	common	i4	suv	5000000
+MG	ZS	occasional	i4	suv	1500000
+MG	MG4	occasional	electric	hatchback	400000
+MG	HS	occasional	i4	suv	800000
+MG	MGB	occasional	i4	convertible	523000
+MG	Midget	occasional	i4	convertible	226000
+Wuling	Hongguang Mini EV	occasional	electric	hatchback	1500000
+Wuling	Hongguang	common	i4	van	5000000
+Xiaomi	SU7	occasional	electric	sedan	250000
+Hongqi	L5	rare	v8	sedan	500
+Tata	Nexon	occasional	i4	suv	800000
+Tata	Harrier	niche	i4	suv	150000
+Tata	Punch	occasional	i3	suv	500000
+Mahindra	Scorpio	occasional	i4	suv	1500000
+Mahindra	Thar	occasional	i4	suv	300000
+Mahindra	XUV700	occasional	i4	suv	300000
+Mahindra	Bolero	occasional	i3	suv	1500000

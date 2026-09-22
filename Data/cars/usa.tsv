@@ -1,0 +1,144 @@
+make	model	tier	engine	body	approx_built
+Ford	F-150	common	v8	pickup	40000000
+Ford	Super Duty	common	v8	pickup	5000000
+Ford	Ranger	common	i4	pickup	8000000
+Ford	Mustang	common	v8	coupe	10000000
+Ford	Explorer	common	v6	suv	8000000
+Ford	Escape	common	i4	suv	5000000
+Ford	Focus	common	i4	hatchback	16000000
+Ford	Fiesta	common	i4	hatchback	18000000
+Ford	Fusion	common	i4	sedan	5000000
+Ford	Expedition	occasional	v8	suv	2000000
+Ford	Edge	occasional	v6	suv	1800000
+Ford	Bronco	occasional	v6	suv	1500000
+Ford	Bronco Sport	occasional	i4	suv	500000
+Ford	Maverick	occasional	i4	pickup	500000
+Ford	Transit	common	v6	van	10000000
+Ford	E-Series	common	v8	van	8000000
+Ford	Taurus	common	v6	sedan	8000000
+Ford	Crown Victoria	occasional	v8	sedan	2000000
+Ford	Flex	occasional	v6	suv	400000
+Ford	Excursion	niche	v8	suv	118000
+Ford	Puma	occasional	i3	suv	800000
+Ford	Mustang Mach-E	occasional	electric	suv	300000
+Ford	F-150 Lightning	niche	electric	pickup	100000
+Ford	EcoSport	occasional	i3	suv	1500000
+Ford	Ka	common	i4	hatchback	3000000
+Ford	Everest	occasional	i4	suv	500000
+Chevrolet	Silverado	common	v8	pickup	15000000
+Chevrolet	Tahoe	common	v8	suv	3000000
+Chevrolet	Suburban	common	v8	suv	10000000
+Chevrolet	Equinox	common	i4	suv	4000000
+Chevrolet	Malibu	common	i4	sedan	10000000
+Chevrolet	Camaro	common	v8	coupe	5500000
+Chevrolet	Corvette	occasional	v8	coupe	1900000
+Chevrolet	Cruze	common	i4	sedan	5000000
+Chevrolet	Impala	common	v6	sedan	16000000
+Chevrolet	Traverse	occasional	v6	suv	2000000
+Chevrolet	Trax	occasional	i4	suv	1500000
+Chevrolet	Trailblazer	occasional	i3	suv	1000000
+Chevrolet	Colorado	occasional	v6	pickup	1500000
+Chevrolet	Spark	common	i3	hatchback	3000000
+Chevrolet	Bolt	occasional	electric	hatchback	200000
+Chevrolet	Blazer	occasional	v6	suv	1500000
+Chevrolet	Express	common	v8	van	3000000
+Chevrolet	Sonic	occasional	i4	hatchback	1000000
+Chevrolet	Aveo	common	i4	hatchback	3000000
+Chevrolet	Cobalt	occasional	i4	sedan	1500000
+Chevrolet	Avalanche	occasional	v8	pickup	600000
+Chevrolet	HHR	occasional	i4	wagon	500000
+Chevrolet	SSR	niche	v8	pickup	24000
+Chevrolet	Volt	niche	i4	hatchback	150000
+GMC	Sierra	common	v8	pickup	7000000
+GMC	Yukon	occasional	v8	suv	2000000
+GMC	Acadia	occasional	v6	suv	1500000
+GMC	Terrain	occasional	i4	suv	1500000
+GMC	Canyon	occasional	i4	pickup	800000
+GMC	Savana	occasional	v8	van	1000000
+GMC	Hummer EV	niche	electric	pickup	30000
+Cadillac	Escalade	occasional	v8	suv	1300000
+Cadillac	CTS	occasional	v6	sedan	800000
+Cadillac	XT5	occasional	v6	suv	500000
+Cadillac	XT4	occasional	i4	suv	300000
+Cadillac	CT5	niche	i4	sedan	150000
+Cadillac	XT6	niche	v6	suv	150000
+Cadillac	Lyriq	niche	electric	suv	60000
+Cadillac	ATS	occasional	i4	sedan	250000
+Cadillac	SRX	occasional	v6	suv	600000
+Cadillac	XLR	niche	v8	convertible	15000
+Cadillac	ELR	niche	i4	coupe	2697
+Cadillac	CT4	niche	i4	sedan	60000
+Cadillac	Escalade IQ	niche	electric	suv	20000
+Buick	Enclave	occasional	v6	suv	1000000
+Buick	Encore	occasional	i4	suv	1500000
+Buick	Envision	occasional	i4	suv	800000
+Buick	LaCrosse	occasional	v6	sedan	1000000
+Buick	Regal	occasional	i4	sedan	1500000
+Buick	Grand National	niche	v6	coupe	35000
+Buick	Verano	occasional	i4	sedan	250000
+Dodge	Charger	occasional	v8	sedan	1500000
+Dodge	Challenger	occasional	v8	coupe	800000
+Dodge	Durango	occasional	v8	suv	1500000
+Dodge	Grand Caravan	common	v6	van	10000000
+Dodge	Journey	occasional	i4	suv	1300000
+Dodge	Dart	occasional	i4	sedan	400000
+Dodge	Viper	niche	v10	coupe	31000
+Dodge	Neon	occasional	i4	sedan	2000000
+Dodge	Avenger	occasional	i4	sedan	600000
+Dodge	Magnum	niche	v8	wagon	170000
+Dodge	Nitro	niche	v6	suv	200000
+Dodge	Caliber	occasional	i4	hatchback	500000
+Dodge	Hornet	niche	i4	suv	50000
+Ram	1500	common	v8	pickup	12000000
+Ram	Heavy Duty	occasional	i6	pickup	2000000
+Ram	ProMaster	occasional	v6	van	800000
+Ram	TRX	niche	v8	pickup	30000
+Jeep	Wrangler	common	v6	suv	5000000
+Jeep	Grand Cherokee	common	v6	suv	7000000
+Jeep	Cherokee	common	i4	suv	5000000
+Jeep	Compass	common	i4	suv	3000000
+Jeep	Renegade	occasional	i4	suv	2000000
+Jeep	Gladiator	occasional	v6	pickup	300000
+Jeep	Wagoneer	niche	i6	suv	100000
+Jeep	Grand Wagoneer	niche	i6	suv	60000
+Jeep	Liberty	occasional	v6	suv	1500000
+Jeep	Patriot	occasional	i4	suv	1000000
+Jeep	Commander	occasional	v8	suv	250000
+Chrysler	Pacifica	occasional	v6	van	1000000
+Chrysler	300	occasional	v8	sedan	1500000
+Chrysler	Town & Country	common	v6	van	3000000
+Chrysler	PT Cruiser	occasional	i4	hatchback	1350000
+Chrysler	Sebring	occasional	i4	sedan	1000000
+Chrysler	Crossfire	niche	v6	coupe	76000
+Chrysler	200	occasional	i4	sedan	800000
+Lincoln	Navigator	occasional	v8	suv	800000
+Lincoln	Town Car	occasional	v8	sedan	2000000
+Lincoln	MKZ	occasional	i4	sedan	400000
+Lincoln	Aviator	occasional	v6	suv	300000
+Lincoln	Nautilus	occasional	i4	suv	600000
+Lincoln	Corsair	occasional	i4	suv	300000
+Lincoln	Mark LT	niche	v8	pickup	40000
+Lincoln	Blackwood	niche	v8	pickup	3356
+Tesla	Model 3	common	electric	sedan	2500000
+Tesla	Model Y	common	electric	suv	4000000
+Tesla	Model S	occasional	electric	sedan	400000
+Tesla	Model X	occasional	electric	suv	300000
+Tesla	Cybertruck	niche	electric	pickup	60000
+Rivian	R1T	niche	electric	pickup	80000
+Rivian	R1S	niche	electric	suv	80000
+Lucid	Air	niche	electric	sedan	30000
+Lucid	Gravity	niche	electric	suv	5000
+Pontiac	Firebird	occasional	v8	coupe	2000000
+Pontiac	GTO	niche	v8	coupe	40000
+Pontiac	G8	niche	v8	sedan	40000
+Pontiac	Solstice	niche	i4	convertible	65000
+Pontiac	Aztek	niche	v6	suv	115000
+Pontiac	Vibe	occasional	i4	hatchback	400000
+Pontiac	Fiero	occasional	v6	coupe	370000
+Saturn	Sky	niche	i4	convertible	34000
+Hummer	H2	niche	v8	suv	160000
+Hummer	H3	niche	i5	suv	120000
+Mercury	Marauder	niche	v8	sedan	11000
+Plymouth	Prowler	niche	v6	convertible	11702
+Scion	xB	occasional	i4	wagon	400000
+Fisker	Ocean	niche	electric	suv	10000
