@@ -6,7 +6,7 @@ Pavement is an iPhone app for car spotting, played a bit like Pokémon Go. Take 
 street, a parking lot or a car show, and Pavement finds every car in the shot, even ones that are
 partly hidden. It adds them to your collection and gives you **Octane** (points) based on how rare they are.
 
-> **Status:** Early development. Nothing is built yet. This README describes what we're building.
+> **Status:** Early development. The app skeleton (five tabs, rarity tiers) builds and runs. Features are next.
 
 ---
 
@@ -97,7 +97,31 @@ The app is built by six AI agents, each with its own area:
 
 ## Getting started
 
-Setup instructions will be added once the Xcode project exists.
+1. Clone the repo and open `Pavement.xcodeproj` in Xcode.
+2. Choose an iPhone simulator (or your own iPhone) and press **Run** (⌘R).
+3. Run the tests with **⌘U**.
+
+From the command line:
+
+```sh
+xcodebuild test -project Pavement.xcodeproj -scheme Pavement \
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro'
+```
+
+### Running on your own iPhone for free
+Open the **Pavement** target → *Signing & Capabilities*, choose your free Apple ID as the Team,
+plug in your iPhone and press Run. Free installs expire after 7 days; just run it again from
+Xcode. Your collection is stored online, so nothing is lost.
+
+## Project layout
+
+```
+Pavement/            The iOS app
+  App/               App entry point and main tab bar
+  Features/          One folder per feature (Spot, Spots, Rankings, Friends, Profile)
+  Models/            Shared data types (e.g. RarityTier)
+PavementTests/       Unit tests
+```
 
 Requirements:
 - macOS with Xcode 26 or newer
