@@ -1,6 +1,6 @@
 # Test photo credits
 
-All from Wikimedia Commons, resized to 1024 px. Public domain or CC0.
+All from Wikimedia Commons at the size served by Commons (up to 1280 px). Public domain or CC0.
 
 | File | Source | License |
 |---|---|---|
