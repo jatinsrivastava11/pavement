@@ -98,7 +98,7 @@ struct ShareSpotButton: View {
             let city = await SpotCity.name(latitude: latest?.latitude, longitude: latest?.longitude)
             image = ShareCardView(car: entry.car,
                                   photo: entry.spots.compactMap(\.photoFile).first.flatMap(photos.image(named:)),
-                                  timesSpotted: entry.timesSpotted, city: city).render()
+                                  city: city).render()
         }
     }
 }
