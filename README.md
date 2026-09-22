@@ -30,8 +30,11 @@ partly hidden. It adds them to your collection and gives you **Octane** (points)
 - If you are, it asks: *"Are you a passenger?"*
   - **Yes:** you can keep spotting.
   - **No:** spotting is blocked until the car stops. Don't spot and drive.
-- A "yes" only lasts until the car stops, and the question comes back on the next trip.
-- If the phone is connected to CarPlay (almost always the driver's phone), spotting is blocked.
+- Passengers confirm with a **slide**, not a tap, so it can't be done without looking.
+- A "yes" lasts for the trip. Red lights don't end a trip; getting out and walking, or about
+  3 minutes stopped, does. The next trip asks again.
+- If the phone is connected to **CarPlay** during a trip (almost always the driver's phone),
+  spotting is blocked.
 - Each spot records where it happened (location "While Using" only).
 
 ### Octane and rarity

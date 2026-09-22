@@ -266,6 +266,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pavement;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Pavement uses the camera to spot cars around you.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Pavement uses your location to tell when you're in a moving car, and to show where you spotted each car.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Pavement uses motion data to tell when you're in a moving car, so only passengers can spot.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,6 +296,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Pavement;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Pavement uses the camera to spot cars around you.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Pavement uses your location to tell when you're in a moving car, and to show where you spotted each car.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Pavement uses motion data to tell when you're in a moving car, so only passengers can spot.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

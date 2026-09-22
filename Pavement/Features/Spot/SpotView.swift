@@ -3,6 +3,7 @@ import SwiftUI
 /// The Spot tab: live camera, shutter, and the screen check on every photo.
 struct SpotView: View {
     @State private var camera = CameraController()
+    @State private var driving = DrivingMonitor()
     @State private var status: Status = .starting
     @State private var isCapturing = false
     @State private var result: CaptureResult?
@@ -41,8 +42,14 @@ struct SpotView: View {
                     .padding(.bottom, 24)
                 }
             }
+            if driving.access != .allowed {
+                PassengerCheckView(access: driving.access,
+                                   onPassenger: driving.confirmPassenger,
+                                   onDriver: driving.declareDriver)
+            }
         }
         .task {
+            driving.start()
             do {
                 try await camera.start()
                 status = .running
@@ -50,11 +57,15 @@ struct SpotView: View {
                 status = .failed(error.localizedDescription)
             }
         }
-        .onDisappear { camera.stop() }
+        .onDisappear {
+            camera.stop()
+            driving.stop()
+        }
         .sheet(item: $result) { SpotResultView(result: $0) }
     }
 
     private func capture() {
+        guard driving.access == .allowed else { return }
         isCapturing = true
         Task {
             defer { isCapturing = false }
