@@ -1,0 +1,2090 @@
+[
+ {
+  "id": "bugatti-bolide",
+  "make": "Bugatti",
+  "model": "Bolide",
+  "tier": "legendary",
+  "engine": "w16",
+  "body": "supercar",
+  "approxBuilt": 40
+ },
+ {
+  "id": "bugatti-centodieci",
+  "make": "Bugatti",
+  "model": "Centodieci",
+  "tier": "legendary",
+  "engine": "w16",
+  "body": "supercar",
+  "approxBuilt": 10
+ },
+ {
+  "id": "bugatti-divo",
+  "make": "Bugatti",
+  "model": "Divo",
+  "tier": "legendary",
+  "engine": "w16",
+  "body": "supercar",
+  "approxBuilt": 40
+ },
+ {
+  "id": "bugatti-la-voiture-noire",
+  "make": "Bugatti",
+  "model": "La Voiture Noire",
+  "tier": "legendary",
+  "engine": "w16",
+  "body": "supercar",
+  "approxBuilt": 1
+ },
+ {
+  "id": "ferrari-250-gto",
+  "make": "Ferrari",
+  "model": "250 GTO",
+  "tier": "legendary",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 36
+ },
+ {
+  "id": "koenigsegg-ccxr-trevita",
+  "make": "Koenigsegg",
+  "model": "CCXR Trevita",
+  "tier": "legendary",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 3
+ },
+ {
+  "id": "lamborghini-veneno",
+  "make": "Lamborghini",
+  "model": "Veneno",
+  "tier": "legendary",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 14
+ },
+ {
+  "id": "mclaren-f1",
+  "make": "McLaren",
+  "model": "F1",
+  "tier": "legendary",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 106
+ },
+ {
+  "id": "mercedes-benz-clk-gtr",
+  "make": "Mercedes-Benz",
+  "model": "CLK GTR",
+  "tier": "legendary",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 26
+ },
+ {
+  "id": "porsche-911-gt1-strassenversion",
+  "make": "Porsche",
+  "model": "911 GT1 Strassenversion",
+  "tier": "legendary",
+  "engine": "flat6",
+  "body": "supercar",
+  "approxBuilt": 25
+ },
+ {
+  "id": "amc-amx-3",
+  "make": "AMC",
+  "model": "AMX/3",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 6
+ },
+ {
+  "id": "alfa-romeo-33-stradale",
+  "make": "Alfa Romeo",
+  "model": "33 Stradale",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 51
+ },
+ {
+  "id": "alfa-romeo-8c-competizione",
+  "make": "Alfa Romeo",
+  "model": "8C Competizione",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 500
+ },
+ {
+  "id": "apollo-intensa-emozione",
+  "make": "Apollo",
+  "model": "Intensa Emozione",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 10
+ },
+ {
+  "id": "aston-martin-one-77",
+  "make": "Aston Martin",
+  "model": "One-77",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 77
+ },
+ {
+  "id": "aston-martin-v12-speedster",
+  "make": "Aston Martin",
+  "model": "V12 Speedster",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "convertible",
+  "approxBuilt": 88
+ },
+ {
+  "id": "aston-martin-valiant",
+  "make": "Aston Martin",
+  "model": "Valiant",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 38
+ },
+ {
+  "id": "aston-martin-valkyrie",
+  "make": "Aston Martin",
+  "model": "Valkyrie",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 235
+ },
+ {
+  "id": "aston-martin-valour",
+  "make": "Aston Martin",
+  "model": "Valour",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 110
+ },
+ {
+  "id": "aston-martin-victor",
+  "make": "Aston Martin",
+  "model": "Victor",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 1
+ },
+ {
+  "id": "audi-sport-quattro",
+  "make": "Audi",
+  "model": "Sport Quattro",
+  "tier": "exotic",
+  "engine": "i5",
+  "body": "coupe",
+  "approxBuilt": 214
+ },
+ {
+  "id": "bmw-507",
+  "make": "BMW",
+  "model": "507",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 252
+ },
+ {
+  "id": "bmw-m1",
+  "make": "BMW",
+  "model": "M1",
+  "tier": "exotic",
+  "engine": "i6",
+  "body": "supercar",
+  "approxBuilt": 453
+ },
+ {
+  "id": "bentley-bacalar",
+  "make": "Bentley",
+  "model": "Bacalar",
+  "tier": "exotic",
+  "engine": "w12",
+  "body": "convertible",
+  "approxBuilt": 12
+ },
+ {
+  "id": "bentley-batur",
+  "make": "Bentley",
+  "model": "Batur",
+  "tier": "exotic",
+  "engine": "w12",
+  "body": "coupe",
+  "approxBuilt": 18
+ },
+ {
+  "id": "bugatti-chiron",
+  "make": "Bugatti",
+  "model": "Chiron",
+  "tier": "exotic",
+  "engine": "w16",
+  "body": "supercar",
+  "approxBuilt": 500
+ },
+ {
+  "id": "bugatti-eb110",
+  "make": "Bugatti",
+  "model": "EB110",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 139
+ },
+ {
+  "id": "bugatti-mistral",
+  "make": "Bugatti",
+  "model": "Mistral",
+  "tier": "exotic",
+  "engine": "w16",
+  "body": "convertible",
+  "approxBuilt": 99
+ },
+ {
+  "id": "bugatti-tourbillon",
+  "make": "Bugatti",
+  "model": "Tourbillon",
+  "tier": "exotic",
+  "engine": "v16",
+  "body": "supercar",
+  "approxBuilt": 250
+ },
+ {
+  "id": "bugatti-veyron",
+  "make": "Bugatti",
+  "model": "Veyron",
+  "tier": "exotic",
+  "engine": "w16",
+  "body": "supercar",
+  "approxBuilt": 450
+ },
+ {
+  "id": "cizeta-v16t",
+  "make": "Cizeta",
+  "model": "V16T",
+  "tier": "exotic",
+  "engine": "v16",
+  "body": "supercar",
+  "approxBuilt": 13
+ },
+ {
+  "id": "czinger-21c",
+  "make": "Czinger",
+  "model": "21C",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 80
+ },
+ {
+  "id": "de-tomaso-p72",
+  "make": "De Tomaso",
+  "model": "P72",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 72
+ },
+ {
+  "id": "ferrari-250-gt-california-spyder",
+  "make": "Ferrari",
+  "model": "250 GT California Spyder",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "convertible",
+  "approxBuilt": 106
+ },
+ {
+  "id": "ferrari-250-gt-swb",
+  "make": "Ferrari",
+  "model": "250 GT SWB",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 165
+ },
+ {
+  "id": "ferrari-288-gto",
+  "make": "Ferrari",
+  "model": "288 GTO",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 272
+ },
+ {
+  "id": "ferrari-599-gto",
+  "make": "Ferrari",
+  "model": "599 GTO",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 599
+ },
+ {
+  "id": "ferrari-812-competizione",
+  "make": "Ferrari",
+  "model": "812 Competizione",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 999
+ },
+ {
+  "id": "ferrari-daytona-sp3",
+  "make": "Ferrari",
+  "model": "Daytona SP3",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 599
+ },
+ {
+  "id": "ferrari-enzo",
+  "make": "Ferrari",
+  "model": "Enzo",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 400
+ },
+ {
+  "id": "ferrari-f12tdf",
+  "make": "Ferrari",
+  "model": "F12tdf",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 799
+ },
+ {
+  "id": "ferrari-f40",
+  "make": "Ferrari",
+  "model": "F40",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 1315
+ },
+ {
+  "id": "ferrari-f50",
+  "make": "Ferrari",
+  "model": "F50",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 349
+ },
+ {
+  "id": "ferrari-f80",
+  "make": "Ferrari",
+  "model": "F80",
+  "tier": "exotic",
+  "engine": "v6",
+  "body": "supercar",
+  "approxBuilt": 799
+ },
+ {
+  "id": "ferrari-laferrari",
+  "make": "Ferrari",
+  "model": "LaFerrari",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 710
+ },
+ {
+  "id": "ferrari-monza-sp",
+  "make": "Ferrari",
+  "model": "Monza SP",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "convertible",
+  "approxBuilt": 499
+ },
+ {
+  "id": "ferrari-sergio",
+  "make": "Ferrari",
+  "model": "Sergio",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 6
+ },
+ {
+  "id": "ford-gt-2017",
+  "make": "Ford",
+  "model": "GT (2017)",
+  "tier": "exotic",
+  "engine": "v6",
+  "body": "supercar",
+  "approxBuilt": 1350
+ },
+ {
+  "id": "ford-gt40",
+  "make": "Ford",
+  "model": "GT40",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 105
+ },
+ {
+  "id": "gordon-murray-t-33",
+  "make": "Gordon Murray",
+  "model": "T.33",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 100
+ },
+ {
+  "id": "gordon-murray-t-50",
+  "make": "Gordon Murray",
+  "model": "T.50",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 100
+ },
+ {
+  "id": "hennessey-venom-f5",
+  "make": "Hennessey",
+  "model": "Venom F5",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 24
+ },
+ {
+  "id": "hennessey-venom-gt",
+  "make": "Hennessey",
+  "model": "Venom GT",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 13
+ },
+ {
+  "id": "jaguar-xj220",
+  "make": "Jaguar",
+  "model": "XJ220",
+  "tier": "exotic",
+  "engine": "v6",
+  "body": "supercar",
+  "approxBuilt": 281
+ },
+ {
+  "id": "jaguar-xjr-15",
+  "make": "Jaguar",
+  "model": "XJR-15",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 53
+ },
+ {
+  "id": "jaguar-xkss",
+  "make": "Jaguar",
+  "model": "XKSS",
+  "tier": "exotic",
+  "engine": "i6",
+  "body": "convertible",
+  "approxBuilt": 34
+ },
+ {
+  "id": "koenigsegg-agera",
+  "make": "Koenigsegg",
+  "model": "Agera",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 85
+ },
+ {
+  "id": "koenigsegg-cc850",
+  "make": "Koenigsegg",
+  "model": "CC850",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 70
+ },
+ {
+  "id": "koenigsegg-ccx",
+  "make": "Koenigsegg",
+  "model": "CCX",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 30
+ },
+ {
+  "id": "koenigsegg-gemera",
+  "make": "Koenigsegg",
+  "model": "Gemera",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 300
+ },
+ {
+  "id": "koenigsegg-jesko",
+  "make": "Koenigsegg",
+  "model": "Jesko",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 125
+ },
+ {
+  "id": "koenigsegg-one-1",
+  "make": "Koenigsegg",
+  "model": "One:1",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 7
+ },
+ {
+  "id": "koenigsegg-regera",
+  "make": "Koenigsegg",
+  "model": "Regera",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 80
+ },
+ {
+  "id": "lamborghini-centenario",
+  "make": "Lamborghini",
+  "model": "Centenario",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 40
+ },
+ {
+  "id": "lamborghini-countach-lpi-800-4",
+  "make": "Lamborghini",
+  "model": "Countach LPI 800-4",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 112
+ },
+ {
+  "id": "lamborghini-miura",
+  "make": "Lamborghini",
+  "model": "Miura",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 764
+ },
+ {
+  "id": "lamborghini-reventon",
+  "make": "Lamborghini",
+  "model": "Reventón",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 36
+ },
+ {
+  "id": "lamborghini-sesto-elemento",
+  "make": "Lamborghini",
+  "model": "Sesto Elemento",
+  "tier": "exotic",
+  "engine": "v10",
+  "body": "supercar",
+  "approxBuilt": 20
+ },
+ {
+  "id": "lamborghini-sian",
+  "make": "Lamborghini",
+  "model": "Sián",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 82
+ },
+ {
+  "id": "lancia-037",
+  "make": "Lancia",
+  "model": "037",
+  "tier": "exotic",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 207
+ },
+ {
+  "id": "lancia-stratos",
+  "make": "Lancia",
+  "model": "Stratos",
+  "tier": "exotic",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 492
+ },
+ {
+  "id": "lexus-lfa",
+  "make": "Lexus",
+  "model": "LFA",
+  "tier": "exotic",
+  "engine": "v10",
+  "body": "supercar",
+  "approxBuilt": 500
+ },
+ {
+  "id": "lotus-evija",
+  "make": "Lotus",
+  "model": "Evija",
+  "tier": "exotic",
+  "engine": "electric",
+  "body": "supercar",
+  "approxBuilt": 130
+ },
+ {
+  "id": "maserati-mc12",
+  "make": "Maserati",
+  "model": "MC12",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 50
+ },
+ {
+  "id": "mclaren-elva",
+  "make": "McLaren",
+  "model": "Elva",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 149
+ },
+ {
+  "id": "mclaren-p1",
+  "make": "McLaren",
+  "model": "P1",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 375
+ },
+ {
+  "id": "mclaren-sabre",
+  "make": "McLaren",
+  "model": "Sabre",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 15
+ },
+ {
+  "id": "mclaren-senna",
+  "make": "McLaren",
+  "model": "Senna",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 500
+ },
+ {
+  "id": "mclaren-speedtail",
+  "make": "McLaren",
+  "model": "Speedtail",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 106
+ },
+ {
+  "id": "mclaren-w1",
+  "make": "McLaren",
+  "model": "W1",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 399
+ },
+ {
+  "id": "mercedes-amg-g-63-amg-6x6",
+  "make": "Mercedes-AMG",
+  "model": "G 63 AMG 6x6",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "pickup",
+  "approxBuilt": 100
+ },
+ {
+  "id": "mercedes-amg-one",
+  "make": "Mercedes-AMG",
+  "model": "One",
+  "tier": "exotic",
+  "engine": "v6",
+  "body": "supercar",
+  "approxBuilt": 275
+ },
+ {
+  "id": "mercedes-benz-slr-stirling-moss",
+  "make": "Mercedes-Benz",
+  "model": "SLR Stirling Moss",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 75
+ },
+ {
+  "id": "mercedes-maybach-g-650-landaulet",
+  "make": "Mercedes-Maybach",
+  "model": "G 650 Landaulet",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "suv",
+  "approxBuilt": 99
+ },
+ {
+  "id": "noble-m600",
+  "make": "Noble",
+  "model": "M600",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 100
+ },
+ {
+  "id": "pagani-huayra",
+  "make": "Pagani",
+  "model": "Huayra",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 300
+ },
+ {
+  "id": "pagani-utopia",
+  "make": "Pagani",
+  "model": "Utopia",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 99
+ },
+ {
+  "id": "pagani-zonda",
+  "make": "Pagani",
+  "model": "Zonda",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 140
+ },
+ {
+  "id": "pininfarina-battista",
+  "make": "Pininfarina",
+  "model": "Battista",
+  "tier": "exotic",
+  "engine": "electric",
+  "body": "supercar",
+  "approxBuilt": 150
+ },
+ {
+  "id": "porsche-918-spyder",
+  "make": "Porsche",
+  "model": "918 Spyder",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 918
+ },
+ {
+  "id": "porsche-959",
+  "make": "Porsche",
+  "model": "959",
+  "tier": "exotic",
+  "engine": "flat6",
+  "body": "supercar",
+  "approxBuilt": 337
+ },
+ {
+  "id": "porsche-carrera-gt",
+  "make": "Porsche",
+  "model": "Carrera GT",
+  "tier": "exotic",
+  "engine": "v10",
+  "body": "supercar",
+  "approxBuilt": 1270
+ },
+ {
+  "id": "rimac-concept-one",
+  "make": "Rimac",
+  "model": "Concept One",
+  "tier": "exotic",
+  "engine": "electric",
+  "body": "supercar",
+  "approxBuilt": 8
+ },
+ {
+  "id": "rimac-nevera",
+  "make": "Rimac",
+  "model": "Nevera",
+  "tier": "exotic",
+  "engine": "electric",
+  "body": "supercar",
+  "approxBuilt": 150
+ },
+ {
+  "id": "rolls-royce-boat-tail",
+  "make": "Rolls-Royce",
+  "model": "Boat Tail",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "convertible",
+  "approxBuilt": 3
+ },
+ {
+  "id": "rolls-royce-droptail",
+  "make": "Rolls-Royce",
+  "model": "Droptail",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "convertible",
+  "approxBuilt": 4
+ },
+ {
+  "id": "rolls-royce-sweptail",
+  "make": "Rolls-Royce",
+  "model": "Sweptail",
+  "tier": "exotic",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 1
+ },
+ {
+  "id": "ssc-tuatara",
+  "make": "SSC",
+  "model": "Tuatara",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 100
+ },
+ {
+  "id": "saleen-s7",
+  "make": "Saleen",
+  "model": "S7",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 100
+ },
+ {
+  "id": "shelby-cobra",
+  "make": "Shelby",
+  "model": "Cobra",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 1000
+ },
+ {
+  "id": "toyota-2000gt",
+  "make": "Toyota",
+  "model": "2000GT",
+  "tier": "exotic",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 351
+ },
+ {
+  "id": "vector-w8",
+  "make": "Vector",
+  "model": "W8",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 19
+ },
+ {
+  "id": "w-motors-lykan-hypersport",
+  "make": "W Motors",
+  "model": "Lykan HyperSport",
+  "tier": "exotic",
+  "engine": "flat6",
+  "body": "supercar",
+  "approxBuilt": 7
+ },
+ {
+  "id": "zenvo-tsr-s",
+  "make": "Zenvo",
+  "model": "TSR-S",
+  "tier": "exotic",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 15
+ },
+ {
+  "id": "acura-integra-type-r",
+  "make": "Acura",
+  "model": "Integra Type R",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 3823
+ },
+ {
+  "id": "alfa-romeo-sz",
+  "make": "Alfa Romeo",
+  "model": "SZ",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 1036
+ },
+ {
+  "id": "alpine-a110-r",
+  "make": "Alpine",
+  "model": "A110 R",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 1000
+ },
+ {
+  "id": "aston-martin-db11-amr",
+  "make": "Aston Martin",
+  "model": "DB11 AMR",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 2000
+ },
+ {
+  "id": "aston-martin-db4",
+  "make": "Aston Martin",
+  "model": "DB4",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 1100
+ },
+ {
+  "id": "aston-martin-db5",
+  "make": "Aston Martin",
+  "model": "DB5",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 1059
+ },
+ {
+  "id": "aston-martin-lagonda",
+  "make": "Aston Martin",
+  "model": "Lagonda",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 645
+ },
+ {
+  "id": "aston-martin-valhalla",
+  "make": "Aston Martin",
+  "model": "Valhalla",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 999
+ },
+ {
+  "id": "aston-martin-vanquish-zagato",
+  "make": "Aston Martin",
+  "model": "Vanquish Zagato",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 325
+ },
+ {
+  "id": "audi-rs2-avant",
+  "make": "Audi",
+  "model": "RS2 Avant",
+  "tier": "rare",
+  "engine": "i5",
+  "body": "wagon",
+  "approxBuilt": 2891
+ },
+ {
+  "id": "bmw-3-0-csl",
+  "make": "BMW",
+  "model": "3.0 CSL",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 1265
+ },
+ {
+  "id": "bmw-m3-csl-e46",
+  "make": "BMW",
+  "model": "M3 CSL (E46)",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 1383
+ },
+ {
+  "id": "bmw-m4-csl",
+  "make": "BMW",
+  "model": "M4 CSL",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 1000
+ },
+ {
+  "id": "bmw-z8",
+  "make": "BMW",
+  "model": "Z8",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 5703
+ },
+ {
+  "id": "bentley-continental-gt-speed-mulliner",
+  "make": "Bentley",
+  "model": "Continental GT Speed Mulliner",
+  "tier": "rare",
+  "engine": "w12",
+  "body": "coupe",
+  "approxBuilt": 1000
+ },
+ {
+  "id": "bentley-mulsanne",
+  "make": "Bentley",
+  "model": "Mulsanne",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 7300
+ },
+ {
+  "id": "buick-gnx",
+  "make": "Buick",
+  "model": "GNX",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 547
+ },
+ {
+  "id": "cadillac-cts-v-wagon",
+  "make": "Cadillac",
+  "model": "CTS-V Wagon",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "wagon",
+  "approxBuilt": 1764
+ },
+ {
+  "id": "cadillac-celestiq",
+  "make": "Cadillac",
+  "model": "Celestiq",
+  "tier": "rare",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 400
+ },
+ {
+  "id": "chevrolet-camaro-zl1-1le",
+  "make": "Chevrolet",
+  "model": "Camaro ZL1 1LE",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 5000
+ },
+ {
+  "id": "chevrolet-chevelle-ss-454-ls6",
+  "make": "Chevrolet",
+  "model": "Chevelle SS 454 LS6",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 4475
+ },
+ {
+  "id": "chevrolet-corvette-zr1-c8",
+  "make": "Chevrolet",
+  "model": "Corvette ZR1 (C8)",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "de-tomaso-mangusta",
+  "make": "De Tomaso",
+  "model": "Mangusta",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 401
+ },
+ {
+  "id": "de-tomaso-pantera",
+  "make": "De Tomaso",
+  "model": "Pantera",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 7260
+ },
+ {
+  "id": "delorean-dmc-12",
+  "make": "DeLorean",
+  "model": "DMC-12",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 9000
+ },
+ {
+  "id": "dodge-challenger-srt-demon",
+  "make": "Dodge",
+  "model": "Challenger SRT Demon",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 3300
+ },
+ {
+  "id": "dodge-challenger-srt-demon-170",
+  "make": "Dodge",
+  "model": "Challenger SRT Demon 170",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 3300
+ },
+ {
+  "id": "dodge-charger-daytona-1969",
+  "make": "Dodge",
+  "model": "Charger Daytona (1969)",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 503
+ },
+ {
+  "id": "facel-vega-hk500",
+  "make": "Facel Vega",
+  "model": "HK500",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 490
+ },
+ {
+  "id": "ferrari-12cilindri",
+  "make": "Ferrari",
+  "model": "12Cilindri",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 2000
+ },
+ {
+  "id": "ferrari-250-gt-lusso",
+  "make": "Ferrari",
+  "model": "250 GT Lusso",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 351
+ },
+ {
+  "id": "ferrari-275-gtb",
+  "make": "Ferrari",
+  "model": "275 GTB",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 970
+ },
+ {
+  "id": "ferrari-308-gtb",
+  "make": "Ferrari",
+  "model": "308 GTB",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 12000
+ },
+ {
+  "id": "ferrari-456",
+  "make": "Ferrari",
+  "model": "456",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 3289
+ },
+ {
+  "id": "ferrari-458-speciale",
+  "make": "Ferrari",
+  "model": "458 Speciale",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "ferrari-488-pista",
+  "make": "Ferrari",
+  "model": "488 Pista",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 3500
+ },
+ {
+  "id": "ferrari-550-maranello",
+  "make": "Ferrari",
+  "model": "550 Maranello",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 3083
+ },
+ {
+  "id": "ferrari-575m-maranello",
+  "make": "Ferrari",
+  "model": "575M Maranello",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 2064
+ },
+ {
+  "id": "ferrari-599-gtb-fiorano",
+  "make": "Ferrari",
+  "model": "599 GTB Fiorano",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 3600
+ },
+ {
+  "id": "ferrari-612-scaglietti",
+  "make": "Ferrari",
+  "model": "612 Scaglietti",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 3025
+ },
+ {
+  "id": "ferrari-812-superfast",
+  "make": "Ferrari",
+  "model": "812 Superfast",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "ferrari-daytona",
+  "make": "Ferrari",
+  "model": "Daytona",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 1406
+ },
+ {
+  "id": "ferrari-dino-206-gt",
+  "make": "Ferrari",
+  "model": "Dino 206 GT",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 152
+ },
+ {
+  "id": "ferrari-dino-246",
+  "make": "Ferrari",
+  "model": "Dino 246",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 3761
+ },
+ {
+  "id": "ferrari-f12berlinetta",
+  "make": "Ferrari",
+  "model": "F12berlinetta",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 10000
+ },
+ {
+  "id": "ferrari-f355",
+  "make": "Ferrari",
+  "model": "F355",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 11273
+ },
+ {
+  "id": "ferrari-ff",
+  "make": "Ferrari",
+  "model": "FF",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "wagon",
+  "approxBuilt": 2291
+ },
+ {
+  "id": "ferrari-mondial",
+  "make": "Ferrari",
+  "model": "Mondial",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 6149
+ },
+ {
+  "id": "ferrari-purosangue",
+  "make": "Ferrari",
+  "model": "Purosangue",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "suv",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "ferrari-sf90-stradale",
+  "make": "Ferrari",
+  "model": "SF90 Stradale",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 7000
+ },
+ {
+  "id": "ferrari-testarossa",
+  "make": "Ferrari",
+  "model": "Testarossa",
+  "tier": "rare",
+  "engine": "flat4",
+  "body": "supercar",
+  "approxBuilt": 7177
+ },
+ {
+  "id": "fisker-karma",
+  "make": "Fisker",
+  "model": "Karma",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 2450
+ },
+ {
+  "id": "ford-escort-rs-cosworth",
+  "make": "Ford",
+  "model": "Escort RS Cosworth",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 7145
+ },
+ {
+  "id": "ford-gt-2005",
+  "make": "Ford",
+  "model": "GT (2005)",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 4038
+ },
+ {
+  "id": "ford-mustang-boss-429",
+  "make": "Ford",
+  "model": "Mustang Boss 429",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 1359
+ },
+ {
+  "id": "ford-mustang-shelby-gt500-1967",
+  "make": "Ford",
+  "model": "Mustang Shelby GT500 (1967)",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 2048
+ },
+ {
+  "id": "ford-rs200",
+  "make": "Ford",
+  "model": "RS200",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 200
+ },
+ {
+  "id": "ford-sierra-rs500-cosworth",
+  "make": "Ford",
+  "model": "Sierra RS500 Cosworth",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 500
+ },
+ {
+  "id": "honda-nsx-first-generation",
+  "make": "Honda",
+  "model": "NSX (first generation)",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "supercar",
+  "approxBuilt": 18685
+ },
+ {
+  "id": "honda-nsx-second-generation",
+  "make": "Honda",
+  "model": "NSX (second generation)",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "supercar",
+  "approxBuilt": 2908
+ },
+ {
+  "id": "honda-s2000-cr",
+  "make": "Honda",
+  "model": "S2000 CR",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "convertible",
+  "approxBuilt": 699
+ },
+ {
+  "id": "hummer-h1",
+  "make": "Hummer",
+  "model": "H1",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "suv",
+  "approxBuilt": 11818
+ },
+ {
+  "id": "iso-grifo",
+  "make": "Iso",
+  "model": "Grifo",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 412
+ },
+ {
+  "id": "jaguar-f-type-project-7",
+  "make": "Jaguar",
+  "model": "F-Type Project 7",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 500
+ },
+ {
+  "id": "lamborghini-aventador",
+  "make": "Lamborghini",
+  "model": "Aventador",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 11465
+ },
+ {
+  "id": "lamborghini-aventador-svj",
+  "make": "Lamborghini",
+  "model": "Aventador SVJ",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 900
+ },
+ {
+  "id": "lamborghini-countach",
+  "make": "Lamborghini",
+  "model": "Countach",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 1983
+ },
+ {
+  "id": "lamborghini-diablo",
+  "make": "Lamborghini",
+  "model": "Diablo",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 2884
+ },
+ {
+  "id": "lamborghini-espada",
+  "make": "Lamborghini",
+  "model": "Espada",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "coupe",
+  "approxBuilt": 1217
+ },
+ {
+  "id": "lamborghini-huracan-sto",
+  "make": "Lamborghini",
+  "model": "Huracán STO",
+  "tier": "rare",
+  "engine": "v10",
+  "body": "supercar",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "lamborghini-jalpa",
+  "make": "Lamborghini",
+  "model": "Jalpa",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 410
+ },
+ {
+  "id": "lamborghini-lm002",
+  "make": "Lamborghini",
+  "model": "LM002",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "suv",
+  "approxBuilt": 328
+ },
+ {
+  "id": "lamborghini-murcielago",
+  "make": "Lamborghini",
+  "model": "Murciélago",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 4099
+ },
+ {
+  "id": "lamborghini-revuelto",
+  "make": "Lamborghini",
+  "model": "Revuelto",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "supercar",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "lamborghini-urraco",
+  "make": "Lamborghini",
+  "model": "Urraco",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 791
+ },
+ {
+  "id": "lancia-delta-s4",
+  "make": "Lancia",
+  "model": "Delta S4",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 200
+ },
+ {
+  "id": "lotus-carlton",
+  "make": "Lotus",
+  "model": "Carlton",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "sedan",
+  "approxBuilt": 950
+ },
+ {
+  "id": "lotus-exige-cup-430",
+  "make": "Lotus",
+  "model": "Exige Cup 430",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 500
+ },
+ {
+  "id": "maserati-bora",
+  "make": "Maserati",
+  "model": "Bora",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 564
+ },
+ {
+  "id": "maserati-ghibli-1967",
+  "make": "Maserati",
+  "model": "Ghibli (1967)",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 1295
+ },
+ {
+  "id": "maserati-mc20",
+  "make": "Maserati",
+  "model": "MC20",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "supercar",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "maybach-57",
+  "make": "Maybach",
+  "model": "57",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "sedan",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "mazda-cosmo-sport",
+  "make": "Mazda",
+  "model": "Cosmo Sport",
+  "tier": "rare",
+  "engine": "rotary",
+  "body": "coupe",
+  "approxBuilt": 1176
+ },
+ {
+  "id": "mazda-rx-7-spirit-r",
+  "make": "Mazda",
+  "model": "RX-7 Spirit R",
+  "tier": "rare",
+  "engine": "rotary",
+  "body": "coupe",
+  "approxBuilt": 1504
+ },
+ {
+  "id": "mclaren-675lt",
+  "make": "McLaren",
+  "model": "675LT",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 1000
+ },
+ {
+  "id": "mclaren-765lt",
+  "make": "McLaren",
+  "model": "765LT",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 1530
+ },
+ {
+  "id": "mercedes-amg-gt-black-series",
+  "make": "Mercedes-AMG",
+  "model": "GT Black Series",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 1700
+ },
+ {
+  "id": "mercedes-amg-sl-63-black-series",
+  "make": "Mercedes-AMG",
+  "model": "SL 63 Black Series",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "convertible",
+  "approxBuilt": 350
+ },
+ {
+  "id": "mercedes-benz-190e-2-5-16-evolution-ii",
+  "make": "Mercedes-Benz",
+  "model": "190E 2.5-16 Evolution II",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 502
+ },
+ {
+  "id": "mercedes-benz-300-sl",
+  "make": "Mercedes-Benz",
+  "model": "300 SL",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 3258
+ },
+ {
+  "id": "mercedes-benz-500e",
+  "make": "Mercedes-Benz",
+  "model": "500E",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 10479
+ },
+ {
+  "id": "mercedes-benz-600-pullman",
+  "make": "Mercedes-Benz",
+  "model": "600 Pullman",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "sedan",
+  "approxBuilt": 2677
+ },
+ {
+  "id": "mercedes-benz-clk-dtm-amg",
+  "make": "Mercedes-Benz",
+  "model": "CLK DTM AMG",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 180
+ },
+ {
+  "id": "mercedes-benz-slr-mclaren",
+  "make": "Mercedes-Benz",
+  "model": "SLR McLaren",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 2157
+ },
+ {
+  "id": "mercedes-benz-sls-amg",
+  "make": "Mercedes-Benz",
+  "model": "SLS AMG",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 8000
+ },
+ {
+  "id": "mercedes-benz-sls-amg-black-series",
+  "make": "Mercedes-Benz",
+  "model": "SLS AMG Black Series",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 350
+ },
+ {
+  "id": "mercedes-maybach-sl-680",
+  "make": "Mercedes-Maybach",
+  "model": "SL 680",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "convertible",
+  "approxBuilt": 2000
+ },
+ {
+  "id": "mitsubishi-lancer-evolution-final-edition",
+  "make": "Mitsubishi",
+  "model": "Lancer Evolution Final Edition",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "sedan",
+  "approxBuilt": 1600
+ },
+ {
+  "id": "nissan-gt-r-nismo",
+  "make": "Nissan",
+  "model": "GT-R Nismo",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "coupe",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "nissan-skyline-2000gt-r",
+  "make": "Nissan",
+  "model": "Skyline 2000GT-R",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 1945
+ },
+ {
+  "id": "nissan-skyline-gt-r-r33",
+  "make": "Nissan",
+  "model": "Skyline GT-R R33",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 16668
+ },
+ {
+  "id": "nissan-skyline-gt-r-r34",
+  "make": "Nissan",
+  "model": "Skyline GT-R R34",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "coupe",
+  "approxBuilt": 11344
+ },
+ {
+  "id": "peugeot-205-t16",
+  "make": "Peugeot",
+  "model": "205 T16",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "hatchback",
+  "approxBuilt": 200
+ },
+ {
+  "id": "plymouth-superbird",
+  "make": "Plymouth",
+  "model": "Superbird",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 1935
+ },
+ {
+  "id": "polestar-1",
+  "make": "Polestar",
+  "model": "1",
+  "tier": "rare",
+  "engine": "i4",
+  "body": "coupe",
+  "approxBuilt": 1500
+ },
+ {
+  "id": "pontiac-gto-judge",
+  "make": "Pontiac",
+  "model": "GTO Judge",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "coupe",
+  "approxBuilt": 6833
+ },
+ {
+  "id": "porsche-911-carrera-rs-2-7",
+  "make": "Porsche",
+  "model": "911 Carrera RS 2.7",
+  "tier": "rare",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 1580
+ },
+ {
+  "id": "porsche-911-dakar",
+  "make": "Porsche",
+  "model": "911 Dakar",
+  "tier": "rare",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 2500
+ },
+ {
+  "id": "porsche-911-gt2-rs",
+  "make": "Porsche",
+  "model": "911 GT2 RS",
+  "tier": "rare",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 1000
+ },
+ {
+  "id": "porsche-911-gt3-rs-4-0",
+  "make": "Porsche",
+  "model": "911 GT3 RS 4.0",
+  "tier": "rare",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 600
+ },
+ {
+  "id": "porsche-911-r",
+  "make": "Porsche",
+  "model": "911 R",
+  "tier": "rare",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 991
+ },
+ {
+  "id": "porsche-911-s-t",
+  "make": "Porsche",
+  "model": "911 S/T",
+  "tier": "rare",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 1963
+ },
+ {
+  "id": "porsche-911-sport-classic",
+  "make": "Porsche",
+  "model": "911 Sport Classic",
+  "tier": "rare",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 1250
+ },
+ {
+  "id": "porsche-boxster-spyder-rs",
+  "make": "Porsche",
+  "model": "Boxster Spyder RS",
+  "tier": "rare",
+  "engine": "flat6",
+  "body": "convertible",
+  "approxBuilt": 2000
+ },
+ {
+  "id": "porsche-cayman-gt4-rs",
+  "make": "Porsche",
+  "model": "Cayman GT4 RS",
+  "tier": "rare",
+  "engine": "flat6",
+  "body": "coupe",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "porsche-taycan-turbo-gt",
+  "make": "Porsche",
+  "model": "Taycan Turbo GT",
+  "tier": "rare",
+  "engine": "electric",
+  "body": "sedan",
+  "approxBuilt": 2000
+ },
+ {
+  "id": "renault-clio-v6",
+  "make": "Renault",
+  "model": "Clio V6",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "hatchback",
+  "approxBuilt": 3000
+ },
+ {
+  "id": "rolls-royce-phantom",
+  "make": "Rolls-Royce",
+  "model": "Phantom",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "sedan",
+  "approxBuilt": 15000
+ },
+ {
+  "id": "rolls-royce-silver-ghost",
+  "make": "Rolls-Royce",
+  "model": "Silver Ghost",
+  "tier": "rare",
+  "engine": "i6",
+  "body": "convertible",
+  "approxBuilt": 7874
+ },
+ {
+  "id": "rolls-royce-spectre",
+  "make": "Rolls-Royce",
+  "model": "Spectre",
+  "tier": "rare",
+  "engine": "electric",
+  "body": "coupe",
+  "approxBuilt": 4000
+ },
+ {
+  "id": "spyker-c8",
+  "make": "Spyker",
+  "model": "C8",
+  "tier": "rare",
+  "engine": "v8",
+  "body": "supercar",
+  "approxBuilt": 267
+ },
+ {
+  "id": "subaru-impreza-22b-sti",
+  "make": "Subaru",
+  "model": "Impreza 22B STi",
+  "tier": "rare",
+  "engine": "flat4",
+  "body": "coupe",
+  "approxBuilt": 424
+ },
+ {
+  "id": "subaru-wrx-sti-s209",
+  "make": "Subaru",
+  "model": "WRX STI S209",
+  "tier": "rare",
+  "engine": "flat4",
+  "body": "sedan",
+  "approxBuilt": 209
+ },
+ {
+  "id": "tesla-roadster-2008",
+  "make": "Tesla",
+  "model": "Roadster (2008)",
+  "tier": "rare",
+  "engine": "electric",
+  "body": "convertible",
+  "approxBuilt": 2450
+ },
+ {
+  "id": "toyota-century",
+  "make": "Toyota",
+  "model": "Century",
+  "tier": "rare",
+  "engine": "v12",
+  "body": "sedan",
+  "approxBuilt": 13000
+ },
+ {
+  "id": "toyota-gr-yaris-first-edition",
+  "make": "Toyota",
+  "model": "GR Yaris (first edition)",
+  "tier": "rare",
+  "engine": "i3",
+  "body": "hatchback",
+  "approxBuilt": 20000
+ },
+ {
+  "id": "volkswagen-golf-r32-mk4",
+  "make": "Volkswagen",
+  "model": "Golf R32 (Mk4)",
+  "tier": "rare",
+  "engine": "v6",
+  "body": "hatchback",
+  "approxBuilt": 5000
+ },
+ {
+  "id": "volvo-850-t-5r",
+  "make": "Volvo",
+  "model": "850 T-5R",
+  "tier": "rare",
+  "engine": "i5",
+  "body": "wagon",
+  "approxBuilt": 6964
+ }
+]

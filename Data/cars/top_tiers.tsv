@@ -1,0 +1,233 @@
+make	model	tier	engine	body	approx_built
+Bugatti	La Voiture Noire	legendary	w16	supercar	1
+Bugatti	Centodieci	legendary	w16	supercar	10
+Bugatti	Divo	legendary	w16	supercar	40
+Bugatti	Bolide	legendary	w16	supercar	40
+Ferrari	250 GTO	legendary	v12	coupe	36
+Lamborghini	Veneno	legendary	v12	supercar	14
+Koenigsegg	CCXR Trevita	legendary	v8	supercar	3
+Mercedes-Benz	CLK GTR	legendary	v12	supercar	26
+Porsche	911 GT1 Strassenversion	legendary	flat6	supercar	25
+McLaren	F1	legendary	v12	supercar	106
+Bugatti	Chiron	exotic	w16	supercar	500
+Bugatti	Veyron	exotic	w16	supercar	450
+Bugatti	Tourbillon	exotic	v16	supercar	250
+Bugatti	Mistral	exotic	w16	convertible	99
+Bugatti	EB110	exotic	v12	supercar	139
+Ferrari	LaFerrari	exotic	v12	supercar	710
+Ferrari	Enzo	exotic	v12	supercar	400
+Ferrari	F50	exotic	v12	supercar	349
+Ferrari	F40	exotic	v8	supercar	1315
+Ferrari	288 GTO	exotic	v8	supercar	272
+Ferrari	Monza SP	exotic	v12	convertible	499
+Ferrari	Daytona SP3	exotic	v12	supercar	599
+Ferrari	F80	exotic	v6	supercar	799
+Ferrari	599 GTO	exotic	v12	coupe	599
+Ferrari	F12tdf	exotic	v12	coupe	799
+Ferrari	812 Competizione	exotic	v12	coupe	999
+Ferrari	250 GT California Spyder	exotic	v12	convertible	106
+Ferrari	Sergio	exotic	v8	convertible	6
+Porsche	918 Spyder	exotic	v8	supercar	918
+Porsche	Carrera GT	exotic	v10	supercar	1270
+Porsche	959	exotic	flat6	supercar	337
+McLaren	P1	exotic	v8	supercar	375
+McLaren	Senna	exotic	v8	supercar	500
+McLaren	Speedtail	exotic	v8	supercar	106
+McLaren	Elva	exotic	v8	convertible	149
+McLaren	W1	exotic	v8	supercar	399
+McLaren	Sabre	exotic	v8	supercar	15
+Pagani	Zonda	exotic	v12	supercar	140
+Pagani	Huayra	exotic	v12	supercar	300
+Pagani	Utopia	exotic	v12	supercar	99
+Koenigsegg	Agera	exotic	v8	supercar	85
+Koenigsegg	Regera	exotic	v8	supercar	80
+Koenigsegg	Jesko	exotic	v8	supercar	125
+Koenigsegg	One:1	exotic	v8	supercar	7
+Koenigsegg	CCX	exotic	v8	supercar	30
+Koenigsegg	CC850	exotic	v8	supercar	70
+Koenigsegg	Gemera	exotic	v8	supercar	300
+Lamborghini	Sián	exotic	v12	supercar	82
+Lamborghini	Reventón	exotic	v12	supercar	36
+Lamborghini	Sesto Elemento	exotic	v10	supercar	20
+Lamborghini	Centenario	exotic	v12	supercar	40
+Lamborghini	Countach LPI 800-4	exotic	v12	supercar	112
+Lamborghini	Miura	exotic	v12	coupe	764
+Aston Martin	Valkyrie	exotic	v12	supercar	235
+Aston Martin	One-77	exotic	v12	coupe	77
+Aston Martin	Victor	exotic	v12	coupe	1
+Aston Martin	Valour	exotic	v12	coupe	110
+Aston Martin	Valiant	exotic	v12	coupe	38
+Rimac	Nevera	exotic	electric	supercar	150
+Rimac	Concept One	exotic	electric	supercar	8
+Pininfarina	Battista	exotic	electric	supercar	150
+Lotus	Evija	exotic	electric	supercar	130
+Mercedes-AMG	One	exotic	v6	supercar	275
+Mercedes-Benz	SLR Stirling Moss	exotic	v8	convertible	75
+Mercedes-AMG	G 63 AMG 6x6	exotic	v8	pickup	100
+Jaguar	XJ220	exotic	v6	supercar	281
+Jaguar	XKSS	exotic	i6	convertible	34
+Ford	GT40	exotic	v8	supercar	105
+Ford	GT (2017)	exotic	v6	supercar	1350
+Lexus	LFA	exotic	v10	supercar	500
+Gordon Murray	T.50	exotic	v12	supercar	100
+Gordon Murray	T.33	exotic	v12	coupe	100
+Hennessey	Venom F5	exotic	v8	supercar	24
+Hennessey	Venom GT	exotic	v8	supercar	13
+SSC	Tuatara	exotic	v8	supercar	100
+Maserati	MC12	exotic	v12	supercar	50
+Bentley	Bacalar	exotic	w12	convertible	12
+Bentley	Batur	exotic	w12	coupe	18
+Rolls-Royce	Boat Tail	exotic	v12	convertible	3
+Rolls-Royce	Sweptail	exotic	v12	coupe	1
+Rolls-Royce	Droptail	exotic	v12	convertible	4
+Czinger	21C	exotic	v8	supercar	80
+De Tomaso	P72	exotic	v8	coupe	72
+Zenvo	TSR-S	exotic	v8	supercar	15
+Apollo	Intensa Emozione	exotic	v12	supercar	10
+W Motors	Lykan HyperSport	exotic	flat6	supercar	7
+Vector	W8	exotic	v8	supercar	19
+Cizeta	V16T	exotic	v16	supercar	13
+Saleen	S7	exotic	v8	supercar	100
+Alfa Romeo	33 Stradale	exotic	v8	coupe	51
+Alfa Romeo	8C Competizione	exotic	v8	coupe	500
+Lancia	Stratos	exotic	v6	coupe	492
+Lancia	037	exotic	i4	coupe	207
+Audi	Sport Quattro	exotic	i5	coupe	214
+BMW	M1	exotic	i6	supercar	453
+BMW	507	exotic	v8	convertible	252
+Toyota	2000GT	exotic	i6	coupe	351
+Shelby	Cobra	exotic	v8	convertible	1000
+Noble	M600	exotic	v8	supercar	100
+Ferrari	250 GT SWB	exotic	v12	coupe	165
+Lamborghini	Aventador	rare	v12	supercar	11465
+Lamborghini	Murciélago	rare	v12	supercar	4099
+Lamborghini	Diablo	rare	v12	supercar	2884
+Lamborghini	Countach	rare	v12	supercar	1983
+Lamborghini	Revuelto	rare	v12	supercar	3000
+Lamborghini	LM002	rare	v12	suv	328
+Lamborghini	Espada	rare	v12	coupe	1217
+Ferrari	812 Superfast	rare	v12	coupe	3000
+Ferrari	SF90 Stradale	rare	v8	supercar	7000
+Ferrari	Testarossa	rare	flat4	supercar	7177
+Ferrari	599 GTB Fiorano	rare	v12	coupe	3600
+Ferrari	F12berlinetta	rare	v12	coupe	10000
+Ferrari	12Cilindri	rare	v12	coupe	2000
+Ferrari	Purosangue	rare	v12	suv	3000
+Ferrari	Daytona	rare	v12	coupe	1406
+Ferrari	275 GTB	rare	v12	coupe	970
+Ferrari	Dino 246	rare	v6	coupe	3761
+Ferrari	550 Maranello	rare	v12	coupe	3083
+Ferrari	575M Maranello	rare	v12	coupe	2064
+Ferrari	612 Scaglietti	rare	v12	coupe	3025
+Ferrari	456	rare	v12	coupe	3289
+Ferrari	FF	rare	v12	wagon	2291
+Ferrari	F355	rare	v8	supercar	11273
+Ferrari	250 GT Lusso	rare	v12	coupe	351
+Porsche	911 GT2 RS	rare	flat6	coupe	1000
+Porsche	911 R	rare	flat6	coupe	991
+Porsche	911 Carrera RS 2.7	rare	flat6	coupe	1580
+Porsche	911 Dakar	rare	flat6	coupe	2500
+Porsche	911 S/T	rare	flat6	coupe	1963
+Porsche	911 Sport Classic	rare	flat6	coupe	1250
+Porsche	911 GT3 RS 4.0	rare	flat6	coupe	600
+McLaren	765LT	rare	v8	supercar	1530
+McLaren	675LT	rare	v8	supercar	1000
+Aston Martin	DB5	rare	i6	coupe	1059
+Aston Martin	DB4	rare	i6	coupe	1100
+Aston Martin	Valhalla	rare	v8	supercar	999
+Aston Martin	Lagonda	rare	v8	sedan	645
+Mercedes-Benz	SLR McLaren	rare	v8	supercar	2157
+Mercedes-Benz	300 SL	rare	i6	coupe	3258
+Mercedes-Benz	SLS AMG	rare	v8	coupe	8000
+Mercedes-AMG	GT Black Series	rare	v8	coupe	1700
+Mercedes-Benz	CLK DTM AMG	rare	v8	coupe	180
+Mercedes-Benz	SLS AMG Black Series	rare	v8	coupe	350
+Mercedes-Benz	600 Pullman	rare	v8	sedan	2677
+Mercedes-Benz	190E 2.5-16 Evolution II	rare	i4	sedan	502
+Maybach	57	rare	v12	sedan	3000
+Rolls-Royce	Phantom	rare	v12	sedan	15000
+Rolls-Royce	Spectre	rare	electric	coupe	4000
+Rolls-Royce	Silver Ghost	rare	i6	convertible	7874
+Bentley	Mulsanne	rare	v8	sedan	7300
+Nissan	Skyline GT-R R34	rare	i6	coupe	11344
+Nissan	Skyline GT-R R33	rare	i6	coupe	16668
+Nissan	Skyline 2000GT-R	rare	i6	coupe	1945
+Honda	NSX (first generation)	rare	v6	supercar	18685
+Honda	NSX (second generation)	rare	v6	supercar	2908
+Dodge	Challenger SRT Demon	rare	v8	coupe	3300
+Dodge	Challenger SRT Demon 170	rare	v8	coupe	3300
+Dodge	Charger Daytona (1969)	rare	v8	coupe	503
+Plymouth	Superbird	rare	v8	coupe	1935
+Ford	GT (2005)	rare	v8	supercar	4038
+Ford	Mustang Boss 429	rare	v8	coupe	1359
+Ford	RS200	rare	i4	coupe	200
+Lotus	Carlton	rare	i6	sedan	950
+Jaguar	F-Type Project 7	rare	v8	convertible	500
+Maserati	MC20	rare	v6	supercar	3000
+Maserati	Bora	rare	v8	coupe	564
+BMW	Z8	rare	v8	convertible	5703
+BMW	3.0 CSL	rare	i6	coupe	1265
+Alfa Romeo	SZ	rare	v6	coupe	1036
+De Tomaso	Pantera	rare	v8	coupe	7260
+De Tomaso	Mangusta	rare	v8	coupe	401
+Spyker	C8	rare	v8	supercar	267
+Mazda	Cosmo Sport	rare	rotary	coupe	1176
+Subaru	Impreza 22B STi	rare	flat4	coupe	424
+Hummer	H1	rare	v8	suv	11818
+Tesla	Roadster (2008)	rare	electric	convertible	2450
+Fisker	Karma	rare	i4	sedan	2450
+DeLorean	DMC-12	rare	v6	coupe	9000
+Polestar	1	rare	i4	coupe	1500
+Cadillac	Celestiq	rare	electric	sedan	400
+Mercedes-Maybach	SL 680	rare	v8	convertible	2000
+Mercedes-Maybach	G 650 Landaulet	exotic	v12	suv	99
+Lamborghini	Huracán STO	rare	v10	supercar	3000
+Lamborghini	Aventador SVJ	rare	v12	supercar	900
+Ferrari	488 Pista	rare	v8	supercar	3500
+Ferrari	458 Speciale	rare	v8	supercar	3000
+Porsche	Taycan Turbo GT	rare	electric	sedan	2000
+Chevrolet	Corvette ZR1 (C8)	rare	v8	coupe	3000
+Ford	Mustang Shelby GT500 (1967)	rare	v8	coupe	2048
+Chevrolet	Camaro ZL1 1LE	rare	v8	coupe	5000
+Cadillac	CTS-V Wagon	rare	v8	wagon	1764
+Chevrolet	Chevelle SS 454 LS6	rare	v8	coupe	4475
+Pontiac	GTO Judge	rare	v8	coupe	6833
+Buick	GNX	rare	v6	coupe	547
+AMC	AMX/3	exotic	v8	coupe	6
+Aston Martin	Vanquish Zagato	rare	v12	coupe	325
+Aston Martin	DB11 AMR	rare	v12	coupe	2000
+Aston Martin	V12 Speedster	exotic	v12	convertible	88
+Bentley	Continental GT Speed Mulliner	rare	w12	coupe	1000
+Lotus	Exige Cup 430	rare	v6	coupe	500
+Jaguar	XJR-15	exotic	v12	supercar	53
+Nissan	GT-R Nismo	rare	v6	coupe	3000
+Toyota	GR Yaris (first edition)	rare	i3	hatchback	20000
+Toyota	Century	rare	v12	sedan	13000
+Honda	S2000 CR	rare	i4	convertible	699
+Mazda	RX-7 Spirit R	rare	rotary	coupe	1504
+Mitsubishi	Lancer Evolution Final Edition	rare	i4	sedan	1600
+Subaru	WRX STI S209	rare	flat4	sedan	209
+Acura	Integra Type R	rare	i4	coupe	3823
+Volkswagen	Golf R32 (Mk4)	rare	v6	hatchback	5000
+Audi	RS2 Avant	rare	i5	wagon	2891
+BMW	M3 CSL (E46)	rare	i6	coupe	1383
+BMW	M4 CSL	rare	i6	coupe	1000
+Porsche	Boxster Spyder RS	rare	flat6	convertible	2000
+Porsche	Cayman GT4 RS	rare	flat6	coupe	3000
+Mercedes-AMG	SL 63 Black Series	rare	v12	convertible	350
+Alpine	A110 R	rare	i4	coupe	1000
+Renault	Clio V6	rare	v6	hatchback	3000
+Peugeot	205 T16	rare	i4	hatchback	200
+Lancia	Delta S4	rare	i4	hatchback	200
+Ford	Escort RS Cosworth	rare	i4	hatchback	7145
+Ford	Sierra RS500 Cosworth	rare	i4	hatchback	500
+Mercedes-Benz	500E	rare	v8	sedan	10479
+Volvo	850 T-5R	rare	i5	wagon	6964
+Maserati	Ghibli (1967)	rare	v8	coupe	1295
+Iso	Grifo	rare	v8	coupe	412
+Facel Vega	HK500	rare	v8	coupe	490
+Lamborghini	Jalpa	rare	v8	supercar	410
+Lamborghini	Urraco	rare	v8	coupe	791
+Ferrari	Mondial	rare	v8	coupe	6149
+Ferrari	308 GTB	rare	v8	coupe	12000
+Ferrari	Dino 206 GT	rare	v6	coupe	152

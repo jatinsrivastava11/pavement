@@ -139,10 +139,15 @@ Pavement/            The iOS app
   App/               App entry point and main tab bar
   Config/            Secrets.swift (gitignored: Supabase URL and key)
   Features/          One folder per feature (Auth, Profile, Spot, Spots, …)
-  Models/            Shared data types (e.g. RarityTier)
+  Models/            Shared data types (RarityTier, CarModel, CarCatalog)
+  Resources/         cars.json (generated, don't edit by hand)
   Services/          Connections to outside services (Supabase)
 PavementTests/       Unit tests
+Data/cars/           Car catalog source (.tsv), one row per car model
+Tools/build_cars.py  Builds Pavement/Resources/cars.json from Data/cars
 ```
+
+After editing anything in `Data/cars/`, run `python3 Tools/build_cars.py`.
 
 Requirements:
 - macOS with Xcode 26 or newer
