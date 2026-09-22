@@ -10,13 +10,14 @@ create table public.friendships (
   check (requester <> addressee)
 );
 
--- True when two users are friends (either direction, accepted).
-create function public.are_friends(a uuid, b uuid) returns boolean
+-- True when the signed-in user and `other` are friends (either direction, accepted).
+-- It only ever answers about yourself, so it can't be used to map other people's friendships.
+create function public.is_friend(other uuid) returns boolean
 language sql stable security definer set search_path = '' as $$
   select exists (
     select 1 from public.friendships
     where status = 'accepted'
-      and ((requester = a and addressee = b) or (requester = b and addressee = a))
+      and ((requester = auth.uid() and addressee = other) or (requester = other and addressee = auth.uid()))
   )
 $$;
 
@@ -33,8 +34,10 @@ create policy "Either side can remove" on public.friendships
 
 -- Friends can see each other's spots (for collections and rare-find alerts).
 create policy "Friends read each other's spots" on public.spots
-  for select to authenticated using (public.are_friends(auth.uid(), user_id));
+  for select to authenticated using (public.is_friend(user_id));
 
 grant select, insert, delete on public.friendships to authenticated;
 grant update (status) on public.friendships to authenticated;
-grant execute on function public.are_friends(uuid, uuid) to authenticated;
+-- Postgres (and Supabase) let everyone call new functions by default: signed-in users only.
+revoke all on function public.is_friend(uuid) from public, anon;
+grant execute on function public.is_friend(uuid) to authenticated;

@@ -97,4 +97,8 @@ grant select on public.car_tiers to authenticated;
 grant select on public.profiles to authenticated;
 grant update (username) on public.profiles to authenticated;   -- Octane can't be edited by users
 grant select, insert on public.spots to authenticated;
+-- Postgres (and Supabase) let everyone call new functions by default, so revoke first.
+revoke all on function public.car_spot_counts() from public, anon;
+revoke all on function public.handle_new_user() from public, anon, authenticated;
+revoke all on function public.award_octane() from public, anon, authenticated;
 grant execute on function public.car_spot_counts() to authenticated;

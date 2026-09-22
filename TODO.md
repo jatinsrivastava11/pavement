@@ -7,6 +7,10 @@ Everything here keeps the project at $0.
 1. **Apply the database migrations.** In Supabase → SQL Editor, run in order:
    `supabase/migrations/0001_profiles_and_spots.sql`, `0002_seed_car_tiers.sql`, `0003_friends.sql`,
    `0004_delete_account.sql`.
+   They've been tested locally against real Postgres 17 with a Supabase stand-in
+   (`Tools/test_database.sh`): server-side Octane, anti-farming, RLS privacy, friends and account
+   deletion all pass. Supabase's real `auth` setup could still differ slightly, so check the app
+   after applying.
    This switches on community rankings, friends, and server-side Octane. It hasn't been tested
    against a real database yet, so expect a round of fixes.
 2. **Check spot syncing live.** The upload queue is built and tested with a stand-in server
