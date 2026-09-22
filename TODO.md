@@ -4,18 +4,9 @@ Things skipped during the build because they need permission, a real device, or 
 Everything here keeps the project at $0.
 
 ## Needs you (a few minutes each)
-1. **Apply the database migrations.** In Supabase → SQL Editor, run in order:
-   `supabase/migrations/0001_profiles_and_spots.sql`, `0002_seed_car_tiers.sql`, `0003_friends.sql`,
-   `0004_delete_account.sql`.
-   They've been tested locally against real Postgres 17 with a Supabase stand-in:
-   - `Tools/test_database.sh` (SQL rules: server-side Octane, anti-farming, privacy, friends,
-     account deletion)
-   - `Tools/test_app_against_database.sh` (the **app's own code** against Postgres + PostgREST:
-     uploads, no duplicates, spot counts, usernames, friend requests, friends-only visibility,
-     forged spots rewritten to their real owner)
-   Supabase's real `auth` setup could still differ slightly, so check the app after applying.
-   This switches on community rankings, friends, and server-side Octane. It hasn't been tested
-   against a real database yet, so expect a round of fixes.
+1. ~~Apply the database migrations~~ **Done and verified on the live project (2026-09-22):**
+   914 car tiers loaded, server-side Octane correct (Civic 10, McLaren F1 2,000), community spot
+   counts working, signed-out access blocked, account deletion removes profile + spots + login.
 2. **Check spot syncing live.** The upload queue is built and tested with a stand-in server
    (offline, retries, no duplicates). After step 1, confirm spots appear in the `spots` table.
 
