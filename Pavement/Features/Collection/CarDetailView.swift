@@ -74,12 +74,12 @@ struct CarDetailView: View {
     }
 }
 
-/// Placeholder until Mechanic's 3D engine viewer (step 8) replaces it.
+/// The 3D engine for a car, shown as a sheet.
 struct EngineSheet: View {
     let engine: EngineType
     var body: some View {
-        ContentUnavailableView("\(engine.displayName) engine", systemImage: "gearshape.2",
-                               description: Text("The interactive 3D engine is coming next."))
-            .presentationDetents([.medium, .large])
+        EngineViewer(engine: engine)
+            .presentationDetents([.large])
+            .presentationDragIndicator(.visible)
     }
 }

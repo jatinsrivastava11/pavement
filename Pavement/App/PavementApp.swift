@@ -15,6 +15,8 @@ struct PavementApp: App {
                     SpotView(app: .demo())
                 } else if let path = UserDefaults.standard.string(forKey: "previewReviewImage") {
                     DebugReviewPreview(imagePath: path)
+                } else if let engine = UserDefaults.standard.string(forKey: "previewEngine").flatMap(EngineType.init(rawValue:)) {
+                    EngineViewer(engine: engine)
                 } else if CommandLine.arguments.contains("-previewTabs") {
                     RootTabView(auth: auth, app: .demo())
                 } else {
