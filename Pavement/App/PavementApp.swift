@@ -3,14 +3,18 @@ import SwiftUI
 @main
 struct PavementApp: App {
     @State private var auth = AuthModel()
+    @State private var app = AppModel()
 
     var body: some Scene {
         WindowGroup {
             Group {
                 #if DEBUG
-                // Development shortcut: launch with -previewSpot to open the Spot screen without signing in.
+                // Development shortcuts: -previewSpot opens the camera screen, -previewTabs opens the tabs with
+                // sample spots. Both skip sign-in and never touch real data.
                 if CommandLine.arguments.contains("-previewSpot") {
                     SpotView()
+                } else if CommandLine.arguments.contains("-previewTabs") {
+                    RootTabView(auth: auth, app: .demo())
                 } else {
                     content
                 }
@@ -29,7 +33,7 @@ struct PavementApp: App {
         case .signedOut:
             LoginView(auth: auth)
         case .signedIn:
-            RootTabView(auth: auth)
+            RootTabView(auth: auth, app: app)
         }
     }
 }

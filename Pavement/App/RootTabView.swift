@@ -1,30 +1,38 @@
 import SwiftUI
 
-/// The app's five main sections. Each tab is a placeholder until its agent builds it.
+/// The app's five main sections.
 struct RootTabView: View {
     let auth: AuthModel
+    let app: AppModel
+
+    enum Section: String { case spot, spots, rankings, friends, profile }
+
+    // Debug builds can open on a given tab with the launch argument `-initialTab spots`.
+    @State private var selection = Section(rawValue: UserDefaults.standard.string(forKey: "initialTab") ?? "") ?? .spot
 
     var body: some View {
-        TabView {
-            Tab("Spot", systemImage: "camera.viewfinder") {
+        TabView(selection: $selection) {
+            Tab("Spot", systemImage: "camera.viewfinder", value: .spot) {
                 SpotView()
             }
-            Tab("Spots", systemImage: "square.grid.2x2") {
-                PlaceholderScreen(title: "Spots", owner: "Studio + Mechanic", icon: "square.grid.2x2")
+            Tab("Spots", systemImage: "square.grid.2x2", value: .spots) {
+                SpotsView(app: app)
             }
-            Tab("Rankings", systemImage: "chart.bar") {
-                PlaceholderScreen(title: "Rankings", owner: "Backbone + Scout", icon: "chart.bar")
+            Tab("Rankings", systemImage: "chart.bar", value: .rankings) {
+                PlaceholderScreen(title: "Rankings", owner: "Studio", icon: "chart.bar")
             }
-            Tab("Friends", systemImage: "person.2") {
+            Tab("Friends", systemImage: "person.2", value: .friends) {
                 PlaceholderScreen(title: "Friends", owner: "Courier", icon: "person.2")
             }
-            Tab("Profile", systemImage: "person.crop.circle") {
+            Tab("Profile", systemImage: "person.crop.circle", value: .profile) {
                 ProfileView(auth: auth)
             }
         }
+        .tint(Theme.accent)
+        .preferredColorScheme(.dark)
     }
 }
 
 #Preview {
-    RootTabView(auth: AuthModel())
+    RootTabView(auth: AuthModel(), app: .demo())
 }
