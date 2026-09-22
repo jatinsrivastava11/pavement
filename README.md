@@ -4,7 +4,7 @@
 
 Pavement is an iPhone app for car spotting, played a bit like Pokémon Go. Take a photo of a
 street, a parking lot or a car show, and Pavement finds every car in the shot, even ones that are
-partly hidden. It adds them to your collection and gives you HP based on how rare they are.
+partly hidden. It adds them to your collection and gives you **Octane** (points) based on how rare they are.
 
 > **Status:** Early development. Nothing is built yet. This README describes what we're building.
 
@@ -26,8 +26,8 @@ partly hidden. It adds them to your collection and gives you HP based on how rar
 - If the phone is connected to CarPlay (almost always the driver's phone), spotting is blocked.
 - Each spot records where it happened (location "While Using" only).
 
-### HP and rarity
-The rarer the car you spot, the more HP you earn.
+### Octane and rarity
+The rarer the car you spot, the more Octane you earn.
 
 | Tier | What it means |
 |---|---|
@@ -49,7 +49,7 @@ Every car in the world is ranked on two scales, shown side by side:
   You can rotate it, zoom in, and take the engine apart.
 
 ### Share
-- **Share cards:** turn any spot into an image card (car, tier, HP, location) and send it
+- **Share cards:** turn any spot into an image card (car, tier, Octane, location) and send it
   through iMessage, Instagram, WhatsApp or anything else on the phone.
 - **Friends:** add friends by username, see each other's collections, and get alerts when a friend
   spots something rare.
@@ -68,7 +68,7 @@ Every car in the world is ranked on two scales, shown side by side:
 | Motion / driving detection | Core Motion (`CMMotionActivityManager`), Core Location |
 | Car detection | On-device only (Vision / Core ML); identifies make and model, e.g. "Porsche 911" |
 | 3D models | RealityKit / SceneKit. Engine: one take-apart model per engine type (I4, V6, V8, V12, flat-6, EV…). Car: exact model only where a free, properly licensed one exists; otherwise a color-matched image |
-| Backend | Supabase (free plan): accounts, collections, HP only |
+| Backend | Supabase (free plan): accounts, collections, Octane only |
 | Photos | Stay on the user's iPhone and are never uploaded |
 
 ---
@@ -86,7 +86,7 @@ The app is built by six AI agents, each with its own area:
 
 | Agent | Area |
 |---|---|
-| **Backbone** | Backend: accounts, user data, HP, rarity tiers |
+| **Backbone** | Backend: accounts, user data, Octane, rarity tiers |
 | **Scout** | Car recognition and car, engine and 3D model data |
 | **Mechanic** | Interactive 3D car and engine models |
 | **Lens** | Camera, motion and passenger detection, wiring the camera into the app |
