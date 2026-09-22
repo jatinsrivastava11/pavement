@@ -21,7 +21,10 @@ partly hidden. It adds them to your collection and gives you HP based on how rar
 - Pavement uses the iPhone's motion sensors to tell when you're in a moving vehicle.
 - If you are, it asks: *"Are you a passenger?"*
   - **Yes:** you can keep spotting.
-  - **No:** spotting is blocked. Don't spot and drive.
+  - **No:** spotting is blocked until the car stops. Don't spot and drive.
+- A "yes" only lasts until the car stops, and the question comes back on the next trip.
+- If the phone is connected to CarPlay (almost always the driver's phone), spotting is blocked.
+- Each spot records where it happened (location "While Using" only).
 
 ### HP and rarity
 The rarer the car you spot, the more HP you earn.
