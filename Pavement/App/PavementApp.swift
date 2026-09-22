@@ -4,6 +4,8 @@ import SwiftUI
 struct PavementApp: App {
     @State private var auth = AuthModel()
     @State private var app = AppModel()
+    /// Shown once per device, after signing in and before the camera asks for permissions.
+    @AppStorage("seenOnboarding") private var seenOnboarding = false
 
     var body: some Scene {
         WindowGroup {
@@ -21,6 +23,8 @@ struct PavementApp: App {
                           let car = AppModel.demo().catalog.car(id: id) {
                     ShareCardView(car: car, photo: nil, city: "Chicago")
                         .scaleEffect(0.34).frame(width: 368, height: 459)
+                } else if CommandLine.arguments.contains("-previewOnboarding") {
+                    OnboardingView {}
                 } else if CommandLine.arguments.contains("-previewTabs") {
                     RootTabView(auth: auth, app: .demo())
                 } else {
@@ -41,7 +45,11 @@ struct PavementApp: App {
         case .signedOut:
             LoginView(auth: auth)
         case .signedIn:
-            RootTabView(auth: auth, app: app)
+            if seenOnboarding {
+                RootTabView(auth: auth, app: app)
+            } else {
+                OnboardingView { seenOnboarding = true }
+            }
         }
     }
 }
