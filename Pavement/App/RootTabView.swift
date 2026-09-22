@@ -29,7 +29,7 @@ struct RootTabView: View {
             }
         }
         .tint(Theme.accent)
-        .preferredColorScheme(.dark)
+        .preferredColorScheme(Theme.colorScheme)
     }
 }
 

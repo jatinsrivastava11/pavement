@@ -145,7 +145,7 @@ private struct ShutterButton: View {
             ZStack {
                 Circle().strokeBorder(.white, lineWidth: 5).frame(width: 82, height: 82)
                 Circle().fill(Theme.accent.opacity(isBusy ? 0.35 : 1)).frame(width: 64, height: 64)
-                if isBusy { ProgressView().tint(.black) }
+                if isBusy { ProgressView().tint(Theme.onAccent) }
             }
         }
         .disabled(isBusy)

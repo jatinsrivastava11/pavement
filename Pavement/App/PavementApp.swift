@@ -6,6 +6,8 @@ struct PavementApp: App {
     @State private var app = AppModel()
     /// Shown once per device, after signing in and before the camera asks for permissions.
     @AppStorage("seenOnboarding") private var seenOnboarding = false
+    /// Changing this redraws the whole app in the other look.
+    @AppStorage("appTheme") private var theme = AppTheme.asphalt.rawValue
 
     var body: some Scene {
         WindowGroup {
@@ -37,6 +39,7 @@ struct PavementApp: App {
                 content
                 #endif
             }
+            .id(theme)
             .task { await auth.observeSession() }
         }
     }

@@ -50,13 +50,13 @@ struct OnboardingView: View {
             } label: {
                 Text(page < Self.pages.count - 1 ? "Next" : "Start spotting")
                     .font(.headline).frame(maxWidth: .infinity).padding()
-                    .foregroundStyle(.black)
+                    .foregroundStyle(Theme.onAccent)
                     .background(Theme.accent, in: RoundedRectangle(cornerRadius: Theme.corner, style: .continuous))
             }
             .padding(Theme.spacing)
         }
         .background(Theme.background)
-        .preferredColorScheme(.dark)
+        .preferredColorScheme(Theme.colorScheme)
     }
 }
 

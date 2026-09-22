@@ -60,7 +60,7 @@ struct FriendsView: View {
                         Text("@\(people[id]?.username ?? "someone")")
                         Spacer()
                         Button("Accept") { Task { try? await service.accept(from: id); await reload() } }
-                            .buttonStyle(.borderedProminent).tint(Theme.accent).foregroundStyle(.black)
+                            .buttonStyle(.borderedProminent).tint(Theme.accent).foregroundStyle(Theme.onAccent)
                     }
                 }
             }

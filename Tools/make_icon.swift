@@ -1,5 +1,5 @@
 // Draws Pavement's app icon (1024×1024): asphalt, a yellow road line into the distance, a car.
-//   swift Tools/make_icon.swift Pavement/Assets.xcassets/AppIcon.appiconset/AppIcon.png
+//   swift Tools/make_icon.swift <out.png> [a|b]      (a = asphalt road, b = race programme)
 import AppKit
 import SwiftUI
 
@@ -67,8 +67,41 @@ struct CarShape: Shape {
     }
 }
 
+/// Icon B: race programme — paper, ink and a racing stripe.
+struct IconB: View {
+    let paper = Color(red: 0.95, green: 0.94, blue: 0.91)
+    let ink = Color(red: 0.07, green: 0.07, blue: 0.08)
+    let red = Color(red: 0.80, green: 0.10, blue: 0.14)
+
+    var body: some View {
+        ZStack {
+            paper
+            // Two diagonal racing stripes across the corner.
+            Path { p in
+                p.move(to: CGPoint(x: 560, y: 1024)); p.addLine(to: CGPoint(x: 1024, y: 560))
+                p.addLine(to: CGPoint(x: 1024, y: 760)); p.addLine(to: CGPoint(x: 760, y: 1024))
+            }
+            .fill(red)
+            Path { p in
+                p.move(to: CGPoint(x: 830, y: 1024)); p.addLine(to: CGPoint(x: 1024, y: 830))
+                p.addLine(to: CGPoint(x: 1024, y: 930)); p.addLine(to: CGPoint(x: 930, y: 1024))
+            }
+            .fill(ink.opacity(0.85))
+            // Car silhouette, printed in ink.
+            CarShape().fill(ink)
+                .frame(width: 660, height: 250)
+                .position(x: 512, y: 470)
+            // Underline, like a printed rule.
+            Rectangle().fill(red).frame(width: 470, height: 22)
+                .position(x: 512, y: 660)
+        }
+        .frame(width: 1024, height: 1024)
+    }
+}
+
 MainActor.assumeIsolated {
-    let renderer = ImageRenderer(content: Icon())
+    let style = CommandLine.arguments.count > 2 ? CommandLine.arguments[2] : "a"
+    let renderer = style == "b" ? ImageRenderer(content: AnyView(IconB())) : ImageRenderer(content: AnyView(Icon()))
     renderer.scale = 1
     guard let cg = renderer.cgImage else { fatalError("render failed") }
     let rep = NSBitmapImageRep(cgImage: cg)

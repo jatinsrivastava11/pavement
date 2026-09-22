@@ -73,7 +73,7 @@ struct CarDetailView: View {
                 } label: {
                     Label("Explore the \(car.engine.displayName) engine in 3D", systemImage: "gearshape.2.fill")
                         .font(.headline).frame(maxWidth: .infinity).padding()
-                        .foregroundStyle(.black)
+                        .foregroundStyle(Theme.onAccent)
                         .background(Theme.accent, in: RoundedRectangle(cornerRadius: Theme.corner, style: .continuous))
                 }
             }

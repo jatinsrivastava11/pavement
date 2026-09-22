@@ -82,7 +82,7 @@ struct EngineViewer: View {
                 }
                 .font(.headline)
                 .padding(.horizontal, 16).padding(.vertical, 10)
-                .foregroundStyle(.black)
+                .foregroundStyle(Theme.onAccent)
                 .background(Theme.accent, in: Capsule())
             }
             if let selected {

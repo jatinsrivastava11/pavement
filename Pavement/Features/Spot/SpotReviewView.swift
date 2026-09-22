@@ -49,7 +49,7 @@ struct SpotReviewView: View {
                 }
             }
         }
-        .preferredColorScheme(.dark)
+        .preferredColorScheme(Theme.colorScheme)
     }
 
     private func carRow(_ car: SpotPipeline.FoundCar) -> some View {
@@ -95,7 +95,7 @@ struct SpotReviewView: View {
         return Button(action: save) {
             Text(count == 0 ? "Nothing to add" : "Add \(count) to collection")
                 .font(.headline).frame(maxWidth: .infinity).padding()
-                .foregroundStyle(.black)
+                .foregroundStyle(Theme.onAccent)
                 .background(count == 0 ? Theme.textSecondary : Theme.accent,
                             in: RoundedRectangle(cornerRadius: Theme.corner, style: .continuous))
         }

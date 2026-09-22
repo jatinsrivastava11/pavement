@@ -4,12 +4,26 @@ import SwiftUI
 struct ProfileView: View {
     let auth: AuthModel
     let app: AppModel
+    @AppStorage("appTheme") private var theme = AppTheme.asphalt.rawValue
     @State private var confirmingDelete = false
     @State private var deleteError: String?
 
     var body: some View {
         NavigationStack {
             List {
+                Section("Appearance") {
+                    // A standard picker: it scales correctly with the reader's text size.
+                    Picker(selection: $theme) {
+                        ForEach(AppTheme.allCases) { option in
+                            Text(option.displayName).tag(option.rawValue)
+                        }
+                    } label: {
+                        Text("Look").foregroundStyle(Theme.textPrimary)
+                    }
+                    Text(AppTheme(rawValue: theme)?.subtitle ?? "")
+                        .font(.footnote).foregroundStyle(Theme.textSecondary)
+                }
+                .listRowBackground(Theme.surface)
                 Section {
                     VStack(alignment: .leading, spacing: 6) {
                         Text("Octane").font(.caption.weight(.semibold)).foregroundStyle(Theme.textSecondary)
@@ -30,6 +44,8 @@ struct ProfileView: View {
                         }
                     }
                 }
+                .listRowBackground(Theme.surface)
+
                 .listRowBackground(Theme.surface)
 
                 if case .signedIn(let email) = auth.state {

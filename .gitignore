@@ -22,3 +22,4 @@ xcuserdata/
 
 # macOS
 .DS_Store
+RUN_IN_SUPABASE.sql

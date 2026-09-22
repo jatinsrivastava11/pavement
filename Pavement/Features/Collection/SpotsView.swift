@@ -36,7 +36,7 @@ struct SpotsView: View {
             }
             .background(Theme.background)
             .navigationTitle("Spots")
-            .toolbarColorScheme(.dark, for: .navigationBar)
+            .toolbarColorScheme(Theme.colorScheme, for: .navigationBar)
             .navigationDestination(for: CollectionEntry.self) { CarDetailView(entry: $0, app: app) }
             #if DEBUG
             .onAppear {
@@ -81,7 +81,7 @@ struct SpotsView: View {
         Button(action: action) {
             Text(title).font(.subheadline.weight(.semibold))
                 .padding(.horizontal, 14).padding(.vertical, 8)
-                .foregroundStyle(selected ? .black : Theme.textPrimary)
+                .foregroundStyle(selected ? Theme.onAccent : Theme.textPrimary)
                 .background(selected ? color : Theme.surfaceRaised, in: Capsule())
         }
         .accessibilityAddTraits(selected ? .isSelected : [])
