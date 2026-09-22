@@ -6,7 +6,7 @@ Pavement is an iPhone app for car spotting, played a bit like Pokémon Go. Take 
 street, a parking lot or a car show, and Pavement finds every car in the shot, even ones that are
 partly hidden. It adds them to your collection and gives you **Octane** (points) based on how rare they are.
 
-> **Status:** Early development. The app skeleton (five tabs, rarity tiers) builds and runs. Features are next.
+> **Status:** Early development. The app skeleton, rarity tiers and email sign-in (Supabase) work. Features are next.
 
 ---
 
@@ -97,9 +97,12 @@ The app is built by six AI agents, each with its own area:
 
 ## Getting started
 
-1. Clone the repo and open `Pavement.xcodeproj` in Xcode.
-2. Choose an iPhone simulator (or your own iPhone) and press **Run** (⌘R).
-3. Run the tests with **⌘U**.
+1. Clone the repo.
+2. Copy `Secrets.example.swift` to `Pavement/Config/Secrets.swift` and fill in your Supabase
+   project URL and **publishable** key. That file is gitignored.
+3. Open `Pavement.xcodeproj` in Xcode (it downloads the Supabase package on first open).
+4. Choose an iPhone simulator (or your own iPhone) and press **Run** (⌘R).
+5. Run the tests with **⌘U**. (One test contacts Supabase, so it needs internet.)
 
 From the command line:
 
@@ -118,8 +121,10 @@ Xcode. Your collection is stored online, so nothing is lost.
 ```
 Pavement/            The iOS app
   App/               App entry point and main tab bar
-  Features/          One folder per feature (Spot, Spots, Rankings, Friends, Profile)
+  Config/            Secrets.swift (gitignored: Supabase URL and key)
+  Features/          One folder per feature (Auth, Profile, Spot, Spots, …)
   Models/            Shared data types (e.g. RarityTier)
+  Services/          Connections to outside services (Supabase)
 PavementTests/       Unit tests
 ```
 

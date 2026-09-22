@@ -2,6 +2,7 @@
 notes/
 
 # Secrets: never commit API keys
+Pavement/Config/Secrets.swift
 Secrets.xcconfig
 *.env
 .env*
