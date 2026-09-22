@@ -19,7 +19,7 @@ struct RootTabView: View {
                 SpotsView(app: app)
             }
             Tab("Rankings", systemImage: "chart.bar", value: .rankings) {
-                PlaceholderScreen(title: "Rankings", owner: "Studio", icon: "chart.bar")
+                RankingsView(app: app)
             }
             Tab("Friends", systemImage: "person.2", value: .friends) {
                 PlaceholderScreen(title: "Friends", owner: "Courier", icon: "person.2")
