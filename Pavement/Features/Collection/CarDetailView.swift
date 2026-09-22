@@ -52,6 +52,7 @@ struct CarDetailView: View {
         }
         .background(Theme.background)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar { ShareSpotButton(entry: entry, photos: app.photos) }
         .sheet(isPresented: $showingEngine) { EngineSheet(engine: car.engine) }
     }
 

@@ -17,6 +17,10 @@ struct PavementApp: App {
                     DebugReviewPreview(imagePath: path)
                 } else if let engine = UserDefaults.standard.string(forKey: "previewEngine").flatMap(EngineType.init(rawValue:)) {
                     EngineViewer(engine: engine)
+                } else if let id = UserDefaults.standard.string(forKey: "previewShareCard"),
+                          let car = AppModel.demo().catalog.car(id: id) {
+                    ShareCardView(car: car, photo: nil, city: "Chicago")
+                        .scaleEffect(0.34).frame(width: 368, height: 459)
                 } else if CommandLine.arguments.contains("-previewTabs") {
                     RootTabView(auth: auth, app: .demo())
                 } else {
