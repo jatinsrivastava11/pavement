@@ -7,10 +7,13 @@ Everything here keeps the project at $0.
 1. **Apply the database migrations.** In Supabase → SQL Editor, run in order:
    `supabase/migrations/0001_profiles_and_spots.sql`, `0002_seed_car_tiers.sql`, `0003_friends.sql`,
    `0004_delete_account.sql`.
-   They've been tested locally against real Postgres 17 with a Supabase stand-in
-   (`Tools/test_database.sh`): server-side Octane, anti-farming, RLS privacy, friends and account
-   deletion all pass. Supabase's real `auth` setup could still differ slightly, so check the app
-   after applying.
+   They've been tested locally against real Postgres 17 with a Supabase stand-in:
+   - `Tools/test_database.sh` (SQL rules: server-side Octane, anti-farming, privacy, friends,
+     account deletion)
+   - `Tools/test_app_against_database.sh` (the **app's own code** against Postgres + PostgREST:
+     uploads, no duplicates, spot counts, usernames, friend requests, friends-only visibility,
+     forged spots rewritten to their real owner)
+   Supabase's real `auth` setup could still differ slightly, so check the app after applying.
    This switches on community rankings, friends, and server-side Octane. It hasn't been tested
    against a real database yet, so expect a round of fixes.
 2. **Check spot syncing live.** The upload queue is built and tested with a stand-in server
@@ -24,10 +27,11 @@ Everything here keeps the project at $0.
 6. **Camera orientation and depth** on the actual device.
 
 ## Recognition (biggest remaining work)
-7. **Only 41 of 914 models can be identified**, and it names only ~14% of known cars (it leaves
-   most unnamed rather than risk a wrong name; 91% right when it does name one). Scaling up needs
-   more photos per model. Commons search is thin for some (Toyota Camry, Corolla, RAV4, Hilux),
-   so try Commons *categories* instead of search.
+7. **Only 44 of 914 models can be identified**, and it names ~15% of known cars (it leaves most
+   unnamed rather than risk a wrong name; 89% right when it does name one). Commons *categories*
+   work far better than search (hundreds of photos per model), so the next batch of models can be
+   added the same way. The Toyota Hilux category is named differently on Commons and came back
+   empty.
 8. ~~Anti-cheat on picks~~ **Done:** users can no longer choose the model. The app names it
    itself, only at 95%+ confidence, and has an "other car" category so unknown models are
    refused (wrongly named unknown cars went from 66% to 20%).

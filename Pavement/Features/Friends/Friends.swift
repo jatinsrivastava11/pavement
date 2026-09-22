@@ -57,8 +57,10 @@ enum Username {
 /// Talks to the friends tables. Needs `supabase/migrations/0001` and `0003` applied.
 struct FriendsService: Sendable {
     var client: SupabaseClient = supabase
+    /// Who "I" am. Normally the signed-in session; tests can supply an id directly.
+    var currentUserID: @Sendable (SupabaseClient) async throws -> UUID = { try await $0.auth.session.user.id }
 
-    func myID() async throws -> UUID { try await client.auth.session.user.id }
+    func myID() async throws -> UUID { try await currentUserID(client) }
 
     func myProfile() async throws -> PublicProfile {
         try await client.from("profiles").select("id, username, octane").eq("id", value: myID()).single().execute().value

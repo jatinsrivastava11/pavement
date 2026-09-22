@@ -4,13 +4,13 @@ import Vision
 
 /// Suggests which car model a cropped car photo shows.
 ///
-/// Knows 41 common and rare models plus an "other" category (trained on dozens of other models) so it
+/// Knows 44 common and rare models plus an "other" category (trained on dozens of other models) so it
 /// can say "not one I know". The app names the car itself (users can't choose), only when the model is
 /// at least `minConfidence` sure, the answer isn't "other", and mirrored/zoomed views agree.
 ///
-/// Measured on held-out photographers (cut-off chosen from a sweep): of 528 known test cars, 73 named
-/// right and 6 wrong; of 61 cars from models it never saw, 1 wrongly named. When it names a car it's
-/// right 91% of the time. Most cars are left unnamed rather than risk a wrong name.
+/// Measured on held-out photographers (cut-off chosen from a sweep): of 582 known test cars, 88 named
+/// right and 10 wrong; of 61 cars from models it never saw, 1 wrongly named. When it names a car it's
+/// right 89% of the time. Most cars are left unnamed rather than risk a wrong name.
 final class CarIdentifier: @unchecked Sendable {
     struct Suggestion: Equatable, Sendable {
         let carID: String
