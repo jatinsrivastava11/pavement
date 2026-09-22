@@ -67,10 +67,11 @@ struct TierBadge: View {
 struct OctaneLabel: View {
     let amount: Int
     var prefix = ""
+    var font: Font = .subheadline
 
     var body: some View {
         Label("\(prefix)\(amount.formatted())", systemImage: "fuelpump.fill")
-            .font(.subheadline.weight(.bold).monospacedDigit())
+            .font(font.weight(.bold).monospacedDigit())
             .foregroundStyle(Theme.accent)
             .accessibilityLabel("\(prefix)\(amount) Octane")
     }

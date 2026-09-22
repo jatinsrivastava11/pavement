@@ -124,7 +124,7 @@ struct SpotReviewView: View {
 
     private func summary(_ spots: [Spot]) -> some View {
         VStack(spacing: Theme.spacing) {
-            OctaneLabel(amount: spots.reduce(0) { $0 + $1.octane }, prefix: "+").font(.largeTitle.weight(.heavy))
+            OctaneLabel(amount: spots.reduce(0) { $0 + $1.octane }, prefix: "+", font: .largeTitle)
             ForEach(spots) { spot in
                 if let car = app.catalog.car(id: spot.carID) {
                     HStack {

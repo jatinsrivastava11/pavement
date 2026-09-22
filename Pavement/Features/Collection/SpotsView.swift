@@ -44,7 +44,7 @@ struct SpotsView: View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
                 Text("Total Octane").font(.caption.weight(.semibold)).foregroundStyle(Theme.textSecondary)
-                OctaneLabel(amount: app.spots.totalOctane).font(.title.weight(.heavy))
+                OctaneLabel(amount: app.spots.totalOctane, font: .title)
             }
             Spacer()
             VStack(alignment: .trailing, spacing: 4) {

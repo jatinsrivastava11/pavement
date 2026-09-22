@@ -22,10 +22,10 @@ struct RootTabView: View {
                 RankingsView(app: app)
             }
             Tab("Friends", systemImage: "person.2", value: .friends) {
-                PlaceholderScreen(title: "Friends", owner: "Courier", icon: "person.2")
+                FriendsView(app: app)
             }
             Tab("Profile", systemImage: "person.crop.circle", value: .profile) {
-                ProfileView(auth: auth)
+                ProfileView(auth: auth, app: app)
             }
         }
         .tint(Theme.accent)
