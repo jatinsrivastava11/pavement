@@ -8,8 +8,9 @@ import Vision
 /// "not one I know". The app names the car itself (users can't choose), only when the model is at
 /// least `minConfidence` sure and the answer isn't "other".
 ///
-/// Measured at 0.95 on held-out photographers: known cars named right 38%, wrong 26%, unnamed 36%.
-/// Cars of models it never saw at all: wrongly named 20% (the previous model without "other": 66%).
+/// Measured on held-out photographers with the full rule (95% + mirrored/zoomed views agree):
+/// known cars named right 66/179, wrong 14/179; cars of models it never saw wrongly named 1/61.
+/// When it names a car it's right 81% of the time. Trained with extra rear-view photos.
 final class CarIdentifier: @unchecked Sendable {
     struct Suggestion: Equatable, Sendable {
         let carID: String

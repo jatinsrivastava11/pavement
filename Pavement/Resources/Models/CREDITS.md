@@ -9,6 +9,6 @@ License: YOLO License v2, "Darknet is public domain. Do whatever you want with i
 above ("YOLOv3Int8LUT" from Apple's model gallery). Used on the whole photo for large cars.
 
 **CarIdentifierPilot.mlmodel**: Pavement's own image classifier (22 car models plus an "other"
-category), trained with Apple Create ML on 1,105 photos from Wikimedia Commons, all under free licenses. The photos
+category), trained with Apple Create ML on 2,110 photos from Wikimedia Commons, all under free licenses. The photos
 aren't included in the app. Every source file and uploader is listed in
 `Data/training/pilot_sources.json`.
