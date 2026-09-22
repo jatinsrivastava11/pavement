@@ -55,7 +55,8 @@ Every car in the world is ranked on two scales, shown side by side:
   spots something rare.
 
 ### Accounts
-- Sign in with **Apple**, **Google**, or **email and password**.
+- Sign in with **email and password**. **Sign in with Apple** comes later (it needs the paid Apple
+  Developer Program).
 
 ---
 
