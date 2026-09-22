@@ -1,6 +1,7 @@
 @preconcurrency import AVFoundation
 import CoreGraphics
 import CoreImage
+import UIKit
 import ImageIO
 
 /// Runs the live camera and captures photos, with depth when the iPhone supports it.
@@ -155,6 +156,17 @@ final class CameraController: NSObject, @unchecked Sendable {
         return (values, width, height)
     }
 }
+
+#if DEBUG
+extension CameraController.Capture {
+    /// A capture from a still photo (no depth), for testing in the simulator.
+    init?(stillImage: UIImage) {
+        guard let cg = stillImage.cgImage else { return nil }
+        let (lum, w, h) = CameraController.luminance(of: cg, maxSide: 1024)
+        self.init(image: cg, luminance: lum, width: w, height: h, depth: nil, uprightDepth: nil, horizontalFOV: nil)
+    }
+}
+#endif
 
 extension CameraController: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: (any Error)?) {
