@@ -1,0 +1,23 @@
+# Private learning notes (not uploaded to GitHub)
+notes/
+
+# Secrets: never commit API keys
+Secrets.xcconfig
+*.env
+.env*
+GoogleService-Info.plist
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
