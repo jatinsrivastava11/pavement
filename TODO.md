@@ -44,7 +44,8 @@ Everything here keeps the project at $0.
 11. **Sign in with Apple and push notifications:** when joining the $99/year Apple Developer
     Program (only if publishing).
 12. Turn **email confirmation** back on before publishing.
-13. **Exact 3D car models** where free, properly licensed ones exist (CC0 / CC-BY).
+13. ~~3D car models~~ **Done** per body style (Kenney, CC0), painted in the photo's color. Exact
+    per-model 3D cars remain a "later" idea.
 14. Old commits on GitHub still show the real email (history rewrite was left for later).
 15. The full detector model is 59 MB, over GitHub's recommended 50 MB (the hard limit is 100 MB).
     Git LFS is free up to 1 GB if it becomes a problem.

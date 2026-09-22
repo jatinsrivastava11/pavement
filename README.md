@@ -82,9 +82,10 @@ Every car in the world is ranked on two scales, shown side by side:
 | iOS app | Swift, SwiftUI |
 | Camera | AVFoundation |
 | Motion / driving detection | Core Motion (`CMMotionActivityManager`), Core Location |
-| Car detection | YOLOv3-Tiny (Core ML, public domain) with tiling to catch small cars |
-| Car identification | Own Create ML classifier (pilot: 22 models), user confirms from top suggestions |
+| Car detection | YOLOv3-Tiny with tiling (small cars) + full YOLOv3 (big cars at the edge), public domain |
+| Car identification | Own Create ML classifier (22 models + "other"); the app names cars itself only when confident and consistent |
 | 3D engines | RealityKit, built from code for every engine type (no downloaded models) |
+| 3D cars | Kenney Car Kit (CC0) per body style, repainted in the color of the car in your photo |
 | Car images | The user's own cropped photo |
 | Backend | Supabase (free plan): accounts, collections, Octane only |
 | Photos | Stay on the user's iPhone and are never uploaded |
