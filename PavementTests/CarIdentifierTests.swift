@@ -1,4 +1,5 @@
 import CoreGraphics
+import CoreML
 import Foundation
 import ImageIO
 import Testing
@@ -16,11 +17,53 @@ struct CarIdentifierTests {
 
     @Test("Every recognizable model is in the catalog, and the quick label list matches the model")
     func labelsInCatalog() {
-        #expect(identifier.knownCarIDs.count >= 22)
+        // The recognizer is split across experts, so this also proves every expert was found and
+        // read: if one failed to load, the count would quietly drop to the other expert's cars.
+        #expect(identifier.knownCarIDs.count >= 70)
         #expect(Set(identifier.knownCarIDs) == CarIdentifier.recognizableIDs)
         for id in identifier.knownCarIDs {
             #expect(catalog.car(id: id) != nil, "\(id) isn't in the catalog")
         }
+    }
+
+    @Test("Each expert covers its own group of cars, and the two do not overlap")
+    func expertsAreDisjoint() throws {
+        // "Tall" cars (SUVs, pickups, vans, wagons) and "low" ones (saloons, hatchbacks, coupés)
+        // must be learned by different experts: if a car appeared in both, the router's choice
+        // would stop mattering and the split would not be buying anything.
+        var carsPerExpert: [String: Set<String>] = [:]
+        for (group, name) in CarIdentifier.groups {
+            let url = try #require(Bundle.main.url(forResource: name, withExtension: "mlmodelc"),
+                                   "expert \(name) is missing from the app")
+            let model = try MLModel(contentsOf: url)
+            let labels = try #require(model.modelDescription.classLabels as? [String])
+            carsPerExpert[group] = Set(labels).subtracting([CarIdentifier.otherLabel])
+        }
+        #expect(carsPerExpert.count == CarIdentifier.groups.count)
+        let tall = try #require(carsPerExpert["tall"]), low = try #require(carsPerExpert["low"])
+        #expect(!tall.isEmpty && !low.isEmpty)
+        #expect(tall.isDisjoint(with: low), "a car is taught to both experts: \(tall.intersection(low).sorted())")
+
+        // And each expert's cars should really be of its own body shape.
+        let tallBodies: Set = ["suv", "pickup", "van", "wagon"]
+        for id in tall {
+            let body = try #require(catalog.car(id: id)?.body.rawValue)
+            #expect(tallBodies.contains(body), "\(id) is a \(body) but is taught to the tall expert")
+        }
+        for id in low {
+            let body = try #require(catalog.car(id: id)?.body.rawValue)
+            #expect(!tallBodies.contains(body), "\(id) is a \(body) but is taught to the low expert")
+        }
+    }
+
+    @Test("The router answers with one of the groups the app has an expert for")
+    func routerPicksAKnownGroup() throws {
+        let url = try #require(Bundle(for: BundleToken.self).url(forResource: "street01", withExtension: "jpg"))
+        let source = try #require(CGImageSourceCreateWithURL(url as CFURL, nil))
+        let image = try #require(CGImageSourceCreateImageAtIndex(source, 0, nil))
+        let routed = try identifier.route(image)
+        let route = try #require(routed, "the router refused to pick any group")
+        #expect(CarIdentifier.groups.keys.contains(route.group), "unknown group \(route.group)")
     }
 
     @Test("Returns up to 3 distinct suggestions, best first")
