@@ -33,6 +33,10 @@ struct RootTabView: View {
     }
 }
 
+// The sample data this preview needs only exists in development builds, so the preview has to be
+// development-only too; without this the release build for a real iPhone does not compile.
+#if DEBUG
 #Preview {
     RootTabView(auth: AuthModel(), app: .demo())
 }
+#endif

@@ -153,6 +153,8 @@ extension BodyStyle {
     }
 }
 
+#if DEBUG
 #Preview {
     SpotsView(app: .demo())
 }
+#endif
