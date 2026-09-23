@@ -82,8 +82,27 @@ private struct DebugReviewPreview: View {
             guard let ui = UIImage(contentsOfFile: imagePath), let cg = ui.cgImage,
                   let pipeline = try? SpotPipeline(catalog: app.catalog) else { cars = []; return }
             image = ui
-            cars = (try? pipeline.run(on: cg)) ?? []
+            var found = (try? pipeline.run(on: cg)) ?? []
+            // The simulator's image-feature model answers the same thing for every photo, so a real
+            // identification can't happen here. `-previewLongestNames` forces the results to the
+            // longest car names in the catalogue instead, which is what the review layout has to
+            // survive: that's where text runs off the edge if a row can't wrap.
+            if UserDefaults.standard.bool(forKey: "previewLongestNames") {
+                let longest = app.catalog.cars
+                    .sorted { $0.displayName.count > $1.displayName.count }
+                    .prefix(max(1, found.count))
+                found = zip(found.isEmpty ? [dummyCar(cg)] : found, longest).map {
+                    SpotPipeline.FoundCar(crop: $0.crop, box: $0.box, verdict: .identified(carID: $1.id))
+                }
+            }
+            cars = found
         }
+
+    }
+
+    /// A stand-in result for photos where no car was detected, so the layout can still be looked at.
+    private func dummyCar(_ image: CGImage) -> SpotPipeline.FoundCar {
+        SpotPipeline.FoundCar(crop: image, box: CGRect(x: 0, y: 0, width: 1, height: 1), verdict: .unidentified)
     }
 }
 #endif

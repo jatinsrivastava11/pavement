@@ -35,6 +35,16 @@ struct SpotsView: View {
                 .padding(Theme.spacing)
             }
             .background(Theme.background)
+            #if DEBUG
+            // `-previewDetail 0` opens straight into the first spot's detail screen, which is
+            // otherwise only reachable by tapping and so cannot be screenshotted from a script.
+            .onAppear {
+                if let n = UserDefaults.standard.object(forKey: "previewDetail") as? Int,
+                   path.isEmpty, entries.indices.contains(n) {
+                    path = [entries[n]]
+                }
+            }
+            #endif
             .navigationTitle("Spots")
             .toolbarColorScheme(Theme.colorScheme, for: .navigationBar)
             .navigationDestination(for: CollectionEntry.self) { CarDetailView(entry: $0, app: app) }
@@ -66,6 +76,10 @@ struct SpotsView: View {
         .card()
     }
 
+    /// The row of tier filters. It runs the full width of the screen rather than sitting inside the
+    /// page's padding: a horizontal scroller that is inset on both sides clips its chips against the
+    /// padding, so the last one looks cut in half at the edge and cannot be scrolled clear of it.
+    /// The padding is given back as scroll content margins, so the chips still line up with the page.
     private var tierFilter: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
@@ -75,6 +89,9 @@ struct SpotsView: View {
                 }
             }
         }
+        .contentMargins(.horizontal, Theme.spacing, for: .scrollContent)
+        .padding(.horizontal, -Theme.spacing)
+        .scrollClipDisabled()
     }
 
     private func chip(_ title: String, selected: Bool, color: Color, action: @escaping () -> Void) -> some View {
@@ -97,10 +114,14 @@ struct SpotCard: View {
         VStack(alignment: .leading, spacing: 10) {
             CarThumbnail(car: entry.car, photo: entry.spots.compactMap(\.photoFile).first.flatMap(photos.image(named:)))
                 .frame(height: 110)
+            // These cards are only about 150pt wide, so a long badge ("LEGENDARY") or a long make
+            // ("Mercedes-Benz") has to shrink to fit rather than run out past the card's edge.
             TierBadge(tier: entry.car.tier)
+                .lineLimit(1).minimumScaleFactor(0.7)
             Text(entry.car.make).font(.caption).foregroundStyle(Theme.textSecondary)
+                .lineLimit(1).minimumScaleFactor(0.75)
             Text(entry.car.model).font(.headline).foregroundStyle(Theme.textPrimary)
-                .lineLimit(2).fixedSize(horizontal: false, vertical: true)
+                .lineLimit(2).minimumScaleFactor(0.8).fixedSize(horizontal: false, vertical: true)
             HStack {
                 OctaneLabel(amount: entry.totalOctane)
                 Spacer()
