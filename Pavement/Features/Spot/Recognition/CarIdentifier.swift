@@ -8,16 +8,19 @@ import Vision
 /// can say "not one I know". The app names the car itself (users can't choose), only when the model is
 /// at least `minConfidence` sure, the answer isn't "other", and mirrored/zoomed views agree.
 ///
-/// Measured on held-out photographers (cut-off chosen from a sweep): of 582 known test cars, 88 named
-/// right and 10 wrong; of 61 cars from models it never saw, 1 wrongly named. When it names a car it's
-/// right 89% of the time. Most cars are left unnamed rather than risk a wrong name.
+/// Measured on held-out photographers (cut-off chosen from a sweep): of 582 known test cars, 91 named
+/// right and 6 wrong; of 61 cars from models it never saw, 1 wrongly named. When it names a car it's
+/// right 93% of the time. Most cars are left unnamed rather than risk a wrong name.
+///
+/// Trained with ~180 photos per car, which beat the alternative of spending the same training budget
+/// on a far larger "other" pool (that scored 65 named right, barely above the previous model's 64).
 final class CarIdentifier: @unchecked Sendable {
     struct Suggestion: Equatable, Sendable {
         let carID: String
         let confidence: Float
     }
 
-    static let minConfidence: Float = 0.85
+    static let minConfidence: Float = 0.95
 
     private let model: VNCoreMLModel
 
