@@ -18,7 +18,14 @@ Everything here keeps the project at $0.
 6. **Camera orientation and depth** on the actual device.
 
 ## Recognition (biggest remaining work)
-7. **Only 44 of 914 models can be identified**, and it names ~15% of known cars (it leaves most
+7. **Identification is at a plateau, not a data shortage.** Tried adding ~5,000 more photos
+   (median 100 -> 260 per model). Deepening only the known models made recognition better but
+   broke refusal of unknown cars (1/61 fooled -> 8/61), because the "other car" category was
+   left behind. Rebalancing (two variants tested at a fixed budget) got back to parity but no
+   further: differences were within noise. **Create ML on this Mac fails above ~6,500 training
+   photos** ("failed to create CVPixelBufferPool"), so more photos per model must come out of
+   "other". Real gains need a bigger training budget or a car-specific model, not more scraping.
+   Only 44 of 914 models can be identified, and it names ~15% of known cars (it leaves most
    unnamed rather than risk a wrong name; 89% right when it does name one). Commons *categories*
    work far better than search (hundreds of photos per model), so the next batch of models can be
    added the same way. The Toyota Hilux category is named differently on Commons and came back
