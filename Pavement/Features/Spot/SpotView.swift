@@ -7,7 +7,12 @@ struct SpotView: View {
     @State private var driving = DrivingMonitor()
     @State private var status: Status = .starting
     @State private var isCapturing = false
+    @State private var stage: ProcessingOverlay.Stage = .looking
     @State private var result: CaptureResult?
+
+    /// The waiting screen stays up at least this long. Recognition is sometimes quick, and a panel
+    /// that flashes up and vanishes reads as a glitch rather than as work being done.
+    private static let minimumWait: Duration = .milliseconds(1_400)
 
     private enum Status: Equatable {
         case starting, running, failed(String)
@@ -25,8 +30,11 @@ struct SpotView: View {
     /// Debug builds can use a photo file as a stand-in camera (the simulator has none):
     /// launch with `-previewCameraImage /path/to/photo.jpg`.
     private let debugImage = UserDefaults.standard.string(forKey: "previewCameraImage").flatMap(UIImage.init(contentsOfFile:))
+    /// Holds the waiting screen up so it can be looked at: launch with `-previewProcessing YES`.
+    static let previewProcessing = UserDefaults.standard.bool(forKey: "previewProcessing")
     #else
     private let debugImage: UIImage? = nil
+    static let previewProcessing = false
     #endif
 
     @ViewBuilder private var preview: some View {
@@ -51,7 +59,7 @@ struct SpotView: View {
                 preview.ignoresSafeArea(edges: .top)
                 ViewfinderFrame().padding(.horizontal, 28).padding(.vertical, 140).allowsHitTesting(false)
                 VStack {
-                    Text(isCapturing ? "Looking for cars…" : "Point at cars and tap")
+                    Text("Point at cars and tap")
                         .font(.subheadline.weight(.semibold))
                         .padding(.horizontal, 14).padding(.vertical, 8)
                         .background(.ultraThinMaterial, in: Capsule())
@@ -60,6 +68,7 @@ struct SpotView: View {
                     ShutterButton(isBusy: isCapturing, action: capture)
                         .padding(.bottom, 28)
                 }
+                if isCapturing || Self.previewProcessing { ProcessingOverlay(stage: stage) }
             }
             if driving.access != .allowed {
                 PassengerCheckView(access: driving.access,
@@ -89,9 +98,13 @@ struct SpotView: View {
 
     private func capture() {
         guard driving.access == .allowed else { return }
-        isCapturing = true
+        stage = .looking
+        withAnimation(.easeOut(duration: 0.2)) { isCapturing = true }
         Task {
-            defer { isCapturing = false }
+            let started = ContinuousClock.now
+            defer {
+                withAnimation(.easeIn(duration: 0.2)) { isCapturing = false }
+            }
             do {
                 let shot: CameraController.Capture
                 #if DEBUG
@@ -109,8 +122,14 @@ struct SpotView: View {
                     let report = ScreenDetector().evaluate(depth: shot.depth, luminance: shot.luminance,
                                                            width: shot.width, height: shot.height)
                     if case .reject = report.decision { return (report, [SpotPipeline.FoundCar]()) }
-                    return (report, try pipeline.run(on: shot.image, depth: shot.uprightDepth, horizontalFOV: shot.horizontalFOV))
+                    return (report, try pipeline.run(on: shot.image, depth: shot.uprightDepth, horizontalFOV: shot.horizontalFOV) { count in
+                        guard count > 0 else { return }
+                        Task { @MainActor in withAnimation { stage = .identifying(count) } }
+                    })
                 }.value
+                // Let the waiting screen finish its turn before the results slide up.
+                let elapsed = ContinuousClock.now - started
+                if elapsed < Self.minimumWait { try? await Task.sleep(for: Self.minimumWait - elapsed) }
                 result = CaptureResult(image: UIImage(cgImage: shot.image), report: report, cars: cars)
             } catch {
                 status = .failed(error.localizedDescription)

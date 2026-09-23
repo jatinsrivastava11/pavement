@@ -37,11 +37,16 @@ struct SpotPipeline: Sendable {
     ///   - image: upright photo (see `CGImage.upright(orientation:)`).
     ///   - depth: upright depth map, when the iPhone has one; used to catch toy cars.
     ///   - horizontalFOV: camera field of view across the upright photo's width, in degrees.
-    func run(on image: CGImage, depth: DepthMap? = nil, horizontalFOV: Double? = nil) throws -> [FoundCar] {
+    ///   - onCarsFound: called once with how many cars were found, before the slower work of naming
+    ///     them begins, so the waiting screen can say what it is doing.
+    func run(on image: CGImage, depth: DepthMap? = nil, horizontalFOV: Double? = nil,
+             onCarsFound: (@Sendable (Int) -> Void)? = nil) throws -> [FoundCar] {
         let aspect = Double(image.height) / Double(image.width)
-        return try detector.detect(in: image)
+        let detections = try detector.detect(in: image)
             .filter { $0.box.width * $0.box.height >= minBoxArea }
             .sorted { $0.box.width * $0.box.height > $1.box.width * $1.box.height }   // biggest first
+        onCarsFound?(detections.count)
+        return try detections
             .compactMap { detection -> FoundCar? in
                 guard let crop = Self.crop(image, to: detection.box) else { return nil }
                 if CarSizeCheck.isToy(box: detection.box, depth: depth, horizontalFOV: horizontalFOV, aspect: aspect) == true {
