@@ -19,40 +19,52 @@ struct CarIdentifierTests {
     func labelsInCatalog() {
         // The recognizer is split across experts, so this also proves every expert was found and
         // read: if one failed to load, the count would quietly drop to the other expert's cars.
-        #expect(identifier.knownCarIDs.count >= 70)
+        #expect(identifier.knownCarIDs.count >= 150)
         #expect(Set(identifier.knownCarIDs) == CarIdentifier.recognizableIDs)
         for id in identifier.knownCarIDs {
             #expect(catalog.car(id: id) != nil, "\(id) isn't in the catalog")
         }
     }
 
-    @Test("Each expert covers its own group of cars, and the two do not overlap")
-    func expertsAreDisjoint() throws {
-        // "Tall" cars (SUVs, pickups, vans, wagons) and "low" ones (saloons, hatchbacks, coupés)
-        // must be learned by different experts: if a car appeared in both, the router's choice
-        // would stop mattering and the split would not be buying anything.
-        var carsPerExpert: [String: Set<String>] = [:]
+    /// The cars each bundled expert was taught.
+    private func carsPerExpert() throws -> [String: Set<String>] {
+        var result: [String: Set<String>] = [:]
         for (group, name) in CarIdentifier.groups {
             let url = try #require(Bundle.main.url(forResource: name, withExtension: "mlmodelc"),
                                    "expert \(name) is missing from the app")
             let model = try MLModel(contentsOf: url)
             let labels = try #require(model.modelDescription.classLabels as? [String])
-            carsPerExpert[group] = Set(labels).subtracting([CarIdentifier.otherLabel])
+            result[group] = Set(labels).subtracting([CarIdentifier.otherLabel])
         }
-        #expect(carsPerExpert.count == CarIdentifier.groups.count)
-        let tall = try #require(carsPerExpert["tall"]), low = try #require(carsPerExpert["low"])
-        #expect(!tall.isEmpty && !low.isEmpty)
-        #expect(tall.isDisjoint(with: low), "a car is taught to both experts: \(tall.intersection(low).sorted())")
+        return result
+    }
 
-        // And each expert's cars should really be of its own body shape.
-        let tallBodies: Set = ["suv", "pickup", "van", "wagon"]
-        for id in tall {
-            let body = try #require(catalog.car(id: id)?.body.rawValue)
-            #expect(tallBodies.contains(body), "\(id) is a \(body) but is taught to the tall expert")
+    @Test("Every expert is bundled, and no car is taught to two of them")
+    func expertsAreDisjoint() throws {
+        // If a car were taught to two experts, the router's choice would stop mattering for it and
+        // the split would not be buying anything. This also proves each expert file is present and
+        // loadable: a missing one would otherwise just quietly shrink the recognizer.
+        let cars = try carsPerExpert()
+        #expect(cars.count == CarIdentifier.groups.count)
+        for (group, ids) in cars {
+            #expect(!ids.isEmpty, "the \(group) expert knows no cars")
         }
-        for id in low {
-            let body = try #require(catalog.car(id: id)?.body.rawValue)
-            #expect(!tallBodies.contains(body), "\(id) is a \(body) but is taught to the low expert")
+        for (a, b) in cars.keys.sorted().combinations() {
+            let shared = cars[a]!.intersection(cars[b]!)
+            #expect(shared.isEmpty, "\(shared.sorted()) taught to both \(a) and \(b)")
+        }
+    }
+
+    @Test("Each expert's cars really are of the body shapes it was meant to learn")
+    func expertsMatchTheirBodyStyles() throws {
+        // The router decides by body shape, so an expert holding a car of the wrong shape would be
+        // unreachable for that car however confident it was.
+        for (group, ids) in try carsPerExpert() {
+            let expected = try #require(CarIdentifier.bodyStyles[group], "no body styles listed for \(group)")
+            for id in ids {
+                let body = try #require(catalog.car(id: id)?.body.rawValue, "\(id) isn't in the catalog")
+                #expect(expected.contains(body), "\(id) is a \(body) but is taught to the \(group) expert")
+            }
         }
     }
 
@@ -106,5 +118,12 @@ struct IdentifierViewsTests {
     func zoom() throws {
         let z = try #require(CarIdentifier.zoomed(marker()))
         #expect(z.width == 84 && z.height == 42)
+    }
+}
+
+private extension Array {
+    /// Every unordered pair, for checking each expert against each other expert.
+    func combinations() -> [(Element, Element)] {
+        indices.flatMap { i in self[(i + 1)...].map { (self[i], $0) } }
     }
 }

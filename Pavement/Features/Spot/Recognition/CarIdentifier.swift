@@ -4,19 +4,24 @@ import Vision
 
 /// Suggests which car model a cropped car photo shows.
 ///
-/// One recognizer can only hold about 45 cars: quality comes from training each car on ~190 photos,
-/// and only about 8,000 photos can be trained at once. So the work is split. A small *router* first
-/// answers an easy, visually obvious question — is this a tall vehicle or a low one? — and the
-/// *expert* for that group, which knows only those cars, names the car. Each expert is also trained
-/// on cars from the other group, so a car sent to the wrong expert is refused rather than misnamed.
+/// One recognizer can only hold about 45 cars: quality comes from training each car on ~150 photos,
+/// and only about 7,500 photos can be trained at once. So the work is split across five *experts*,
+/// one per body shape, and a small *router* picks which of them should answer.
+///
+/// The router is not very good — it sends only about 62% of cars to the right expert, because a
+/// hatchback and a saloon look alike in a photo. It works anyway, because each expert is also
+/// trained on the other groups' cars, so an expert handed a car outside its group answers "other"
+/// instead of guessing. A wrong route costs a refusal, not a wrong name. That was measured against
+/// the alternatives: asking the two best-matching experts, or all five, finds more cars but brings
+/// in far more wrong names (67% and 60% precision against this one's 74%).
 ///
 /// The app names the car itself (users can't choose), only when the expert is at least
 /// `minConfidence` sure, the answer isn't "other", and mirrored/zoomed views agree.
 ///
-/// Measured on held-out photographers, over 1,673 photos of 77 cars plus 61 photos of models it was
-/// never taught: 317 named right, 47 wrong, 5 of the 61 unknown models wrongly named. When it names
-/// a car it is right 86% of the time. The single 44-car recognizer this replaced managed 114 right
-/// and 80 wrong on the same photos (58%), because it confidently mislabels every car outside its 44.
+/// Measured on held-out photographers, 4,837 photos of 128 cars plus 61 photos of models it was
+/// never taught: 575 named right, 190 wrong, 8 of the 61 unknown models wrongly named. The 75-car
+/// recognizer this replaced managed 219 right and 330 wrong on the same photos, because it
+/// confidently mislabels every car outside the 75 it knows.
 final class CarIdentifier: @unchecked Sendable {
     struct Suggestion: Equatable, Sendable {
         let carID: String
@@ -31,7 +36,17 @@ final class CarIdentifier: @unchecked Sendable {
     static let otherLabel = "other"
 
     /// The groups the router chooses between, and the expert bundled for each.
-    static let groups = ["tall": "CarExpertTall", "low": "CarExpertLow"]
+    static let groups = ["suv": "CarExpertSuv", "utility": "CarExpertUtility",
+                         "compact": "CarExpertCompact", "saloon": "CarExpertSaloon",
+                         "sporty": "CarExpertSporty"]
+
+    /// Which body styles each expert was taught. Used by the tests to check every car really is
+    /// with its own group, and to keep this list honest as cars are added.
+    static let bodyStyles: [String: Set<String>] = [
+        "suv": ["suv"], "utility": ["pickup", "van", "wagon"],
+        "compact": ["hatchback"], "saloon": ["sedan"],
+        "sporty": ["coupe", "supercar", "convertible"],
+    ]
 
     private let router: VNCoreMLModel
     private let experts: [String: VNCoreMLModel]
