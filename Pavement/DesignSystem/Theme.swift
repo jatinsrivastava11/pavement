@@ -139,11 +139,16 @@ struct TierBadge: View {
     var compact = false
 
     var body: some View {
-        Label(compact ? "" : tier.displayName.uppercased(), systemImage: tier.symbol)
+        // Compact keeps the tier's name — it is the whole point of the badge — but sets it smaller
+        // and tighter, and lets it shrink, so a long one ("OCCASIONAL") still reads in a narrow
+        // card instead of being cut to "OCCASI…".
+        Label(tier.displayName.uppercased(), systemImage: tier.symbol)
             .labelStyle(.titleAndIcon)
-            .font(.caption.weight(.heavy))
-            .tracking(0.8)
-            .padding(.horizontal, compact ? 6 : 10)
+            .font(compact ? .caption2.weight(.heavy) : .caption.weight(.heavy))
+            .tracking(compact ? 0.2 : 0.8)
+            .lineLimit(1)
+            .minimumScaleFactor(0.6)
+            .padding(.horizontal, compact ? 7 : 10)
             .padding(.vertical, 5)
             .foregroundStyle(Theme.badgeText)
             .background(tier.color, in: Capsule())

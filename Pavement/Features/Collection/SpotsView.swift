@@ -24,7 +24,7 @@ struct SpotsView: View {
                             .foregroundStyle(Theme.textSecondary)
                             .padding(.top, 40)
                     } else {
-                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 12)], spacing: 12) {
+                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 104), spacing: 10)], spacing: 10) {
                             ForEach(entries) { entry in
                                 NavigationLink(value: entry) { SpotCard(entry: entry, photos: app.photos) }
                                     .buttonStyle(.plain)
@@ -111,26 +111,26 @@ struct SpotCard: View {
     let photos: SpotPhotoStore
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 6) {
             CarThumbnail(car: entry.car, photo: entry.spots.compactMap(\.photoFile).first.flatMap(photos.image(named:)))
-                .frame(height: 110)
-            // These cards are only about 150pt wide, so a long badge ("LEGENDARY") or a long make
-            // ("Mercedes-Benz") has to shrink to fit rather than run out past the card's edge.
-            TierBadge(tier: entry.car.tier)
+                .aspectRatio(4 / 3, contentMode: .fit)
+            // The cards are narrow, so a long badge ("LEGENDARY") or make ("Mercedes-Benz") has to
+            // shrink to fit rather than run out past the card's edge.
+            TierBadge(tier: entry.car.tier, compact: true)
                 .lineLimit(1).minimumScaleFactor(0.7)
-            Text(entry.car.make).font(.caption).foregroundStyle(Theme.textSecondary)
+            Text(entry.car.make).font(.caption2).foregroundStyle(Theme.textSecondary)
                 .lineLimit(1).minimumScaleFactor(0.75)
-            Text(entry.car.model).font(.headline).foregroundStyle(Theme.textPrimary)
+            Text(entry.car.model).font(.subheadline.weight(.semibold)).foregroundStyle(Theme.textPrimary)
                 .lineLimit(2).minimumScaleFactor(0.8).fixedSize(horizontal: false, vertical: true)
-            HStack {
+            HStack(spacing: 4) {
                 OctaneLabel(amount: entry.totalOctane)
-                Spacer()
+                Spacer(minLength: 0)
                 if entry.timesSpotted > 1 {
-                    Text("×\(entry.timesSpotted)").font(.caption.weight(.bold)).foregroundStyle(Theme.textSecondary)
+                    Text("×\(entry.timesSpotted)").font(.caption2.weight(.bold)).foregroundStyle(Theme.textSecondary)
                 }
             }
         }
-        .padding(12)
+        .padding(8)
         .background(Theme.surface, in: RoundedRectangle(cornerRadius: Theme.corner, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: Theme.corner, style: .continuous)
             .stroke(entry.car.tier.color.opacity(entry.car.tier == .common ? 0.15 : 0.6), lineWidth: 1.5))
@@ -149,7 +149,9 @@ struct CarThumbnail: View {
             if let photo {
                 Image(uiImage: photo).resizable().scaledToFill()
             } else {
-                Image(systemName: car.body.symbol).font(.system(size: 44)).foregroundStyle(car.tier.color)
+                Image(systemName: car.body.symbol)
+                    .resizable().scaledToFit().padding(.horizontal, 18)
+                    .foregroundStyle(car.tier.color)
             }
         }
         .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
