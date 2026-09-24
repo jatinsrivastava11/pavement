@@ -56,7 +56,10 @@ Everything here keeps the project at $0.
     Program (only if publishing).
 12. Turn **email confirmation** back on before publishing.
 13. ~~3D car models~~ **Done** per body style (Kenney, CC0), painted in the photo's color. Exact
-    per-model 3D cars remain a "later" idea.
+    per-model 3D cars are the **next phase of the project**, to be started when Jatin says so: use
+    an AI to generate the models rather than looking for existing ones, since free accurate car
+    models, patent drawings and photogrammetry have all been tried and ruled out. See the "Next
+    phase" section at the end of `notes/README.md`.
 14. Old commits on GitHub still show the real email (history rewrite was left for later).
 15. The full detector model is 59 MB, over GitHub's recommended 50 MB (the hard limit is 100 MB).
     Git LFS is free up to 1 GB if it becomes a problem.
