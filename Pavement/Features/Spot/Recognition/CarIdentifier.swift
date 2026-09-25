@@ -1,131 +1,136 @@
+import Accelerate
 import CoreGraphics
 import CoreML
 import Vision
 
 /// Suggests which car model a cropped car photo shows.
 ///
-/// One recognizer can only hold about 45 cars: quality comes from training each car on ~150 photos,
-/// and only about 7,500 photos can be trained at once. So the work is split across five *experts*,
-/// one per body shape, and a small *router* picks which of them should answer.
+/// Vision turns the photo into a feature print — a list of 768 numbers describing what it looks
+/// like — and a single matrix of learned weights turns that into a score for every car at once.
+/// That is the whole recognizer: one multiply, about half a megabyte of weights, no Core ML
+/// classifier involved.
 ///
-/// The router is not very good — it sends only about 62% of cars to the right expert, because a
-/// hatchback and a saloon look alike in a photo. It works anyway, because each expert is also
-/// trained on the other groups' cars, so an expert handed a car outside its group answers "other"
-/// instead of guessing. A wrong route costs a refusal, not a wrong name. That was measured against
-/// the alternatives: asking the two best-matching experts, or all five, finds more cars but brings
-/// in far more wrong names (67% and 60% precision against this one's 74%).
+/// It is built this way because the obvious way was the thing holding it back. Create ML's image
+/// classifier does the same two steps, but holds every training image in memory while it does them,
+/// so it runs out of room at roughly 8,000 photos. That limit is what forced the previous design:
+/// five separate recognizers split by body shape, with a router picking between them, each trained
+/// on a fraction of the photos. Extracting the feature prints once, up front, removes the limit
+/// entirely — every car and every photo train together — and the router, the five models and the
+/// 38% of cars the router misdirected all disappear with it.
 ///
-/// The app names the car itself (users can't choose), only when the expert is at least
-/// `minConfidence` sure, the answer isn't "other", and mirrored/zoomed views agree.
+/// The app names the car itself (users can't choose), only when the score is confident enough and
+/// the answer survives the photo being mirrored and slightly zoomed.
 ///
-/// Measured on held-out photographers, 4,837 photos of 128 cars plus 61 photos of models it was
-/// never taught: 575 named right, 190 wrong, 8 of the 61 unknown models wrongly named. The 75-car
-/// recognizer this replaced managed 219 right and 330 wrong on the same photos, because it
-/// confidently mislabels every car outside the 75 it knows.
+/// Measured on held-out photographers: against the five-model version on the same photos, named
+/// right went from 575 to 1,534 and named wrong from 190 to 142 — 2.7 times as many cars
+/// identified, and right 88% of the time when it speaks rather than 74%.
 final class CarIdentifier: @unchecked Sendable {
     struct Suggestion: Equatable, Sendable {
         let carID: String
         let confidence: Float
     }
 
-    static let minConfidence: Float = 0.95
+    /// Chosen from a sweep over held-out photographers. Raising it names fewer cars and is wrong
+    /// less often; the shape of that trade is in the notes.
+    static let minConfidence: Float = 0.8
 
     /// Views of the same crop (mirrored, slightly zoomed) must agree at this confidence.
-    static let agreementConfidence: Float = 0.85
+    static let agreementConfidence: Float = 0.6
+
+    /// One row of weights per car, and the bias for each.
+    private let weights: [Float]
+    private let bias: [Float]
+    private let dims: Int
+    private let carIDs: [String]
+    /// Cosine features are small, so the scores are scaled before the softmax to sharpen them.
+    /// Must match the scale the weights were trained with.
+    private static let logitScale: Float = 12
+
+    init() throws {
+        guard let binURL = Bundle.main.url(forResource: "CarHead", withExtension: "bin"),
+              let jsonURL = Bundle.main.url(forResource: "CarHead", withExtension: "json"),
+              let ids = try JSONSerialization.jsonObject(with: Data(contentsOf: jsonURL)) as? [String]
+        else { throw CocoaError(.fileNoSuchFile) }
+        let data = try Data(contentsOf: binURL)
+        let header = data.withUnsafeBytes { $0.loadUnaligned(as: SIMD2<Int32>.self) }
+        dims = Int(header.x)
+        let count = Int(header.y)
+        guard count == ids.count, data.count == 8 + (dims * count + count) * 4 else {
+            throw CocoaError(.fileReadCorruptFile)
+        }
+        carIDs = ids
+        let floats = data.dropFirst(8).withUnsafeBytes { Array($0.bindMemory(to: Float.self)) }
+        weights = Array(floats[0..<(dims * count)])
+        bias = Array(floats[(dims * count)...])
+    }
 
     static let otherLabel = "other"
 
-    /// The groups the router chooses between, and the expert bundled for each.
-    static let groups = ["suv": "CarExpertSuv", "utility": "CarExpertUtility",
-                         "compact": "CarExpertCompact", "saloon": "CarExpertSaloon",
-                         "sporty": "CarExpertSporty"]
-
-    /// Which body styles each expert was taught. Used by the tests to check every car really is
-    /// with its own group, and to keep this list honest as cars are added.
-    static let bodyStyles: [String: Set<String>] = [
-        "suv": ["suv"], "utility": ["pickup", "van", "wagon"],
-        "compact": ["hatchback"], "saloon": ["sedan"],
-        "sporty": ["coupe", "supercar", "convertible"],
-    ]
-
-    private let router: VNCoreMLModel
-    private let experts: [String: VNCoreMLModel]
-
-    init() throws {
-        let configuration = MLModelConfiguration()
-        #if targetEnvironment(simulator)
-        configuration.computeUnits = .cpuOnly   // the simulator can't run it on the GPU
-        #endif
-        router = try Self.load("CarRouter", configuration)
-        experts = try Self.groups.mapValues { try Self.load($0, configuration) }
-    }
-
-    /// Models are loaded from the bundle by name rather than through Xcode's generated classes, so
-    /// the set of experts can change without any code changing with it.
-    private static func load(_ name: String, _ configuration: MLModelConfiguration) throws -> VNCoreMLModel {
-        guard let url = Bundle.main.url(forResource: name, withExtension: "mlmodelc") else {
-            throw CocoaError(.fileNoSuchFile)
-        }
-        return try VNCoreMLModel(for: MLModel(contentsOf: url, configuration: configuration))
-    }
-
-    /// Car IDs the bundled experts can recognize, read from the model files (no need to load them).
+    /// Car IDs the bundled weights can recognize.
     static let recognizableIDs: Set<String> = {
-        var ids = Set<String>()
-        for name in groups.values {
-            guard let url = Bundle.main.url(forResource: name, withExtension: "mlmodelc"),
-                  let data = try? Data(contentsOf: url.appendingPathComponent("metadata.json")),
-                  let meta = (try? JSONSerialization.jsonObject(with: data)) as? [[String: Any]],
-                  let labels = meta.first?["classLabels"] as? [String] else { continue }
-            ids.formUnion(labels)
-        }
-        return ids.subtracting([otherLabel])
+        guard let url = Bundle.main.url(forResource: "CarHead", withExtension: "json"),
+              let ids = try? JSONSerialization.jsonObject(with: Data(contentsOf: url)) as? [String]
+        else { return [] }
+        return Set(ids)
     }()
 
-    /// Every car ID the experts can recognize (not counting "other").
-    var knownCarIDs: [String] {
-        Set(Self.groups.values.flatMap { Self.labels(inBundledModel: $0) })
-            .subtracting([Self.otherLabel]).sorted()
-    }
+    var knownCarIDs: [String] { carIDs }
 
-    /// Which group the router thinks this car belongs to, and how sure it is. "other" is skipped:
-    /// the router's job is only to choose a group, and refusing is the expert's job.
-    func route(_ car: CGImage) throws -> (group: String, confidence: Float)? {
-        try Self.top(router, car, limit: 3).first { $0.carID != Self.otherLabel }
-            .map { (group: $0.carID, confidence: $0.confidence) }
-    }
-
-    /// The top `limit` suggestions for a cropped car image, best first, from whichever expert the
-    /// router picks.
-    func suggestions(for car: CGImage, limit: Int = 3) throws -> [Suggestion] {
-        guard let group = try route(car)?.group, let expert = experts[group] else { return [] }
-        return try Self.top(expert, car, limit: limit)
-    }
-
-    private static func top(_ model: VNCoreMLModel, _ image: CGImage, limit: Int) throws -> [Suggestion] {
-        let request = VNCoreMLRequest(model: model)
-        request.imageCropAndScaleOption = .centerCrop
+    /// The photo as Vision sees it: a fixed-length list of numbers, unit length so the weights
+    /// behave like cosine similarities.
+    private func featurePrint(_ image: CGImage) throws -> [Float]? {
+        let request = VNGenerateImageFeaturePrintRequest()
+        request.revision = VNGenerateImageFeaturePrintRequestRevision2
         #if targetEnvironment(simulator)
+        // The simulator has no GPU inference context for this ("failed to create espresso
+        // context"), so it has to be told to use the CPU or the request throws outright.
         if let cpu = MLComputeDevice.allComputeDevices.first(where: { if case .cpu = $0 { true } else { false } }) {
             request.setComputeDevice(cpu, for: .main)
         }
         #endif
         try VNImageRequestHandler(cgImage: image).perform([request])
-        return (request.results as? [VNClassificationObservation] ?? [])
-            .prefix(limit)
-            .map { Suggestion(carID: $0.identifier, confidence: $0.confidence) }
+        guard let observation = request.results?.first as? VNFeaturePrintObservation,
+              observation.elementCount == dims else { return nil }
+        var v = [Float](repeating: 0, count: dims)
+        observation.data.withUnsafeBytes { raw in
+            let src = raw.bindMemory(to: Float.self)
+            for i in 0..<dims { v[i] = src[i] }
+        }
+        var norm: Float = 0
+        vDSP_svesq(v, 1, &norm, vDSP_Length(dims))
+        if norm > 0 { vDSP_vsmul(v, 1, [1 / sqrt(norm)], &v, 1, vDSP_Length(dims)) }
+        return v
     }
 
-    /// The expert's answer if it's confident enough and it holds up when the photo is mirrored and
-    /// slightly zoomed; otherwise nil ("couldn't identify"). Lucky one-off mistakes (a Beetle from
-    /// behind read as a Bugatti) tend to fall apart under those small changes. All three views are
-    /// put to the one expert the router chose, so they are judged against the same set of cars.
+    /// Scores every car at once, as softmax probabilities.
+    private func scores(for image: CGImage) throws -> [Float]? {
+        guard let v = try featurePrint(image) else { return nil }
+        var logits = bias
+        // One matrix-vector multiply: (cars x dims) * (dims) -> (cars)
+        cblas_sgemv(CblasRowMajor, CblasNoTrans, Int32(carIDs.count), Int32(dims),
+                    Self.logitScale, weights, Int32(dims), v, 1, Self.logitScale, &logits, 1)
+        let peak = logits.max() ?? 0
+        var total: Float = 0
+        for i in logits.indices { logits[i] = exp(logits[i] - peak); total += logits[i] }
+        if total > 0 { for i in logits.indices { logits[i] /= total } }
+        return logits
+    }
+
+    /// The top `limit` suggestions for a cropped car image, best first.
+    func suggestions(for car: CGImage, limit: Int = 3) throws -> [Suggestion] {
+        guard let p = try scores(for: car) else { return [] }
+        return p.enumerated().sorted { $0.element > $1.element }.prefix(limit)
+            .map { Suggestion(carID: carIDs[$0.offset], confidence: $0.element) }
+    }
+
+    /// The answer if it is confident enough and it holds up when the photo is mirrored and slightly
+    /// zoomed; otherwise nil ("couldn't identify"). Lucky one-off mistakes — a Beetle from behind
+    /// read as a Bugatti — tend to fall apart under those small changes.
     func identify(_ car: CGImage) throws -> Suggestion? {
-        guard let group = try route(car)?.group, let expert = experts[group],
-              let best = try Self.top(expert, car, limit: 1).first,
-              best.carID != Self.otherLabel, best.confidence >= Self.minConfidence else { return nil }
+        guard let best = try suggestions(for: car, limit: 1).first,
+              best.confidence >= Self.minConfidence else { return nil }
         for view in [Self.mirrored(car), Self.zoomed(car)].compactMap({ $0 }) {
-            guard let other = try Self.top(expert, view, limit: 1).first,
+            guard let other = try suggestions(for: view, limit: 1).first,
                   other.carID == best.carID, other.confidence >= Self.agreementConfidence else { return nil }
         }
         return best
@@ -144,12 +149,5 @@ final class CarIdentifier: @unchecked Sendable {
     static func zoomed(_ image: CGImage) -> CGImage? {
         let w = Double(image.width), h = Double(image.height)
         return image.cropping(to: CGRect(x: w * 0.08, y: h * 0.08, width: w * 0.84, height: h * 0.84).integral)
-    }
-
-    private static func labels(inBundledModel name: String) -> [String] {
-        guard let url = Bundle.main.url(forResource: name, withExtension: "mlmodelc"),
-              let ml = try? MLModel(contentsOf: url),
-              let labels = ml.modelDescription.classLabels as? [String] else { return [] }
-        return labels
     }
 }

@@ -63,13 +63,19 @@ struct CarSizeCheckTests {
 }
 
 struct AutoIdentifyTests {
-    /// 0.95 comes from a sweep over the frozen test set (582 photos of known cars, 61 of models the
-    /// recognizer was never taught). At 0.95 it names 91 right and 6 wrong and is fooled by 1 of the
-    /// 61; dropping to 0.85 names 115 right but 9 wrong and is fooled by 3. Changing this number is a
-    /// product decision about how often the app is allowed to be wrong, so it shouldn't drift silently.
+    /// 0.8 comes from a sweep over held-out photographers, 4,829 photos of 125 cars plus 190 photos
+    /// of models the recognizer was never taught:
+    ///
+    ///     floor   named right   named wrong   unknown named   right when it speaks
+    ///     0.5     2304          620           107 of 190      76%
+    ///     0.8     1534          142            59 of 190      88%
+    ///     0.9     1107           42            39 of 190      93%
+    ///
+    /// Raising it names fewer cars and lies less often, so this number is a product decision about
+    /// how often the app is allowed to be wrong, not a technical one. It shouldn't drift silently.
     @Test("The app names cars itself only above the measured confidence floor")
     func floor() throws {
-        #expect(CarIdentifier.minConfidence == 0.95)
+        #expect(CarIdentifier.minConfidence == 0.8)
         #expect(CarIdentifier.minConfidence >= CarIdentifier.agreementConfidence,
                 "the first answer should be held to at least the bar its mirrored/zoomed views are")
     }

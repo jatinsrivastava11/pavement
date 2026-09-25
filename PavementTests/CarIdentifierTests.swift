@@ -1,4 +1,5 @@
 import CoreGraphics
+import Vision
 import CoreML
 import Foundation
 import ImageIO
@@ -26,56 +27,35 @@ struct CarIdentifierTests {
         }
     }
 
-    /// The cars each bundled expert was taught.
-    private func carsPerExpert() throws -> [String: Set<String>] {
-        var result: [String: Set<String>] = [:]
-        for (group, name) in CarIdentifier.groups {
-            let url = try #require(Bundle.main.url(forResource: name, withExtension: "mlmodelc"),
-                                   "expert \(name) is missing from the app")
-            let model = try MLModel(contentsOf: url)
-            let labels = try #require(model.modelDescription.classLabels as? [String])
-            result[group] = Set(labels).subtracting([CarIdentifier.otherLabel])
-        }
-        return result
+    @Test("The weights file matches the list of cars it is supposed to score")
+    func weightsMatchCars() throws {
+        // The head is a raw binary: a header, then one row of weights per car, then one bias each.
+        // If it ever disagreed with the car list, every car would be scored as the wrong one, and
+        // nothing else in the app would notice.
+        let binURL = try #require(Bundle.main.url(forResource: "CarHead", withExtension: "bin"))
+        let jsonURL = try #require(Bundle.main.url(forResource: "CarHead", withExtension: "json"))
+        let ids = try #require(try JSONSerialization.jsonObject(with: Data(contentsOf: jsonURL)) as? [String])
+        let data = try Data(contentsOf: binURL)
+        let header = data.withUnsafeBytes { $0.loadUnaligned(as: SIMD2<Int32>.self) }
+        let dims = Int(header.x), count = Int(header.y)
+        #expect(count == ids.count, "\(count) rows of weights for \(ids.count) cars")
+        #expect(dims == 768, "Vision's revision 2 feature print is 768 numbers; got \(dims)")
+        #expect(data.count == 8 + (dims * count + count) * 4, "weights file is the wrong length")
+        #expect(Set(ids).count == ids.count, "a car is listed twice")
     }
 
-    @Test("Every expert is bundled, and no car is taught to two of them")
-    func expertsAreDisjoint() throws {
-        // If a car were taught to two experts, the router's choice would stop mattering for it and
-        // the split would not be buying anything. This also proves each expert file is present and
-        // loadable: a missing one would otherwise just quietly shrink the recognizer.
-        let cars = try carsPerExpert()
-        #expect(cars.count == CarIdentifier.groups.count)
-        for (group, ids) in cars {
-            #expect(!ids.isEmpty, "the \(group) expert knows no cars")
-        }
-        for (a, b) in cars.keys.sorted().combinations() {
-            let shared = cars[a]!.intersection(cars[b]!)
-            #expect(shared.isEmpty, "\(shared.sorted()) taught to both \(a) and \(b)")
-        }
-    }
-
-    @Test("Each expert's cars really are of the body shapes it was meant to learn")
-    func expertsMatchTheirBodyStyles() throws {
-        // The router decides by body shape, so an expert holding a car of the wrong shape would be
-        // unreachable for that car however confident it was.
-        for (group, ids) in try carsPerExpert() {
-            let expected = try #require(CarIdentifier.bodyStyles[group], "no body styles listed for \(group)")
-            for id in ids {
-                let body = try #require(catalog.car(id: id)?.body.rawValue, "\(id) isn't in the catalog")
-                #expect(expected.contains(body), "\(id) is a \(body) but is taught to the \(group) expert")
-            }
-        }
-    }
-
-    @Test("The router answers with one of the groups the app has an expert for")
-    func routerPicksAKnownGroup() throws {
+    @Test("Scores form a probability distribution over every car")
+    func scoresAreProbabilities() throws {
         let url = try #require(Bundle(for: BundleToken.self).url(forResource: "street01", withExtension: "jpg"))
         let source = try #require(CGImageSourceCreateWithURL(url as CFURL, nil))
         let image = try #require(CGImageSourceCreateImageAtIndex(source, 0, nil))
-        let routed = try identifier.route(image)
-        let route = try #require(routed, "the router refused to pick any group")
-        #expect(CarIdentifier.groups.keys.contains(route.group), "unknown group \(route.group)")
+        // Asking for every car back, the confidences must sum to 1: that is what makes the
+        // confidence floor mean "how sure, out of everything it could have said".
+        let all = try identifier.suggestions(for: image, limit: identifier.knownCarIDs.count)
+        #expect(all.count == identifier.knownCarIDs.count)
+        let total = all.reduce(Float(0)) { $0 + $1.confidence }
+        #expect(abs(total - 1) < 0.01, "confidences summed to \(total)")
+        #expect(all.allSatisfy { $0.confidence >= 0 && $0.confidence <= 1 })
     }
 
     @Test("Returns up to 3 distinct suggestions, best first")
@@ -127,3 +107,4 @@ private extension Array {
         indices.flatMap { i in self[(i + 1)...].map { (self[i], $0) } }
     }
 }
+
