@@ -20,7 +20,7 @@ struct CarIdentifierTests {
     func labelsInCatalog() {
         // The recognizer is split across experts, so this also proves every expert was found and
         // read: if one failed to load, the count would quietly drop to the other expert's cars.
-        #expect(identifier.knownCarIDs.count >= 150)
+        #expect(identifier.knownCarIDs.count >= 350)
         #expect(Set(identifier.knownCarIDs) == CarIdentifier.recognizableIDs)
         for id in identifier.knownCarIDs {
             #expect(catalog.car(id: id) != nil, "\(id) isn't in the catalog")

@@ -63,13 +63,13 @@ struct CarSizeCheckTests {
 }
 
 struct AutoIdentifyTests {
-    /// 0.8 comes from a sweep over held-out photographers, 4,829 photos of 125 cars plus 190 photos
-    /// of models the recognizer was never taught:
+    /// 0.8 comes from a sweep over held-out photographers, 12,319 photos of 356 cars plus 190
+    /// photos of models the recognizer was never taught:
     ///
     ///     floor   named right   named wrong   unknown named   right when it speaks
-    ///     0.5     2304          620           107 of 190      76%
-    ///     0.8     1534          142            59 of 190      88%
-    ///     0.9     1107           42            39 of 190      93%
+    ///     0.5     6030          1604          102 of 190      78%
+    ///     0.8     4111           338           53 of 190      91%
+    ///     0.9     3055           131           29 of 190      95%
     ///
     /// Raising it names fewer cars and lies less often, so this number is a product decision about
     /// how often the app is allowed to be wrong, not a technical one. It shouldn't drift silently.
